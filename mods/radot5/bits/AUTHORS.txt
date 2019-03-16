@@ -1,0 +1,16 @@
+CombinE:
+	Mortar:							custom/e22.shp
+	Mortar Cameo:					custom/e22icon.shp
+	Oil Pump:						custom/oiler*.shp
+	Oil Pump Cameo:					custom/oilericon.shp
+
+Nooze:
+	Tank Destroyer:					custom/tnkd.shp
+	Tank Destroyer Cameo:			custom/tnkdicon.shp
+	Tank Destroyer Firing Sound:	custom/audio/tnkd_fire.aud
+
+Holloweye:
+	WW1 Mod Artwork:				custom/wwi/*
+
+MustaphaTR:
+	Civilian Flags:					custom/flags/*

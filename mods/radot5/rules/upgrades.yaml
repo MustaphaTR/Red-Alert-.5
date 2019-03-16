@@ -1,0 +1,48 @@
+^default.upgrade:
+	Interactable:
+	AlwaysVisible:
+	Buildable:
+		Queue: Upgrade
+		BuildLimit: 1
+	RenderSprites:
+	ProvidesPrerequisite@upgradename:
+
+upgrade.adv_training:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Advanced Training
+	Buildable:
+		BuildPaletteOrder: 10
+		Description: Doubles the rate infantry and cavalry gain veterancy.
+	Valued:
+		Cost: 1250
+
+upgrade.horse_armor:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Improved Horse Armor
+	Buildable:
+		BuildPaletteOrder: 20
+		Description: Increases Cavalry health by 50%.
+	Valued:
+		Cost: 1250
+
+upgrade.autoloaders:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Autoloaders
+	Buildable:
+		BuildPaletteOrder: 30
+		Description: Increases Artillery and Turret fire speed by 25%.
+	Valued:
+		Cost: 1500
+
+upgrade.explosive_rockets:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Explosive Rockets
+	Buildable:
+		BuildPaletteOrder: 40
+		Description: Increases Rocket damage.
+	Valued:
+		Cost: 1500

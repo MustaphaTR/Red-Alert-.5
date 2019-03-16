@@ -1,0 +1,46 @@
+# General dumping-ground for UI element sizes, etc.
+
+Metrics:
+	ColorPickerActorType: fact.colorpicker
+	ColorPickerRemapIndices: 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95
+	FactionSuffix-allies: allies
+	FactionSuffix-greece: allies
+	FactionSuffix-uk: allies
+	FactionSuffix-germany: allies
+	FactionSuffix-france: allies
+	FactionSuffix-spain: allies
+	FactionSuffix-comintern: comintern
+	FactionSuffix-ussr: comintern
+	FactionSuffix-mongolia: comintern
+	FactionSuffix-tuva: comintern
+	FactionSuffix-sinkiang: comintern
+	FactionSuffix-comchina: comintern
+	FactionSuffix-axis: axis
+	FactionSuffix-italy: axis
+	FactionSuffix-hungary: axis
+	FactionSuffix-reich: axis
+	FactionSuffix-yugoslavia: axis
+	FactionSuffix-natspain: axis
+	FactionSuffix-intermarium: intermarium
+	FactionSuffix-poland: intermarium
+	FactionSuffix-romania: intermarium
+	FactionSuffix-lithuania: intermarium
+	FactionSuffix-latvia: intermarium
+	FactionSuffix-estonia: intermarium
+	FactionSuffix-unitedfront: unitedfront
+	FactionSuffix-china: unitedfront
+	FactionSuffix-guangxi: unitedfront
+	FactionSuffix-yunnan: unitedfront
+	FactionSuffix-ma: unitedfront
+	FactionSuffix-usa: unitedfront
+	FactionSuffix-coprosperity: coprosperity
+	FactionSuffix-japan: coprosperity
+	FactionSuffix-manchukuo: coprosperity
+	FactionSuffix-mengkukuo: coprosperity
+	FactionSuffix-siam: coprosperity
+	IncompatibleProtectedGameColor: B22222
+	IncompatibleVersionColor: D3D3D3
+	TextfieldColorHighlight: 562020
+	ChatLineSound: ChatLine
+	ClickDisabledSound: ClickDisabledSound
+	ClickSound: ClickSound

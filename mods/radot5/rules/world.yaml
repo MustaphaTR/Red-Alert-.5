@@ -1,0 +1,450 @@
+^BaseWorld:
+	Inherits: ^Palettes
+	AlwaysVisible:
+	ActorMap:
+	ScreenMap:
+	MusicPlaylist:
+		VictoryMusic: score
+		DefeatMusic: map
+	TerrainGeometryOverlay:
+	DebugVisualizations:
+	Locomotor@FOOT:
+		Name: foot
+		Crushes: mine, crate
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 90
+			Rough: 80
+			Road: 100
+			Bridge: 100
+			Ore: 80
+			Gems: 80
+			Beach: 80
+	Locomotor@MOUNTAINER:
+		Name: mountainer
+		Crushes: mine, crate
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 90
+			Rock: 50
+			Rough: 80
+			Road: 100
+			Bridge: 100
+			Ore: 80
+			Gems: 80
+			Beach: 80
+	Locomotor@WHEELED:
+		Name: wheeled
+		Crushes: mine, crate
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 40
+			Road: 100
+			Bridge: 100
+			Ore: 70
+			Gems: 70
+			Beach: 40
+	Locomotor@HEAVYWHEELED:
+		Name: heavywheeled
+		Crushes: wall, mine, crate, infantry
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 40
+			Road: 100
+			Bridge: 100
+			Ore: 70
+			Gems: 70
+			Beach: 40
+	Locomotor@LIGHTTRACKED:
+		Name: lighttracked
+		Crushes: wall, mine, crate
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 70
+			Road: 100
+			Bridge: 100
+			Ore: 70
+			Gems: 70
+			Beach: 70
+	Locomotor@TRACKED:
+		Name: tracked
+		Crushes: wall, infantry, mine, crate
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 70
+			Road: 100
+			Bridge: 100
+			Ore: 70
+			Gems: 70
+			Beach: 70
+	Locomotor@HEAVYTRACKED:
+		Name: heavytracked
+		Crushes: wall, infantry, mine, crate, heavywall
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 70
+			Road: 100
+			Bridge: 100
+			Ore: 70
+			Gems: 70
+			Beach: 70
+	Locomotor@NAVAL:
+		Name: naval
+		Crushes: crate
+		TerrainSpeeds:
+			Water: 100
+	Locomotor@LANDINGCRAFT:
+		Name: lcraft
+		Crushes: crate
+		TerrainSpeeds:
+			Water: 100
+			Beach: 70
+	Locomotor@IMMOBILE:
+		Name: immobile
+		TerrainSpeeds:
+	TerrainRenderer:
+	ShroudRenderer:
+		FogVariants: shroud
+		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
+		UseExtendedIndex: true
+	Faction@0:
+		Name: Allies
+		InternalName: allies
+		Side: Allies
+		Selectable: False
+	Faction@1:
+		Name: Greece
+		InternalName: greece
+		Side: Allies
+		Description: Greece\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Unit:
+	Faction@2:
+		Name: UK
+		InternalName: uk
+		Side: Allies
+		Description: United Kindgom\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Abiliy: Paradrop
+	Faction@3:
+		Name: Germany
+		InternalName: germany
+		Side: Allies
+		Description: Republic of Germany\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Unit: Mechanic
+	Faction@4:
+		Name: France
+		InternalName: france
+		Side: Allies
+		Description: France\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Building: Fortified PillBox
+	Faction@5:
+		Name: Spain
+		InternalName: spain
+		Side: Allies
+		Description: Spanish Republic\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Unit:
+	Faction@6:
+		Name: Comintern
+		InternalName: comintern
+		Side: Comintern
+		Selectable: False
+	Faction@7:
+		Name: USSR
+		InternalName: ussr
+		Side: Comintern
+		Description: Union of Soviet Socialist Republics\nFaction Units:\n - Flamethrower\n - Heavy Tank\n - Flame Tower\n\nSubfaction Unit: Katyusha
+	Faction@8:
+		Name: Mongolia
+		InternalName: mongolia
+		Side: Comintern
+		Description: Mongolia\nFaction Units:\n - Flamethrower\n - Heavy Tank\n - Flame Tower\n\nSubfaction Unit: Scout Cavalry
+	Faction@9:
+		Name: Tannu Tuva
+		InternalName: tuva
+		Side: Comintern
+		Description: Tannu Tuva\nFaction Units:\n - Flamethrower\n - Heavy Tank\n - Flame Tower\n\nSubfaction Unit:
+	Faction@10:
+		Name: Sinkiang
+		InternalName: sinkiang
+		Side: Comintern
+		Description: Sinkiang\nFaction Units:\n - Flamethrower\n - Heavy Tank\n - Flame Tower\n\nSubfaction Building: Propaganda Tower
+	Faction@11:
+		Name: Comm. China
+		InternalName: comchina
+		Side: Comintern
+		Description: Communist China\nFaction Units:\n - Flamethrower\n - Heavy Tank\n - Flame Tower\n\nSubfaction Unit: Saboteur
+	Faction@12:
+		Name: Axis
+		InternalName: axis
+		Side: Axis
+		Selectable: false
+	Faction@13:
+		Name: Italy
+		InternalName: italy
+		Side: Axis
+		Description: Italy\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit: Chemical Buggy
+	Faction@14:
+		Name: Hungary
+		InternalName: hungary
+		Side: Axis
+		Description: Hungary\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit:
+	Faction@15:
+		Name: Third Reich
+		InternalName: reich
+		Side: Axis
+		Description: Third German Reich\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit: V2 Launcher
+	Faction@16:
+		Name: Yugoslavia
+		InternalName: yugoslavia
+		Side: Axis
+		Description: Yugoslavia\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit:
+	Faction@17:
+		Name: Nat. Spain
+		InternalName: natspain
+		Side: Axis
+		Description: Nationalist Spain\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit:
+	Faction@18:
+		Name: Intermarium
+		InternalName: intermarium
+		Side: Intermarium
+		Selectable: false
+	Faction@19:
+		Name: Poland
+		InternalName: poland
+		Side: Intermarium
+		Description: Poland\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+	Faction@20:
+		Name: Romania
+		InternalName: romania
+		Side: Intermarium
+		Description: Romania\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Building: Oil Pump
+	Faction@21:
+		Name: Lithuania
+		InternalName: lithuania
+		Side: Intermarium
+		Description: Lithuania\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+	Faction@22:
+		Name: Latvia
+		InternalName: latvia
+		Side: Intermarium
+		Description: Latvia\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+	Faction@23:
+		Name: Estonia
+		InternalName: estonia
+		Side: Intermarium
+		Description: Estonia\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+	Faction@24:
+		Name: United Front
+		InternalName: unitedfront
+		Side: United Front
+		Selectable: false
+	Faction@25:
+		Name: China
+		InternalName: china
+		Side: United Front
+		Description: China\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit: Camo Tank
+	Faction@26:
+		Name: Guangxi
+		InternalName: guangxi
+		Side: United Front
+		Description: Guangxi Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit:
+	Faction@27:
+		Name: Yunnan
+		InternalName: yunnan
+		Side: United Front
+		Description: Yunnan Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit:
+	Faction@28:
+		Name: Xibei San Ma
+		InternalName: ma
+		Side: United Front
+		Description: Xibei San Ma\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit: Mountaineer
+	Faction@29:
+		Name: USA
+		InternalName: usa
+		Side: United Front
+		Description: United States of America\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit: Marine
+	Faction@30:
+		Name: Co-Prosperity Sphere
+		InternalName: coprosperity
+		Side: Co-Prosperity Sphere
+		Selectable: false
+	Faction@31:
+		Name: Japan
+		InternalName: japan
+		Side: Co-Prosperity Sphere
+		Description: Empire of Japan\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Unit: Battleship
+	Faction@32:
+		Name: Manchukuo
+		InternalName: manchukuo
+		Side: Co-Prosperity Sphere
+		Description: Manchukuo\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Unit:
+	Faction@33:
+		Name: Mengkukuo
+		InternalName: mengkukuo
+		Side: Co-Prosperity Sphere
+		Description: Mengkukuo\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Unit:
+	Faction@34:
+		Name: Siam
+		InternalName: siam
+		Side: Co-Prosperity Sphere
+		Description: Siam\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Unit:
+	Faction@random:
+		Name: Any
+		InternalName: Random
+		RandomFactionMembers: RandomAllies, RandomComintern, RandomAxis, RandomIntermarium, RandomUnitedFront, RandomCoProsperity
+		Side: Random
+		Description: Random Country\nA random country will be chosen when the game starts.
+	Faction@randomallies:
+		Name: Allies
+		InternalName: RandomAllies
+		RandomFactionMembers: greece, uk, germany, france, spain
+		Side: Random
+		Description: Random member of Allies\nA member of Allies will be chosen when the game starts.
+	Faction@randomcomintern:
+		Name: Comintern
+		InternalName: RandomComintern
+		RandomFactionMembers: ussr, mongolia, tuva, sinkiang, comchina
+		Side: Random
+		Description: Random member of Comintern\nA random member of Comintern will be chosen when the game starts.
+	Faction@randomaxis:
+		Name: Axis
+		InternalName: RandomAxis
+		RandomFactionMembers: italy, hungary, reich, yugoslavia, natspain
+		Side: Random
+		Description: Random member of Axis\nA random member of Axis will be chosen when the game starts.
+	Faction@randomintermarium:
+		Name: Intermarium
+		InternalName: RandomIntermarium
+		RandomFactionMembers: poland, romania, lithuania, latvia, estonia
+		Side: Random
+		Description: Random member of Intermarium\nA random member of Intermarium will be chosen when the game starts.
+	Faction@randomunitedfront:
+		Name: United Front
+		InternalName: RandomUnitedFront
+		RandomFactionMembers: china, guangxi, yunnan, ma, usa
+		Side: Random
+		Description: Random member of United Front\nA random member of United Front will be chosen when the game starts.
+	Faction@randomcoprosperity:
+		Name: Co-Prosperity Sphere
+		InternalName: RandomCoProsperity
+		RandomFactionMembers: japan, manchukuo, mengkukuo, siam
+		Side: Random
+		Description: Random member of Co-Prosperity Sphere\nA random member of Co-Prosperity Sphere will be chosen when the game starts.
+	ResourceType@ore:
+		Type: Ore
+		Name: Valuable Minerals
+		PipColor: Yellow
+		ResourceType: 1
+		TerrainType: Ore
+		Palette: player
+		Sequences: gold01,gold02,gold03,gold04
+		MaxDensity: 12
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear,Road
+		AllowUnderActors: true
+	ResourceType@gem:
+		Type: Gems
+		Name: Valuable Minerals
+		PipColor: Red
+		ResourceType: 2
+		TerrainType: Gems
+		Palette: player
+		Sequences: gem01,gem02,gem03,gem04
+		MaxDensity: 3
+		ValuePerUnit: 50
+		AllowedTerrainTypes: Clear,Road
+		AllowUnderActors: true
+
+World:
+	Inherits: ^BaseWorld
+	ChatCommands:
+	DevCommands:
+	DebugVisualizationCommands:
+	PlayerCommands:
+	HelpCommand:
+	ScreenShaker:
+	BuildingInfluence:
+	ProductionQueueFromSelection:
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	LegacyBridgeLayer:
+		Bridges: bridge1, bridge2, bridge3, bridge4, br1, br2, br3, sbridge1, sbridge2, sbridge3, sbridge4
+	CustomTerrainDebugOverlay:
+	CrateSpawner:
+		DeliveryAircraft: badr
+		QuantizedFacings: 16
+		Minimum: 1
+		Maximum: 3
+		SpawnInterval: 3000
+		WaterChance: 20
+		InitialSpawnDelay: 1500
+		CheckboxDisplayOrder: 1
+	DomainIndex:
+	SmudgeLayer@SCORCH:
+		Type: Scorch
+		Sequence: scorches
+		SmokePercentage: 50
+	SmudgeLayer@CRATER:
+		Type: Crater
+		Sequence: craters
+	ResourceLayer:
+	ResourceClaimLayer:
+	WarheadDebugOverlay:
+	SpawnMapActors:
+	MapBuildRadius:
+		AllyBuildRadiusCheckboxDisplayOrder: 4
+		BuildRadiusCheckboxDisplayOrder: 5
+	MapOptions:
+		ShortGameCheckboxDisplayOrder: 2
+		TechLevelDropdownDisplayOrder: 2
+		GameSpeedDropdownDisplayOrder: 3
+	CreateMPPlayers:
+	MPStartUnits@mcvonly:
+		Class: none
+		ClassName: MCV Only
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam
+		BaseActor: mcv
+	MPStartUnits@lightallies:
+		Class: light
+		ClassName: Light Support
+		Factions: allies, greece, uk, germany, france, spain
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e3,e3,jeep,1tnk
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@lightsoviet:
+		Class: light
+		ClassName: Light Support
+		Factions: comintern, ussr, mongolia, tuva, sinkiang, comchina
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e3,e3,apc,ftrk
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@heavyallies:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: allies, greece, uk, germany, france, spain
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e3,e3,jeep,1tnk,2tnk,2tnk,2tnk
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@heavycomintern:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: comintern, ussr, mongolia, tuva, sinkiang, comchina
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e3,e3,apc,ftrk,3tnk,3tnk
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartLocations:
+		SeparateTeamSpawnsCheckboxDisplayOrder: 6
+	SpawnMPUnits:
+		DropdownDisplayOrder: 1
+	PathFinder:
+	ValidateOrder:
+	DebugPauseState:
+	RadarPings:
+	StartGameNotification:
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
+	LoadWidgetAtGameStart:
+
+EditorWorld:
+	Inherits: ^BaseWorld
+	EditorActorLayer:
+	EditorResourceLayer:
+	EditorSelectionLayer:
+	LoadWidgetAtGameStart:

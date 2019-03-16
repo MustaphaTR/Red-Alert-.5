@@ -1,0 +1,146 @@
+scoutcav:
+	stand: scout_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	run: scout_run
+		Start: 0
+		Length: 19
+		Facings: 16
+		Tick: 100
+	shoot: scout_attack
+		Start: 0
+		Length: 17
+		Facings: 16
+		Tick: 100
+	idle1: scout_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	die1: scout_death
+		Start: 0
+		Length: 21
+		Facings: 16
+		Tick: 100
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	icon:scout_icon
+
+riflecav:
+	stand: dragoon_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	run: dragoon_run
+		Start: 0
+		Length: 19
+		Facings: 16
+		Tick: 100
+	shoot: dragoon_attack
+		Start: 0
+		Length: 21
+		Facings: 16
+		Tick: 50
+	idle1: dragoon_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	die1: dragoon_death
+		Start: 0
+		Length: 19
+		Tick: 100
+	muzzle: gunfire2
+		Length: 2
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	icon: dragoon_icon
+
+grencav:
+	stand: mount_grenadier_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	run: mount_grenadier_run
+		Start: 0
+		Length: 19
+		Facings: 16
+		Tick: 100
+	shoot: mount_grenadier_attack
+		Start: 0
+		Length: 21
+		Facings: 16
+		Tick: 20
+	idle1:mount_grenadier_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	die1: mount_grenadier_death
+		Start: 0
+		Length: 19
+		Tick: 100
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	icon: mount_grenadier_icon
+
+hussar:
+	idle:
+		Facings: 8
+	stand:
+		Facings: 8
+	run:
+		Start: 72
+		Length: 8
+		Facings: 8
+	shoot:
+		Start: 136
+		Length: 5
+		Facings: 8
+	idle1:
+		Start: 240
+		Length: 12
+	idle2:
+		Start: 252
+		Length: 18
+	die1:
+		Start: 269
+		Length: 6
+	die2:
+		Start: 269
+		Length: 6
+	die3:
+		Start: 269
+		Length: 6
+	die4:
+		Start: 269
+		Length: 6
+	die5:
+		Start: 269
+		Length: 6
+	die6:
+		Start: 269
+		Length: 6
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: hussaricon

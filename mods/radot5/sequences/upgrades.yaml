@@ -1,0 +1,11 @@
+upgrade.adv_training:
+	icon: advtrainicon
+
+upgrade.autoloaders:
+	icon: aloadicon
+
+upgrade.horse_armor:
+	icon: armoricon
+
+upgrade.explosive_rockets:
+	icon: aprockicon

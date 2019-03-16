@@ -1,0 +1,102 @@
+SCOUTCAV:
+	Inherits: ^Cavalry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Buildable:
+		Queue: Cavalry
+		BuildPaletteOrder: 10
+		Prerequisites: ~cavalry.mongolia, ~techlevel.low
+		Description: Scouting unit.\n  Strong vs Infantry\n  Weak vs Vehicles
+	Valued:
+		Cost: 250
+	Tooltip:
+		Name: Scout Cavalry
+	Mobile:
+		Speed: 100
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 4000
+	Armament@PRIMARY:
+		Weapon: ScoutGun
+	AttackFrontal:
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+
+RIFLECAV:
+	Inherits: ^Cavalry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Buildable:
+		Queue: Cavalry
+		BuildPaletteOrder: 20
+		Prerequisites: ~techlevel.low
+		Description: Cavalry unit equiped with a rifle.\n  Strong vs Infantry\n  Weak vs Vehicles
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Rifle Cavalry
+	Mobile:
+		Speed: 90
+	Health:
+		HP: 8000
+	Armament@PRIMARY:
+		Weapon: CavalryRifle
+		LocalOffset: 800,0,600
+		MuzzleSequence: muzzle
+	AttackFrontal:
+	WithMuzzleOverlay:
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+
+GRENCAV:
+	Inherits: ^Cavalry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Buildable:
+		Queue: Cavalry
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.low
+		Description: Mounted grenadier.\n  Strong vs Structures\n  Weak vs Vehicles
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Grenadier Cavalry
+	Mobile:
+		Speed: 80
+	Health:
+		HP: 7000
+	Armament@PRIMARY:
+		Weapon: CavalryGrenade
+		LocalOffset: 0,200,600
+	AttackFrontal:
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+
+HUSSAR:
+	Inherits: ^Cavalry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Buildable:
+		Queue: Cavalry
+		BuildPaletteOrder: 40
+		Prerequisites: ~cavalry.intermarium, ~techlevel.low
+		Description: Cavalry unit equiped with a shotgun.\n  Strong vs Infantry\n  Weak vs Vehicles
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Hussar
+	Mobile:
+		Speed: 90
+	Health:
+		HP: 9000
+	Armament@PRIMARY:
+		Weapon: HussarShotgun
+		LocalOffset: 0,0,555
+		MuzzleSequence: muzzle
+	AttackFrontal:
+	WithMuzzleOverlay:
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	RenderSprites:
+		Scale: 1.2
