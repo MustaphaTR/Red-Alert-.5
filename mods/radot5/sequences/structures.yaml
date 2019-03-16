@@ -681,3 +681,8 @@ cycl:
 	damaged-idle:
 		Start: 16
 		Length: 16
+
+hedgehog:
+	idle: tanktrap1
+	idle-2: tanktrap2
+	icon: tanktrap1

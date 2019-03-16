@@ -23,6 +23,9 @@ FACT:
 	ProvidesPrerequisite@sinkiang:
 		Factions: sinkiang
 		Prerequisite: structures.sinkiang
+	ProvidesPrerequisite@intermarium:
+		Factions: intermarium, poland, romania, lithuania, latvia, estonia
+		Prerequisite: structures.intermarium
 	ProvidesPrerequisite@romania:
 		Factions: romania
 		Prerequisite: structures.romania
@@ -2028,6 +2031,33 @@ WOOD:
 		Types: woodfence
 	WithWallSpriteBody:
 		Type: woodfence
+
+HEDGEHOG:
+	Inherits: ^Defense
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		BuildDurationModifier: 300
+		Prerequisites: ~structures.intermarium, ~techlevel.medium
+		Description: Tough unit blockade.
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Hedgehog
+	Health:
+		HP: 200000
+	Armor:
+		Type: Concrete
+	-RenderRangeCircle:
+	-WithMakeAnimation:
+	-SpawnActorsOnSell:
+	WithSpriteBody:
+		RequiresCondition: art1
+	WithSpriteBody@2:
+		Sequence: idle-2
+		RequiresCondition: art2
+	GrantRandomCondition:
+		Conditions: art1, art2
 
 BARRACKS:
 	AlwaysVisible:
