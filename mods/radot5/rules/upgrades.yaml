@@ -46,3 +46,14 @@ upgrade.explosive_rockets:
 		Description: Increases Rocket damage.
 	Valued:
 		Cost: 1500
+
+upgrade.air_radar:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Air Radar
+	Buildable:
+		BuildPaletteOrder: 40
+		Prerequisites: dome
+		Description: Increases aircraft sight.
+	Valued:
+		Cost: 1000

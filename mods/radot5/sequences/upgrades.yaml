@@ -9,3 +9,6 @@ upgrade.horse_armor:
 
 upgrade.explosive_rockets:
 	icon: aprockicon
+
+upgrade.air_radar:
+	icon: radricon

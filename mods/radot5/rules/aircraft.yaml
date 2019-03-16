@@ -98,11 +98,11 @@ MIG:
 	Health:
 		HP: 7500
 	RevealsShroud:
-		Range: 13c0
+		Range: 8c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 11c0
+		Range: 6c0
 		Type: GroundPosition
 	Armament:
 		Weapon: Maverick
@@ -161,11 +161,11 @@ YAK:
 	Health:
 		HP: 6000
 	RevealsShroud:
-		Range: 11c0
+		Range: 8c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 9c0
+		Range: 6c0
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: ChainGun.Yak
@@ -253,11 +253,11 @@ TRAN:
 	Health:
 		HP: 14000
 	RevealsShroud:
-		Range: 8c0
+		Range: 6c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 6c0
+		Range: 4c0
 		Type: GroundPosition
 	Aircraft:
 		TurnSpeed: 5
@@ -310,11 +310,11 @@ HELI:
 	Health:
 		HP: 12000
 	RevealsShroud:
-		Range: 12c0
+		Range: 8c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 10c0
+		Range: 6c0
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: HellfireAA
@@ -374,11 +374,11 @@ HIND:
 	Health:
 		HP: 10000
 	RevealsShroud:
-		Range: 10c0
+		Range: 8c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 8c0
+		Range: 6c0
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: ChainGun

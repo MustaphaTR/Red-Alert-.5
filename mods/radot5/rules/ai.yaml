@@ -403,6 +403,7 @@ Player:
 			upgrade.horse_armor: 1
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
+			upgrade.air_radar: 1
 		UnitLimits:
 			dog: 4
 			harv: 8
@@ -493,5 +494,6 @@ Player:
 			pt: 10
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
+			upgrade.air_radar: 1
 		UnitLimits:
 			harv: 8

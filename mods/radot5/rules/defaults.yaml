@@ -211,6 +211,14 @@
 		Condition: explosive_rockets
 		Prerequisites: upgrade.explosive_rockets
 
+^AffectedByAirRadar:
+	RevealsShroudMultiplier@AIR_RADAR:
+		RequiresCondition: air_radar
+		Modifier: 125
+	GrantConditionOnPrerequisite@AIR_RADAR:
+		Condition: air_radar
+		Prerequisites: upgrade.air_radar
+
 ^IronCurtainable:
 	WithColoredOverlay@IRONCURTAIN:
 		RequiresCondition: invulnerability
@@ -611,6 +619,7 @@
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^SpriteActor
 	Inherits@5: ^AffectedByPropaganda
+	Inherits@6: ^AffectedByAirRadar
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
 	OwnerLostAction:
