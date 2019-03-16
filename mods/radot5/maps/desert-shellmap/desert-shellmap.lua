@@ -6,7 +6,7 @@
    the License, or (at your option) any later version. For more
    information, see COPYING.
 ]]
-UnitTypes = { "2tnk", "ftrk", "1tnk", "apc" }
+UnitTypes = { "ftrk", "1tnk", "apc", "2tnk" }
 BeachUnitTypes = { "e1", "e2", "e3", "e5", "e1", "e2", "e3", "e5", "e1", "e2", "e3", "e5", "e1", "e2", "e3", "e5" }
 ProxyType = "powerproxy.paratroopers"
 ProducedUnitTypes =
