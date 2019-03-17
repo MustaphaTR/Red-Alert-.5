@@ -458,7 +458,7 @@ E7:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 130
 		Prerequisites: ~barracks, stek, ~techlevel.high
 		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nCan detect cloaked units.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
 	Valued:
@@ -657,7 +657,7 @@ THF:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 100
 		Prerequisites: ~barracks, fix, ~infantry.unitedfront, ~techlevel.medium
 		Description: Steals enemy credits.\nHijacks enemy vehicles.\n  Unarmed
 	Valued:
@@ -800,6 +800,39 @@ SNIPER:
 	-MustBeDestroyed:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
+
+SABOT:
+	Inherits: ^Soldier
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Saboteur
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 120
+		Prerequisites: ~barracks, ~infantry.comchina, stek, ~techlevel.high
+		Description: Infantry armed with explosions to blow up structures.\nCloaked while not moving.\n  Strong vs Buildings\n  Weak vs Infantry, Vehicles, Aircraft
+	Passenger:
+		PipType: Red
+	Demolition:
+		DetonationDelay: 0
+		Flashes: 0
+		EnterBehaviour: Suicide
+	Cloak:
+		InitialDelay: 250
+		CloakDelay: 120
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		PauseOnCondition: cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	-MustBeDestroyed:
 
 Zombie:
 	Inherits: ^Soldier

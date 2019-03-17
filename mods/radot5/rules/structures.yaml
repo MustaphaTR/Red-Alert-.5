@@ -230,6 +230,9 @@ BARR:
 	ProvidesPrerequisite@comintern:
 		Factions: comintern, ussr, mongolia, tuva, sinkiang, comchina
 		Prerequisite: infantry.comintern
+	ProvidesPrerequisite@comchina:
+		Factions: comchina
+		Prerequisite: infantry.comchina
 	ProvidesPrerequisite@axis:
 		Factions: axis, italy, hungary, reich, yugoslavia, natspain
 		Prerequisite: infantry.axis
