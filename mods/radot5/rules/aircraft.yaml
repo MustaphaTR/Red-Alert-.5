@@ -79,6 +79,17 @@ BADR.Bomber:
 		Experience: 1000
 	Interactable:
 
+BADR.ClusterMines:
+	Inherits: BADR.Bomber
+	Tooltip:
+		Name: Cargo Plane
+	Armament:
+		Weapon: ClusterMines
+		PauseOnCondition: !ammo
+	AmmoPool:
+		Ammo: 1
+		AmmoCondition: ammo
+
 MIG:
 	Inherits: ^Plane
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

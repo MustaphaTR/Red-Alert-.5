@@ -14,6 +14,7 @@ Packages:
 	.
 	$radot5: radot5
 	./mods/common: common
+	./mods/as: as
 	~main.mix
 	~conquer.mix
 	~lores.mix: lores
@@ -87,6 +88,7 @@ Chrome:
 	radot5|chrome.yaml
 
 Assemblies:
+	as|OpenRA.Mods.AS.dll
 	common|OpenRA.Mods.Common.dll
 	common|OpenRA.Mods.Cnc.dll
 

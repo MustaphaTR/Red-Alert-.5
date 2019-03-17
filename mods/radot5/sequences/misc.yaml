@@ -167,6 +167,9 @@ beacon:
 	carpeticon: carpetbcon
 		Length: *
 		Offset: 0,-42
+	cminesicon: cminesbcon
+		Length: *
+		Offset: 0,-42
 	clock: beaconclock
 		Length: *
 		Offset: 0,-42
@@ -509,6 +512,7 @@ icon:
 	parabombs: pbmbicon
 	sonar: sonricon
 	carpet: carpeticon
+	cmines: cminesicon
 
 quee:
 	idle:

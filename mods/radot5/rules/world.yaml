@@ -221,7 +221,7 @@
 		Name: Latvia
 		InternalName: latvia
 		Side: Intermarium
-		Description: Latvia\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+		Description: Latvia\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Abiliy: Cluster Mines
 	Faction@23:
 		Name: Estonia
 		InternalName: estonia

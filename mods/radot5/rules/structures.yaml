@@ -1771,24 +1771,9 @@ AFLD:
 	ProvidesPrerequisite@uk:
 		Factions: uk
 		Prerequisite: aircraft.uk
-	AirstrikePower@spyplane:
-		OrderName: SovietSpyPlane
-		Prerequisites: aircraft.soviet
-		Icon: spyplane
-		ChargeInterval: 3750
-		Description: Spy Plane
-		LongDesc: Reveals an area of the map\nand cloaked enemy units.
-		SelectTargetSpeechNotification: SelectTarget
-		EndChargeSpeechNotification: SpyPlaneReady
-		CameraActor: camera.spyplane
-		CameraRemoveDelay: 150
-		UnitType: u2
-		QuantizedFacings: 8
-		DisplayBeacon: true
-		BeaconPoster: camicon
-		ArrowSequence: arrow
-		ClockSequence: clock
-		CircleSequence: circles
+	ProvidesPrerequisite@latvia:
+		Factions: latvia
+		Prerequisite: aircraft.latvia
 	ParatroopersPower@paratroopers:
 		OrderName: SovietParatroopers
 		Prerequisites: aircraft.uk
@@ -1804,6 +1789,23 @@ AFLD:
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
 		BeaconPoster: pinficon
+		ArrowSequence: arrow
+		ClockSequence: clock
+		CircleSequence: circles
+	AirstrikePower@clustermines:
+		OrderName: ClusterMines
+		Prerequisites: aircraft.latvia
+		Icon: cmines
+		ChargeInterval: 7500
+		QuantizedFacings: 8
+		Description: Cluster Mines
+		LongDesc: 1 Cargo Plane drops 13 mines\nanywhere on the map.
+		SelectTargetSpeechNotification: SelectTarget
+		UnitType: badr.clustermines
+		DisplayBeacon: True
+		DisplayRadarPing: True
+		BeaconPoster: cminesicon
+		CameraActor: camera
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
