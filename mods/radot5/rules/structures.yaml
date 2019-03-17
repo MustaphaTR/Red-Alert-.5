@@ -2026,6 +2026,8 @@ HEDGEHOG:
 		HP: 200000
 	Armor:
 		Type: Concrete
+	RequiresBuildableArea:
+		Adjacent: 7
 	-RenderRangeCircle:
 	-WithMakeAnimation:
 	-SpawnActorsOnSell:
