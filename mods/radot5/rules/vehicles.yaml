@@ -403,8 +403,9 @@ MCV:
 
 JEEP:
 	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
@@ -436,6 +437,12 @@ JEEP:
 		Weapon: M60mg
 		MuzzleSequence: muzzle
 		LocalOffset: 128,0,43
+		RequiresCondition: !ap_bullets
+	Armament@AP:
+		Weapon: M60mg.AP
+		MuzzleSequence: muzzle
+		LocalOffset: 128,0,43
+		RequiresCondition: ap_bullets
 	AttackTurreted:
 	WithMuzzleOverlay:
 	WithSpriteTurret:

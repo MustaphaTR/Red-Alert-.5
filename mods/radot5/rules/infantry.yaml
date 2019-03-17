@@ -68,6 +68,7 @@ DOG:
 
 E1:
 	Inherits: ^Soldier
+	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Infantry
@@ -87,10 +88,20 @@ E1:
 		HP: 5000
 	Armament@PRIMARY:
 		Weapon: M1Carbine
+		RequiresCondition: !ap_bullets
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Vulcan
 		MuzzleSequence: garrison-muzzle
+		RequiresCondition: !ap_bullets
+	Armament@PRIMARY-AP:
+		Weapon: M1Carbine.AP
+		RequiresCondition: ap_bullets
+	Armament@GARRISONED-AP:
+		Name: garrisoned
+		Weapon: Vulcan.AP
+		MuzzleSequence: garrison-muzzle
+		RequiresCondition: ap_bullets
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot

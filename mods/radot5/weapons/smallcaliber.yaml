@@ -204,6 +204,45 @@ Vulcan:
 		InvalidTargets: Ship, Structure, Bridge
 		Delay: 10
 
+Vulcan.AP:
+	Inherits: Vulcan
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 55
+			Light: 60
+			Heavy: 25
+			Concrete: 22
+	Warhead@4Dam_2: SpreadDamage
+		Versus:
+			Wood: 55
+			Light: 60
+			Heavy: 25
+			Concrete: 22
+	Warhead@5Dam_3: SpreadDamage
+		Versus:
+			Wood: 55
+			Light: 60
+			Heavy: 25
+			Concrete: 22
+	Warhead@7Dam_4: SpreadDamage
+		Versus:
+			Wood: 55
+			Light: 60
+			Heavy: 25
+			Concrete: 22
+	Warhead@9Dam_5: SpreadDamage
+		Versus:
+			Wood: 55
+			Light: 60
+			Heavy: 25
+			Concrete: 22
+	Warhead@11Dam_6: SpreadDamage
+		Versus:
+			Wood: 55
+			Light: 60
+			Heavy: 25
+			Concrete: 22
+
 ChainGun:
 	Inherits: ^HeavyMG
 	ReloadDelay: 10
@@ -224,7 +263,7 @@ ChainGun.Yak:
 	Projectile: Bullet
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Damage: 4000
+		Damage: 3000
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 100
@@ -232,6 +271,15 @@ ChainGun.Yak:
 			Light: 60
 			Heavy: 25
 			Concrete: 25
+
+ChainGun.Yak.AP:
+	Inherits: ChainGun.Yak
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 55
+			Light: 70
+			Heavy: 30
+			Concrete: 27
 
 Pistol:
 	Inherits: ^LightMG
@@ -247,6 +295,15 @@ Pistol:
 	Warhead@3EffWater: CreateEffect
 		Explosions: water_piff
 
+Pistol.AP:
+	Inherits: Pistol
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 15
+			Light: 50
+			Heavy: 15
+			Concrete: 12
+
 M1Carbine:
 	Inherits: ^LightMG
 	ReloadDelay: 20
@@ -260,17 +317,44 @@ M1Carbine:
 	Warhead@3EffWater: CreateEffect
 		Explosions: water_piff
 
+M1Carbine.AP:
+	Inherits: M1Carbine
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 35
+			Light: 50
+			Heavy: 15
+			Concrete: 12
+
 ScoutGun:
 	Inherits: M1Carbine
 	ReloadDelay: 15
 	Warhead@1Dam: SpreadDamage
 		Damage: 1100
 
+ScoutGun.AP:
+	Inherits: ScoutGun
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 35
+			Light: 50
+			Heavy: 15
+			Concrete: 12
+
 CavalryRifle:
 	Inherits: M1Carbine
 	ReloadDelay: 16
 	Warhead@1Dam: SpreadDamage
 		Damage: 1200
+
+CavalryRifle.AP:
+	Inherits: CavalryRifle
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 35
+			Light: 50
+			Heavy: 15
+			Concrete: 12
 
 HussarShotgun:
 	Inherits: M1Carbine
@@ -285,12 +369,30 @@ HussarShotgun:
 	Warhead@3EffWater: CreateEffect
 		Explosions: water_piffs
 
+HussarShotgun.AP:
+	Inherits: HussarShotgun
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 45
+			Light: 50
+			Heavy: 15
+			Concrete: 12
+
 M60mg:
 	Inherits: ^LightMG
 	ReloadDelay: 30
 	Range: 4c0
 	Report: pillbox1.aud
 	Burst: 5
+
+M60mg.AP:
+	Inherits: M60mg
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 35
+			Light: 50
+			Heavy: 15
+			Concrete: 12
 
 ^SnipeWeapon:
 	ReloadDelay: 80

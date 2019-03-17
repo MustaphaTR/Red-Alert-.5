@@ -10,5 +10,8 @@ upgrade.horse_armor:
 upgrade.explosive_rockets:
 	icon: aprockicon
 
+upgrade.ap_bullets:
+	icon: apbullicon
+
 upgrade.air_radar:
 	icon: radricon

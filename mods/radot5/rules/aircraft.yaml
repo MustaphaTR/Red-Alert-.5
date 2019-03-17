@@ -156,6 +156,7 @@ MIG:
 
 YAK:
 	Inherits: ^Plane
+	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Aircraft
@@ -183,12 +184,27 @@ YAK:
 		LocalOffset: 256,-213,0
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
+		RequiresCondition: !ap_bullets
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: ChainGun.Yak
 		LocalOffset: 256,213,0
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
+		RequiresCondition: !ap_bullets
+	Armament@PRIMARY-AP:
+		Weapon: ChainGun.Yak.AP
+		LocalOffset: 256,-213,0
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+		RequiresCondition: ap_bullets
+	Armament@SECONDARY-AP:
+		Name: secondary
+		Weapon: ChainGun.Yak.AP
+		LocalOffset: 256,213,0
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+		RequiresCondition: ap_bullets
 	AttackAircraft:
 		FacingTolerance: 20
 	Aircraft:
@@ -237,8 +253,12 @@ BOMBER:
 	Armament@PRIMARY:
 		Weapon: PlaneBomb
 		LocalOffset: 0,0,0
+		PauseOnCondition: !ammo
 	-Armament@SECONDARY:
+	-Armament@PRIMARY-AP:
+	-Armament@SECONDARY-AP:
 	-WithMuzzleOverlay:
+	-GrantConditionOnPrerequisite@AP_BULLETS:
 	AmmoPool:
 		Ammo: 6
 		PipCount: 6

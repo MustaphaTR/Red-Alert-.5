@@ -1142,7 +1142,7 @@ PDOX:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 120
-		Prerequisites: disabled # atek, ~structures.allies, ~techlevel.unrestricted
+		Prerequisites: ~disabled # atek, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Teleports a group of units across the\nmap for a short time.\nRequires power to operate.\nMaximum 1 can be built.\n  Special Ability: Chronoshift
 	Valued:
@@ -1636,6 +1636,9 @@ ATEK:
 	Power:
 		Amount: -100
 	Exit:
+	ProvidesPrerequisite@lithuania:
+		Factions: lithuania
+		Prerequisite: upgrade.lithuania
 	ProvidesPrerequisite@buildingname:
 
 HPAD:
@@ -1688,36 +1691,6 @@ HPAD:
 		SelectionNotification: PrimaryBuildingSelected
 	Power:
 		Amount: -30
-	ProvidesPrerequisite@allies:
-		Factions: allies, england, france, germany
-		Prerequisite: aircraft.allies
-	ProvidesPrerequisite@alliesvanilla:
-		Factions: allies
-		Prerequisite: aircraft.alliesvanilla
-	ProvidesPrerequisite@england:
-		Factions: england
-		Prerequisite: aircraft.england
-	ProvidesPrerequisite@france:
-		Factions: france
-		Prerequisite: aircraft.france
-	ProvidesPrerequisite@germany:
-		Factions: germany
-		Prerequisite: aircraft.germany
-	ProvidesPrerequisite@alliedstructure:
-		RequiresPrerequisites: structures.allies
-		Prerequisite: aircraft.allies
-	ProvidesPrerequisite@alliedvanillastructure:
-		RequiresPrerequisites: structures.alliesvanilla
-		Prerequisite: aircraft.alliesvanilla
-	ProvidesPrerequisite@englishstructure:
-		RequiresPrerequisites: structures.england
-		Prerequisite: aircraft.england
-	ProvidesPrerequisite@frenchstructure:
-		RequiresPrerequisites: structures.france
-		Prerequisite: aircraft.france
-	ProvidesPrerequisite@germanstructure:
-		RequiresPrerequisites: structures.germany
-		Prerequisite: aircraft.germany
 	ProvidesPrerequisite@buildingname:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate

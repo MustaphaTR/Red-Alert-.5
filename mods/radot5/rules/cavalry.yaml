@@ -1,5 +1,6 @@
 SCOUTCAV:
 	Inherits: ^Cavalry
+	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
@@ -19,12 +20,17 @@ SCOUTCAV:
 		HP: 4000
 	Armament@PRIMARY:
 		Weapon: ScoutGun
+		RequiresCondition: !ap_bullets
+	Armament@PRIMARY-AP:
+		Weapon: ScoutGun.AP
+		RequiresCondition: ap_bullets
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 
 RIFLECAV:
 	Inherits: ^Cavalry
+	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
@@ -44,6 +50,12 @@ RIFLECAV:
 		Weapon: CavalryRifle
 		LocalOffset: 800,0,600
 		MuzzleSequence: muzzle
+		RequiresCondition: !ap_bullets
+	Armament@PRIMARY-AP:
+		Weapon: CavalryRifle.AP
+		LocalOffset: 800,0,600
+		MuzzleSequence: muzzle
+		RequiresCondition: ap_bullets
 	AttackFrontal:
 	WithMuzzleOverlay:
 	WithInfantryBody:
@@ -75,6 +87,7 @@ GRENCAV:
 
 HUSSAR:
 	Inherits: ^Cavalry
+	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
@@ -94,6 +107,12 @@ HUSSAR:
 		Weapon: HussarShotgun
 		LocalOffset: 0,0,555
 		MuzzleSequence: muzzle
+		RequiresCondition: !ap_bullets
+	Armament@PRIMARY-AP:
+		Weapon: HussarShotgun.AP
+		LocalOffset: 0,0,555
+		MuzzleSequence: muzzle
+		RequiresCondition: ap_bullets
 	AttackFrontal:
 	WithMuzzleOverlay:
 	WithInfantryBody:

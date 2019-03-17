@@ -47,12 +47,23 @@ upgrade.explosive_rockets:
 	Valued:
 		Cost: 1500
 
+upgrade.ap_bullets:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: AP Bullets
+	Buildable:
+		BuildPaletteOrder: 50
+		Prerequisites: ~upgrade.lithuania
+		Description: Increases bullet damage versus armored units.
+	Valued:
+		Cost: 1500
+
 upgrade.air_radar:
 	Inherits: ^default.upgrade
 	Tooltip:
 		Name: Air Radar
 	Buildable:
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 60
 		Prerequisites: dome
 		Description: Increases aircraft sight.
 	Valued:

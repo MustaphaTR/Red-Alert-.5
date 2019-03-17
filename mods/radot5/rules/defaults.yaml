@@ -211,6 +211,11 @@
 		Condition: explosive_rockets
 		Prerequisites: upgrade.explosive_rockets
 
+^AffectedByAPBullets:
+	GrantConditionOnPrerequisite@AP_BULLETS:
+		Condition: ap_bullets
+		Prerequisites: upgrade.ap_bullets
+
 ^AffectedByAirRadar:
 	RevealsShroudMultiplier@AIR_RADAR:
 		RequiresCondition: air_radar
@@ -553,9 +558,14 @@
 		Categories: Civilian infantry
 
 ^ArmedCivilian:
+	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Armament:
 		Weapon: Pistol
+		RequiresCondition: !ap_bullets
+	Armament@AP:
+		Weapon: Pistol.AP
+		RequiresCondition: ap_bullets
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot

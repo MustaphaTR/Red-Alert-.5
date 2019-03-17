@@ -216,7 +216,7 @@
 		Name: Lithuania
 		InternalName: lithuania
 		Side: Intermarium
-		Description: Lithuania\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+		Description: Lithuania\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Upgrade: AP Bullets
 	Faction@22:
 		Name: Latvia
 		InternalName: latvia
