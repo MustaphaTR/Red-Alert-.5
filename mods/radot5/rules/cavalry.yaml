@@ -33,7 +33,7 @@ RIFLECAV:
 		Prerequisites: ~techlevel.low
 		Description: Cavalry unit equiped with a rifle.\n  Strong vs Infantry\n  Weak vs Vehicles
 	Valued:
-		Cost: 400
+		Cost: 300
 	Tooltip:
 		Name: Rifle Cavalry
 	Mobile:
@@ -59,7 +59,7 @@ GRENCAV:
 		Prerequisites: ~techlevel.low
 		Description: Mounted grenadier.\n  Strong vs Structures\n  Weak vs Vehicles
 	Valued:
-		Cost: 300
+		Cost: 400
 	Tooltip:
 		Name: Grenadier Cavalry
 	Mobile:
