@@ -119,6 +119,7 @@ proc:
 		TilesetOverrides:
 			INTERIOR: TEMPERAT
 	icon: procicon
+	fake-icon: proficon
 
 silo:
 	idle: silo2
@@ -194,6 +195,7 @@ barr:
 		TilesetOverrides:
 			INTERIOR: TEMPERAT
 	icon: barricon
+	fake-icon: barficon
 
 tent:
 	Defaults:
@@ -210,6 +212,8 @@ tent:
 	bib: bib3
 		Length: *
 	icon: tenticon
+		UseTilesetExtension: false
+	fake-icon: tenficon
 		UseTilesetExtension: false
 
 kenn:
@@ -269,6 +273,7 @@ stek:
 		TilesetOverrides:
 			INTERIOR: TEMPERAT
 	icon: stekicon
+	fake-icon: steficon
 
 weap:
 	idle:
@@ -313,6 +318,7 @@ hpad:
 		TilesetOverrides:
 			INTERIOR: TEMPERAT
 	icon: hpadicon
+	fake-icon: hpaficon
 
 afld:
 	idle: afldidle
@@ -341,6 +347,7 @@ afld:
 		Length: *
 		Offset: 0,-4
 	icon: afldicon
+	fake-icon: aflficon
 
 spen:
 	idle:

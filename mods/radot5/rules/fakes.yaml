@@ -38,7 +38,7 @@ SYRF:
 	Selectable:
 		Bounds: 72,48
 	Buildable:
-		BuildPaletteOrder: 890
+		BuildPaletteOrder: 880
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like a Naval Yard.
@@ -121,6 +121,54 @@ SPEF:
 			TopLeft: -555, -1110
 			BottomRight: 555, 1110
 
+PROF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Selectable:
+		Bounds: 72,50,0,4
+		DecorationBounds: 72,70,0,-2
+	Buildable:
+		BuildPaletteOrder: 900
+		Prerequisites: ~structures.allies, ~techlevel.medium
+		Queue: Defense
+		Description: Looks like an Ore Refinery.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Ore Refinery
+		GenericName: Ore Refinery
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: _X_ xxx X== ===
+		Dimensions: 3,4
+		LocalCenterOffset: 0,-512,0
+	RenderSprites:
+		Image: PROC
+	WithBuildingBib:
+	WithIdleOverlay@TOP:
+		RequiresCondition: !build-incomplete
+		Sequence: idle-top
+	Valued:
+		Cost: 140
+	Health:
+		HP: 90000
+	Armor:
+		Type: Wood
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -512
+			BottomRight: 1536, 598
+	HitShape@TOP:
+		TargetableOffsets: 1680,0,0
+		Type: Rectangle
+			TopLeft: -512, -1536
+			BottomRight: 512, -512
+	HitShape@BOTTOMLEFT:
+		TargetableOffsets: -1260,-1024,0
+		Type: Rectangle
+			TopLeft: -1536, 598
+			BottomRight: -512, 1280
+
 WEAF:
 	Inherits: ^FakeBuilding
 	Inherits@infiltrate: ^InfiltratableFake
@@ -128,7 +176,7 @@ WEAF:
 	Selectable:
 		Bounds: 72,48
 	Buildable:
-		BuildPaletteOrder: 920
+		BuildPaletteOrder: 910
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Queue: Defense
 		Description: Looks like a War Factory.
@@ -171,7 +219,7 @@ DOMF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 930
+		BuildPaletteOrder: 920
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like a Radar Dome.
@@ -184,7 +232,7 @@ DOMF:
 	RenderSprites:
 		Image: DOME
 	Valued:
-		Cost: 180
+		Cost: 140
 	Health:
 		HP: 100000
 	Armor:
@@ -196,7 +244,7 @@ FIXF:
 		Bounds: 68,34,0,3
 		DecorationBounds: 72,48
 	Buildable:
-		BuildPaletteOrder: 940
+		BuildPaletteOrder: 930
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like a Service Depot.
@@ -231,7 +279,7 @@ FAPW:
 	HitShape:
 		TargetableOffsets: -355,-1024,0
 	Buildable:
-		BuildPaletteOrder: 950
+		BuildPaletteOrder: 940
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like an Advanced Power Plant.
@@ -271,7 +319,7 @@ ATEF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 970
+		BuildPaletteOrder: 950
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.high
 		Description: Looks like a Research Center.
@@ -286,7 +334,40 @@ ATEF:
 	Valued:
 		Cost: 150
 	Health:
-		HP: 40000
+		HP: 60000
+	Armor:
+		Type: Wood
+
+STEF:
+	Inherits: ^FakeBuilding
+	Inherits@IDISABLE: ^DisableOnLowPower
+	Inherits@shape: ^3x2Shape
+	Selectable:
+		Bounds: 72,48
+	HitShape:
+		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0
+	Tooltip:
+		Name: Fake Tech Center
+		GenericName: Tech Center
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Buildable:
+		BuildPaletteOrder: 960
+		Queue: Defense
+		Prerequisites: ~structures.allies, ~techlevel.high
+		Description: Looks like a Tech Center.
+		Icon: fake-icon
+	Building:
+		Footprint: XxX XxX ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
+	RenderSprites:
+		Image: STEK
+	Valued:
+		Cost: 180
+	Health:
+		HP: 80000
 	Armor:
 		Type: Wood
 
@@ -302,7 +383,7 @@ PDOF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 980
+		BuildPaletteOrder: 970
 		Queue: Defense
 		Prerequisites: ~disabled # ~structures.france, ~techlevel.unrestricted
 		BuildLimit: 1
