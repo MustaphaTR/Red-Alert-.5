@@ -8,7 +8,7 @@ FPWR:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 640,-384,0, 640,512,0, -710,-512,0, -710,512,0
 	Buildable:
-		BuildPaletteOrder: 870
+		BuildPaletteOrder: 830
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.infonly
 		Description: Looks like a Power Plant.
@@ -32,13 +32,129 @@ FPWR:
 	Valued:
 		Cost: 30
 
+BARF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 490,-470,0, 355,512,0, -355,-512,0, -630,512,0
+	Buildable:
+		BuildPaletteOrder: 840
+		Queue: Defense
+		Prerequisites: ~structures.allies, ~techlevel.infonly
+		Description: Looks like a Barracks.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Barracks
+		GenericName: Barracks
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	Health:
+		HP: 60000
+	Armor:
+		Type: Wood
+	WithBuildingBib:
+	RenderSprites:
+		Image: BARR
+	Valued:
+		Cost: 50
+
+TENF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
+	Buildable:
+		BuildPaletteOrder: 850
+		Queue: Defense
+		Prerequisites: ~structures.allies, ~techlevel.infonly
+		Description: Looks like a Stable.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Stable
+		GenericName: Stable
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	Health:
+		HP: 75000
+	Armor:
+		Type: Wood
+	WithBuildingBib:
+	RenderSprites:
+		Image: TENT
+	Valued:
+		Cost: 70
+
+PROF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Selectable:
+		Bounds: 72,50,0,4
+		DecorationBounds: 72,70,0,-2
+	Buildable:
+		BuildPaletteOrder: 860
+		Prerequisites: ~structures.allies, ~techlevel.infonly
+		Queue: Defense
+		Description: Looks like an Ore Refinery.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Ore Refinery
+		GenericName: Ore Refinery
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: _X_ xxx X== ===
+		Dimensions: 3,4
+		LocalCenterOffset: 0,-512,0
+	RenderSprites:
+		Image: PROC
+	WithBuildingBib:
+	WithIdleOverlay@TOP:
+		RequiresCondition: !build-incomplete
+		Sequence: idle-top
+	Valued:
+		Cost: 140
+	Health:
+		HP: 90000
+	Armor:
+		Type: Wood
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -512
+			BottomRight: 1536, 598
+	HitShape@TOP:
+		TargetableOffsets: 1680,0,0
+		Type: Rectangle
+			TopLeft: -512, -1536
+			BottomRight: 512, -512
+	HitShape@BOTTOMLEFT:
+		TargetableOffsets: -1260,-1024,0
+		Type: Rectangle
+			TopLeft: -1536, 598
+			BottomRight: -512, 1280
+
 SYRF:
 	Inherits: ^FakeBuilding
 	Inherits@infiltrate: ^InfiltratableFake
 	Selectable:
 		Bounds: 72,48
 	Buildable:
-		BuildPaletteOrder: 880
+		BuildPaletteOrder: 870
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like a Naval Yard.
@@ -85,7 +201,7 @@ SPEF:
 	Targetable:
 		TargetTypes: Ground, Water, Structure, SpyInfiltrate
 	Buildable:
-		BuildPaletteOrder: 890
+		BuildPaletteOrder: 880
 		Queue: Defense
 		Prerequisites: ~disabled
 		Description: Looks like a Sub Pen.
@@ -121,54 +237,6 @@ SPEF:
 			TopLeft: -555, -1110
 			BottomRight: 555, 1110
 
-PROF:
-	Inherits: ^FakeBuilding
-	Inherits@infiltrate: ^InfiltratableFake
-	Selectable:
-		Bounds: 72,50,0,4
-		DecorationBounds: 72,70,0,-2
-	Buildable:
-		BuildPaletteOrder: 900
-		Prerequisites: ~structures.allies, ~techlevel.medium
-		Queue: Defense
-		Description: Looks like an Ore Refinery.
-		Icon: fake-icon
-	Tooltip:
-		Name: Fake Ore Refinery
-		GenericName: Ore Refinery
-		GenericVisibility: Enemy
-		GenericStancePrefix: False
-	Building:
-		Footprint: _X_ xxx X== ===
-		Dimensions: 3,4
-		LocalCenterOffset: 0,-512,0
-	RenderSprites:
-		Image: PROC
-	WithBuildingBib:
-	WithIdleOverlay@TOP:
-		RequiresCondition: !build-incomplete
-		Sequence: idle-top
-	Valued:
-		Cost: 140
-	Health:
-		HP: 90000
-	Armor:
-		Type: Wood
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -512
-			BottomRight: 1536, 598
-	HitShape@TOP:
-		TargetableOffsets: 1680,0,0
-		Type: Rectangle
-			TopLeft: -512, -1536
-			BottomRight: 512, -512
-	HitShape@BOTTOMLEFT:
-		TargetableOffsets: -1260,-1024,0
-		Type: Rectangle
-			TopLeft: -1536, 598
-			BottomRight: -512, 1280
-
 WEAF:
 	Inherits: ^FakeBuilding
 	Inherits@infiltrate: ^InfiltratableFake
@@ -176,7 +244,7 @@ WEAF:
 	Selectable:
 		Bounds: 72,48
 	Buildable:
-		BuildPaletteOrder: 910
+		BuildPaletteOrder: 890
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Queue: Defense
 		Description: Looks like a War Factory.
@@ -219,7 +287,7 @@ DOMF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 920
+		BuildPaletteOrder: 900
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like a Radar Dome.
@@ -238,13 +306,45 @@ DOMF:
 	Armor:
 		Type: Wood
 
+ADLF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^3x2Shape
+	Selectable:
+		Bounds: 72,48
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 420,0,0, 420,-1024,0, 420,1024,0, -777,0,0, -777,-1024,0, -777,1024,0
+	Tooltip:
+		Name: Fake Airfield
+		GenericName: Airfield
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Buildable:
+		BuildPaletteOrder: 910
+		Queue: Defense
+		Prerequisites: ~structures.allies, ~techlevel.medium
+		Description: Looks like an Airfield.
+		Icon: fake-icon
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	RenderSprites:
+		Image: AFLD
+	Valued:
+		Cost: 50
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+
 FIXF:
 	Inherits: ^FakeBuilding
 	Selectable:
 		Bounds: 68,34,0,3
 		DecorationBounds: 72,48
 	Buildable:
-		BuildPaletteOrder: 930
+		BuildPaletteOrder: 920
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like a Service Depot.
@@ -279,7 +379,7 @@ FAPW:
 	HitShape:
 		TargetableOffsets: -355,-1024,0
 	Buildable:
-		BuildPaletteOrder: 940
+		BuildPaletteOrder: 930
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.medium
 		Description: Looks like an Advanced Power Plant.
@@ -319,7 +419,7 @@ ATEF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 950
+		BuildPaletteOrder: 940
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.high
 		Description: Looks like a Research Center.
@@ -352,7 +452,7 @@ STEF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 960
+		BuildPaletteOrder: 950
 		Queue: Defense
 		Prerequisites: ~structures.allies, ~techlevel.high
 		Description: Looks like a Tech Center.
@@ -368,6 +468,40 @@ STEF:
 		Cost: 180
 	Health:
 		HP: 80000
+	Armor:
+		Type: Wood
+
+HPAF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 768,-512,0, 768,512,0, -281,-512,0, -630,512,0
+	Tooltip:
+		Name: Fake Helipad
+		GenericName: Helipad
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Buildable:
+		BuildPaletteOrder: 960
+		Queue: Defense
+		Prerequisites: ~structures.allies, ~techlevel.high
+		Description: Looks like a Helipad.
+		Icon: fake-icon
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
+	RenderSprites:
+		Image: HPAD
+	Valued:
+		Cost: 80
+	Health:
+		HP: 100000
 	Armor:
 		Type: Wood
 

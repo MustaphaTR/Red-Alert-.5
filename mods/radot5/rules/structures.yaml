@@ -487,7 +487,7 @@ TENT:
 		Dimensions: 2,3
 		LocalCenterOffset: 0,-512,0
 	Health:
-		HP: 60000
+		HP: 75000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -1715,7 +1715,7 @@ AFLD:
 		Queue: Building
 		BuildPaletteOrder: 80
 		Prerequisites: dome, ~techlevel.medium
-		Description: Produces and reloads aircraft.\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers
+		Description: Produces and reloads aircraft.
 	Valued:
 		Cost: 500
 	Tooltip:
