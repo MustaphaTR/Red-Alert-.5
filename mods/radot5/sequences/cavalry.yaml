@@ -103,6 +103,35 @@ grencav:
 			DESERT: TEMPERAT
 	icon: mount_grenadier_icon
 
+engicav:
+	stand: cengi_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	run: cengi_run
+		Start: 0
+		Length: 19
+		Facings: 16
+		Tick: 100
+	idle1: cengi_idle
+		Start: 0
+		Length: 1
+		Facings: 16
+		Tick: 100
+	die1: cengi_death
+		Start: 0
+		Length: 19
+		Tick: 100
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	icon: e6icon
+
 hussar:
 	idle:
 		Facings: 8

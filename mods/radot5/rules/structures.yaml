@@ -519,6 +519,9 @@ TENT:
 	ProvidesPrerequisite@mongolia:
 		Factions: mongolia
 		Prerequisite: cavalry.mongolia
+	ProvidesPrerequisite@tuva:
+		Factions: tuva
+		Prerequisite: cavalry.tuva
 	ProvidesPrerequisite@intermarium:
 		Factions: intermarium, poland, romania, lithuania, latvia, estonia
 		Prerequisite: cavalry.intermarium

@@ -8,6 +8,8 @@ SCOUTCAV:
 		BuildPaletteOrder: 10
 		Prerequisites: ~cavalry.mongolia, ~techlevel.low
 		Description: Scouting unit.\n  Strong vs Infantry\n  Weak vs Vehicles
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Valued:
 		Cost: 250
 	Tooltip:
@@ -40,6 +42,8 @@ RIFLECAV:
 		BuildPaletteOrder: 20
 		Prerequisites: ~techlevel.low
 		Description: Cavalry unit equiped with a rifle.\n  Strong vs Infantry\n  Weak vs Vehicles
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -74,6 +78,8 @@ GRENCAV:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.low
 		Description: Mounted grenadier.\n  Strong vs Structures\n  Weak vs Vehicles
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -101,6 +107,8 @@ HUSSAR:
 		BuildPaletteOrder: 40
 		Prerequisites: ~cavalry.intermarium, ~techlevel.low
 		Description: Cavalry unit equiped with a shotgun.\n  Strong vs Infantry\n  Weak vs Vehicles
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -127,3 +135,46 @@ HUSSAR:
 		Prerequisites: stable.upgraded
 	RenderSprites:
 		Scale: 1.2
+
+ENGICAV:
+	Inherits: ^Cavalry
+	Buildable:
+		Queue: Cavalry
+		BuildPaletteOrder: 50
+		Prerequisites: ~cavalry.tuva, ~techlevel.low
+		Description: Cavalry unit that infiltrates and captures enemy structures.\nCaptures slower than a normal engineer but has higher mobility.\n  Unarmed
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Valued:
+		Cost: 700
+	Tooltip:
+		Name: Engineer Cavalry
+	Mobile:
+		Speed: 80
+	Health:
+		HP: 5000
+	Passenger:
+		PipType: Yellow
+	EngineerRepair:
+	RepairsBridges:
+	CaptureManager:
+	GrantConditionOnPrerequisite@GLOBALREUSABLEENGINEER:
+		Condition: global-reusable-engineers
+		Prerequisites: global-reusable-engineers
+	Captures:
+		RequiresCondition: !global-reusable-engineers
+		CaptureTypes: building
+		PlayerExperience: 25
+		CaptureDelay: 280
+	Captures@REUSABLE:
+		RequiresCondition: global-reusable-engineers
+		CaptureTypes: building
+		PlayerExperience: 25
+		CaptureDelay: 525
+		ConsumedByCapture: False
+		EnterCursor: ability
+		EnterBlockedCursor: move-blocked
+	Voiced:
+		VoiceSet: EngineerVoice
+	Selectable:
+		Priority: 5
