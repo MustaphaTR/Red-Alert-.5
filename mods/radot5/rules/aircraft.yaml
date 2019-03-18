@@ -245,7 +245,7 @@ BOMBER:
 		BuildPaletteOrder: 40
 		Prerequisites: ~afld, dome, fix, ~techlevel.medium
 	Valued:
-		Cost: 1350
+		Cost: 2000
 	Tooltip:
 		Name: Bomber Plane
 	Aircraft:
