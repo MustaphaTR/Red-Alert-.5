@@ -645,6 +645,7 @@ hq:
 		UseTilesetExtension: true
 		Length: *
 	icon: hqicon
+	fake-icon: hqficon
 
 miss:
 	idle:

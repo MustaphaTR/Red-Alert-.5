@@ -437,6 +437,44 @@ MSLF:
 	Explodes:
 		DamageThreshold: 50
 
+HQF:
+	Inherits: ^FakeBuilding
+	Inherits@IDISABLE: ^DisableOnLowPower
+	HitShape:
+		TargetableOffsets: 0,0,0, 0,512,0, 420,-598,256
+		Type: Rectangle
+			TopLeft: -1024, -384
+			BottomRight: 1024, 1024
+	Selectable:
+		Bounds: 48,40,0,9
+		DecorationBounds: 48,53,0,-4
+	Tooltip:
+		Name: Fake Airforce Command HeadQuarters
+		GenericName: Airforce Command HeadQuarters
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Buildable:
+		BuildPaletteOrder: 990
+		Queue: Defense
+		Prerequisites: ~structures.allies, ~techlevel.unrestricted
+		BuildLimit: 1
+		Description: Looks like an Airforce Command HeadQuarters\nMaximum 1 can be built.
+		Icon: fake-icon
+	Building:
+		Footprint: X_ xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	RenderSprites:
+		Image: HQ
+	Valued:
+		Cost: 250
+	Health:
+		HP: 80000
+	Armor:
+		Type: Wood
+	Explodes:
+		DamageThreshold: 50
+
 FACF:
 	Inherits: ^FakeBuilding
 	Selectable:
