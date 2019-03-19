@@ -1079,7 +1079,7 @@ GAP:
 		Range: 4c0
 	WithRangeCircle:
 		Type: speaker
-		Range: 4c0
+		Range: 6c0
 		Color: DD000066
 
 IRON:
