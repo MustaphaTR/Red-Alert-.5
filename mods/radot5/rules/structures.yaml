@@ -1906,7 +1906,7 @@ STEK:
 		Produces: Intelligence
 	Exit:
 	ProduceActorPower@INTELLIGENCE:
-		Prerequisite: tech.uk
+		Prerequisites: tech.uk
 		Description: Intelligence
 		LongDesc: Makes enemy structures visible for 30 seconds.
 		Icon: intel
