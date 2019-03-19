@@ -11,7 +11,7 @@
 		Damage: 2000
 		ValidTargets: Air
 		Versus:
-			None: 40
+			None: 60
 			Wood: 10
 			Light: 60
 			Heavy: 10
