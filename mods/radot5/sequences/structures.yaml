@@ -549,6 +549,18 @@ hbox:
 	icon: hboxicon
 		UseTilesetExtension: false
 
+tbox:
+	idle: pbox
+	damaged-idle: pbox
+		Start: 1
+	make: pboxmake
+		Length: *
+	bib: mbPBOX
+		Length: *
+		Offset: 0,-2
+		UseTilesetExtension: true
+	icon: tnkbicon
+
 gap:
 	idle:
 		Length: 32

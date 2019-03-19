@@ -176,27 +176,27 @@
 		Name: Italy
 		InternalName: italy
 		Side: Axis
-		Description: Italy\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit: Chemical Buggy
+		Description: Italy\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit: Chemical Buggy
 	Faction@14:
 		Name: Hungary
 		InternalName: hungary
 		Side: Axis
-		Description: Hungary\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit:
+		Description: Hungary\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit:
 	Faction@15:
 		Name: Third Reich
 		InternalName: reich
 		Side: Axis
-		Description: Third German Reich\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit: V2 Launcher
+		Description: Third German Reich\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit: V2 Launcher
 	Faction@16:
 		Name: Yugoslavia
 		InternalName: yugoslavia
 		Side: Axis
-		Description: Yugoslavia\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit:
+		Description: Yugoslavia\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit:
 	Faction@17:
 		Name: Nat. Spain
 		InternalName: natspain
 		Side: Axis
-		Description: Nationalist Spain\nFaction Units:\n - Chemical Trooper\n - IFV\n - \n\nSubfaction Unit:
+		Description: Nationalist Spain\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit:
 	Faction@18:
 		Name: Intermarium
 		InternalName: intermarium

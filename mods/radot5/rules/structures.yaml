@@ -23,6 +23,9 @@ FACT:
 	ProvidesPrerequisite@sinkiang:
 		Factions: sinkiang
 		Prerequisite: structures.sinkiang
+	ProvidesPrerequisite@axis:
+		Factions: axis, italy, hungary, reich, yugoslavia, natspain
+		Prerequisite: structures.axis
 	ProvidesPrerequisite@intermarium:
 		Factions: intermarium, poland, romania, lithuania, latvia, estonia
 		Prerequisite: structures.intermarium
@@ -1459,6 +1462,54 @@ HBOX:
 	Power:
 		Amount: -20
 	-MustBeDestroyed:
+
+TBOX:
+	Inherits: ^Defense
+	Inherits@AUTOTARGET: ^AutoTargetAll
+	Tooltip:
+		Name: Tank Bunker
+	Building:
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 55
+		Prerequisites: weap, ~structures.axis, ~techlevel.low
+		Description: Static defense capable of hosting a vehicle.\nCan detect cloaked units.
+	Valued:
+		Cost: 600
+	Health:
+		HP: 60000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
+	WithBuildingBib:
+		HasMinibib: Yes
+	Turreted:
+		TurnSpeed: 255
+	-QuantizeFacingsFromSequence:
+	BodyOrientation:
+		QuantizedFacings: 8
+	Cargo:
+		Types: Vehicle
+		MaxWeight: 1
+		PipCount: 1
+	-SpawnActorsOnSell:
+	AttackGarrisoned:
+		RequiresCondition: !build-incomplete
+		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
+		PortYaws: 0, 176, 341, 512, 682, 853
+		PortCones: 88, 88, 88, 88, 88, 88
+	RenderRangeCircle:
+		FallbackRange: 6c0
+	Power:
+		Amount: -30
+	DetectCloaked:
+		Range: 6c0
+	RenderSprites:
+		Scale: 1.1
 
 GUN:
 	Inherits: ^Defense

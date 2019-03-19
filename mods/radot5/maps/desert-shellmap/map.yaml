@@ -1232,11 +1232,9 @@ Actors:
 		Location: 56,68
 	Actor394: atek
 		Location: 106,44
-		Faction: axis
 		Owner: Axis
 	AxisStable1: tent
 		Location: 93,34
-		Faction: axis
 		Owner: Axis
 	AxisStable2: tent
 		Owner: Axis
@@ -1310,5 +1308,9 @@ Actors:
 		Owner: Axis
 		Location: 48,32
 		TurretFacing: 130
+	Actor398: tbox
+		Owner: Axis
+		Location: 91,31
+		TurretFacing: 92
 Rules: radot5|rules/campaign-palettes.yaml, rules.yaml
 Weapons: weapons.yaml
