@@ -1747,15 +1747,15 @@ AFLD:
 	Production:
 		Produces: Aircraft, Plane
 	Reservable:
-	ProvidesPrerequisite@uk:
-		Factions: uk
-		Prerequisite: aircraft.uk
+	ProvidesPrerequisite@spain:
+		Factions: spain
+		Prerequisite: aircraft.spain
 	ProvidesPrerequisite@latvia:
 		Factions: latvia
 		Prerequisite: aircraft.latvia
 	ParatroopersPower@paratroopers:
 		OrderName: SovietParatroopers
-		Prerequisites: aircraft.uk
+		Prerequisites: aircraft.spain
 		Icon: paratroopers
 		ChargeInterval: 7500
 		Description: Paratroopers

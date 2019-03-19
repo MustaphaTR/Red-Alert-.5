@@ -121,7 +121,7 @@
 		Name: UK
 		InternalName: uk
 		Side: Allies
-		Description: United Kindgom\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Abiliy: Paradrop
+		Description: United Kindgom\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Abiliy: Intelligence
 	Faction@3:
 		Name: Germany
 		InternalName: germany
@@ -136,7 +136,7 @@
 		Name: Spain
 		InternalName: spain
 		Side: Allies
-		Description: Spanish Republic\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Unit:
+		Description: Spanish Republic\nFaction Units:\n - Spy\n - Ranger\n - Fake Structures\n\nSubfaction Ability: Paratroopers
 	Faction@6:
 		Name: Comintern
 		InternalName: comintern
