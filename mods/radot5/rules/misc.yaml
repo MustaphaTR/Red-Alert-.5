@@ -183,6 +183,22 @@ camera.spyplane:
 		Range: 10c0
 		CloakTypes: Cloak, Thief
 
+camera.intelligence:
+	Inherits: CAMERA
+	ConditionManager:
+	-RevealsShroud:
+	Tooltip:
+		Name: Intelligence
+	GivesIntelligence:
+		Types: Intelligence
+		RequiresCondition: stek
+	KillsSelf:
+		RemoveInstead: true
+		Delay: 750
+	GrantConditionOnPrerequisite@TECH_CENTER:
+		Condition: stek
+		Prerequisites: stek
+
 SONAR:
 	Inherits: camera.spyplane
 	EditorOnlyTooltip:

@@ -775,6 +775,9 @@
 		PlayerExperience: 25
 		RepairingNotification: Repairing
 	EngineerRepairable:
+	RevealsShroudToIntelligenceOwner:
+		Types: Intelligence
+		Range: 1c0
 	AcceptsDeliveredCash:
 	WithMakeAnimation:
 		Condition: build-incomplete

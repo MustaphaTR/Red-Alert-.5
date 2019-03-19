@@ -1848,6 +1848,22 @@ STEK:
 	Power:
 		Amount: -100
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@uk:
+		Factions: uk
+		Prerequisite: tech.uk
+	Production:
+		Produces: Intelligence
+	Exit:
+	ProduceActorPower@INTELLIGENCE:
+		Prerequisite: tech.uk
+		Description: Intelligence
+		LongDesc: Makes enemy structures visible for 30 seconds.
+		Icon: intel
+		Actors: camera.intelligence
+		Type: Intelligence
+		ChargeInterval: 4500
+		OrderName: IntelligencePowerInfoOrder
+	SupportPowerChargeBar:
 
 FIX:
 	Inherits: ^Building
