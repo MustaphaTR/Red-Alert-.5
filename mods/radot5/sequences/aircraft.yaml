@@ -70,3 +70,8 @@ u2:
 badr:
 	idle:
 		Facings: 16
+
+balloon:
+	idle:
+		Facings: 1
+	icon: balloonicon

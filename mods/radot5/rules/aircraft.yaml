@@ -109,11 +109,11 @@ MIG:
 	Health:
 		HP: 7500
 	RevealsShroud:
-		Range: 8c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 6c0
+		Range: 5c0
 		Type: GroundPosition
 	Armament:
 		Weapon: Maverick
@@ -173,11 +173,11 @@ YAK:
 	Health:
 		HP: 6000
 	RevealsShroud:
-		Range: 8c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 6c0
+		Range: 5c0
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: ChainGun.Yak
@@ -267,6 +267,44 @@ BOMBER:
 		Scale: 1.2
 		Image: YAK
 
+BALLOON:
+	Inherits: ^Helicopter
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 10
+		Prerequisites: ~techlevel.medium
+		Description: Slow aircraft with high vision range.\nCan carry 5 infantry.\nCan be built from an Airfield or a Helipad.
+	Valued:
+		Cost: 900
+	Tooltip:
+		Name: Observation Balloon
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 14000
+	RevealsShroud:
+		Range: 12c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 10c0
+		Type: GroundPosition
+	Aircraft:
+		TurnSpeed: 255
+		Speed: 64
+		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
+		AltitudeVelocity: 0c58
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+	-WithShadow:
+	SpawnActorOnDeath:
+		Actor: BALLOON.Husk
+	SelectionDecorations:
+	Selectable:
+		Bounds: 38,50,0,-18
+
 TRAN:
 	Inherits: ^Helicopter
 	Buildable:
@@ -341,11 +379,11 @@ HELI:
 	Health:
 		HP: 12000
 	RevealsShroud:
-		Range: 8c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 6c0
+		Range: 5c0
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: HellfireAA
@@ -405,11 +443,11 @@ HIND:
 	Health:
 		HP: 10000
 	RevealsShroud:
-		Range: 8c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 6c0
+		Range: 5c0
 		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: ChainGun

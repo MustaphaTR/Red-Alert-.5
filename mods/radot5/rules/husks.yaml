@@ -122,14 +122,31 @@ TRAN.Husk:
 		Offset: 597,0,213
 		Sequence: rotor2
 	RevealsShroud:
-		Range: 8c0
+		Range: 6c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 6c0
+		Range: 4c0
 		Type: GroundPosition
 	RenderSprites:
 		Image: tran
+
+BALLOON.Husk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Observation Balloon
+	Aircraft:
+		TurnSpeed: 255
+		Speed: 64
+	RevealsShroud:
+		Range: 12c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 10c0
+		Type: GroundPosition
+	RenderSprites:
+		Image: balloon
 
 TRAN.Husk1:
 	Inherits: ^Husk
@@ -186,11 +203,11 @@ MIG.Husk:
 		Interval: 2
 		MinDamage: Undamaged
 	RevealsShroud:
-		Range: 13c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 11c0
+		Range: 5c0
 		Type: GroundPosition
 	RenderSprites:
 		Image: mig
@@ -209,11 +226,11 @@ YAK.Husk:
 		Interval: 2
 		MinDamage: Undamaged
 	RevealsShroud:
-		Range: 11c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 9c0
+		Range: 5c0
 		Type: GroundPosition
 	RenderSprites:
 		Image: yak
@@ -232,11 +249,11 @@ HELI.Husk:
 		Offset: -427,0,0
 		MinDamage: Undamaged
 	RevealsShroud:
-		Range: 12c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 10c0
+		Range: 5c0
 		Type: GroundPosition
 	RenderSprites:
 		Image: heli
@@ -254,11 +271,11 @@ HIND.Husk:
 		Offset: -427,0,0
 		MinDamage: Undamaged
 	RevealsShroud:
-		Range: 10c0
+		Range: 7c0
 		Type: GroundPosition
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 8c0
+		Range: 5c0
 		Type: GroundPosition
 	RenderSprites:
 		Image: hind
