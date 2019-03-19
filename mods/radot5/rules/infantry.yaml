@@ -400,6 +400,8 @@ E22:
 		Weapon: MortarShell
 		FireDelay: 10
 	AttackFrontal:
+		TargetFrozenActors: True
+		ForceFireIgnoresActors: True
 	WithInfantryBody:
 		DefaultAttackSequence: throw
 	RenderSprites:
