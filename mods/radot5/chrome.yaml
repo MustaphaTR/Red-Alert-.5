@@ -991,6 +991,7 @@ flags: flags.png
 	unitedfront: 120,30,30,15
 	coprosperity: 150,30,30,15
 	Random: 180,0,30,15
+	RandomComplete: 180,0,30,15
 	RandomComintern: 0,0,30,15
 	RandomAllies: 30,0,30,15
 	RandomAxis: 60,0,30,15
