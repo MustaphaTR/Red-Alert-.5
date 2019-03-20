@@ -729,10 +729,6 @@ Actors:
 	Actor225: 2tnk
 		Location: 47,61
 		Owner: Allies
-	Actor239: 1tnk
-		Location: 44,65
-		Owner: Allies
-		Facing: 30
 	Actor236: jeep
 		Location: 45,62
 		Owner: Allies
@@ -1312,5 +1308,25 @@ Actors:
 		Owner: Axis
 		Location: 91,31
 		TurretFacing: 92
+	Actor401: ftrk
+		Owner: Allies
+		Location: 88,71
+		TurretFacing: 0
+		Facing: 0
+	Actor414: ftrk
+		Owner: Allies
+		Location: 92,71
+		TurretFacing: 0
+		Facing: 0
+	Actor415: ftrk
+		Owner: Allies
+		Location: 44,65
+		TurretFacing: 42
+		Facing: 42
+	Actor416: ftrk
+		Owner: Allies
+		Location: 50,77
+		TurretFacing: 126
+		Facing: 126
 Rules: radot5|rules/campaign-palettes.yaml, rules.yaml
 Weapons: weapons.yaml
