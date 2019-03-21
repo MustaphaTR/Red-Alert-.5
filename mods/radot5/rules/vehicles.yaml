@@ -289,6 +289,11 @@ GTNK:
 		HP: 30000
 	Armor:
 		Type: Light
+	RevealsShroud:
+		Range: 5c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
 	Turreted:
 		TurnSpeed: 8
 		Offset: 0,0,160
