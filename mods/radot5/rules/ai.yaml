@@ -339,6 +339,7 @@ Player:
 			harv: 10
 			apc: 30
 			jeep: 20
+			gtnk: 20
 			bggy: 15
 			arty: 15
 			v2rl: 40
@@ -355,6 +356,7 @@ Player:
 			mrj: 1
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
+			upgrade.fortified_structures: 1
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
 			upgrade.ap_bullets: 1
@@ -362,6 +364,7 @@ Player:
 			dog: 4
 			harv: 8
 			jeep: 4
+			gtnk: 4
 			ftrk: 4
 			mrj: 1
 	SquadManagerBotModule@normal:
@@ -392,6 +395,7 @@ Player:
 			harv: 15
 			apc: 30
 			jeep: 20
+			gtnk: 20
 			bggy: 15
 			arty: 15
 			v2rl: 40
@@ -417,6 +421,7 @@ Player:
 			pt: 10
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
+			upgrade.fortified_structures: 1
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
 			upgrade.ap_bullets: 1
@@ -425,6 +430,7 @@ Player:
 			dog: 4
 			harv: 8
 			jeep: 4
+			gtnk: 4
 			ftrk: 4
 			mrj: 1
 	SquadManagerBotModule@turtle:
@@ -455,6 +461,7 @@ Player:
 			harv: 15
 			apc: 10
 			jeep: 20
+			gtnk: 20
 			bggy: 15
 			arty: 15
 			v2rl: 40
@@ -480,6 +487,7 @@ Player:
 			pt: 10
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
+			upgrade.fortified_structures: 1
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
 			upgrade.ap_bullets: 1
@@ -488,6 +496,7 @@ Player:
 			dog: 4
 			harv: 8
 			jeep: 4
+			gtnk: 4
 			ftrk: 4
 			mrj: 1
 	SquadManagerBotModule@naval:
@@ -512,6 +521,7 @@ Player:
 			ca: 20
 			pt: 10
 			upgrade.autoloaders: 1
+			upgrade.fortified_structures: 1
 			upgrade.ap_bullets: 1
 			upgrade.explosive_rockets: 1
 			upgrade.air_radar: 1

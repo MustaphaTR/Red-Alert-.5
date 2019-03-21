@@ -266,22 +266,22 @@
 		Name: Japan
 		InternalName: japan
 		Side: Co-Prosperity Sphere
-		Description: Empire of Japan\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Upgrade: Nationalim
+		Description: Empire of Japan\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Upgrade: Nationalim
 	Faction@32:
 		Name: Manchukuo
 		InternalName: manchukuo
 		Side: Co-Prosperity Sphere
-		Description: Manchukuo\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Unit:
+		Description: Manchukuo\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Unit:
 	Faction@33:
 		Name: Mengkukuo
 		InternalName: mengkukuo
 		Side: Co-Prosperity Sphere
-		Description: Mengkukuo\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Unit:
+		Description: Mengkukuo\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Unit:
 	Faction@34:
 		Name: Siam
 		InternalName: siam
 		Side: Co-Prosperity Sphere
-		Description: Siam\nFaction Units:\n - Mortar\n - \n - Kamikaze Plane\n\nSubfaction Unit:
+		Description: Siam\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Unit:
 	Faction@random:
 		Name: Any
 		InternalName: Random

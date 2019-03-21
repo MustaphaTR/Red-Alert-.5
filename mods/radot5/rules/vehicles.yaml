@@ -49,8 +49,8 @@ V2RL:
 
 1TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
@@ -115,8 +115,8 @@ V2RL:
 
 2TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
@@ -161,8 +161,8 @@ V2RL:
 
 3TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 120
@@ -207,8 +207,8 @@ V2RL:
 
 4TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 180
@@ -266,6 +266,56 @@ V2RL:
 		Range: 6c0
 	Selectable:
 		DecorationBounds: 44,38,0,-4
+
+GTNK:
+	Inherits: ^TrackedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@EXPERIENCE: ^GainsExperience
+	Tooltip:
+		Name: Gatling Tank
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: ~vehicles.coprosperity, ~techlevel.low
+		Description: Anti-infantry & anti-air vehicle.\nFires faster as it continues to fire.
+	Valued:
+		Cost: 650
+	Mobile:
+		Speed: 128
+		TurnSpeed: 8
+	Health:
+		HP: 30000
+	Armor:
+		Type: Light
+	Turreted:
+		TurnSpeed: 8
+		Offset: 0,0,160
+	ReloadDelayMultiplier@Gatling1:
+		RequiresCondition: gatling >= 1
+		Modifier: 50
+	ReloadDelayMultiplier@Gatling2:
+		RequiresCondition: gatling >= 2
+		Modifier: 50
+	Armament@GatlingAG:
+		Weapon: GatlingAG
+		LocalOffset: 213,0,0
+		MuzzleSequence: muzzle
+	Armament@GatlingAA:
+		Weapon: GatlingAA
+		LocalOffset: 213,0,0
+		MuzzleSequence: muzzle
+	GrantConditionOnAttack@gatling:
+		Condition: gatling
+		RequiredShotsPerInstance: 4
+		MaximumInstances: 2
+		RevokeDelay: 25
+		RevokeAll: true
+		IsCyclic: false
+	AttackTurreted:
+	WithSpriteTurret:
+	WithMuzzleOverlay:
 
 ARTY:
 	Inherits: ^TrackedVehicle

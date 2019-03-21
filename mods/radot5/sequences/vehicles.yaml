@@ -158,6 +158,19 @@ hhusk2:
 		UseClassicFacingFudge: True
 		ZOffset: -512
 
+gtnk:
+	idle: 1tnk
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 64
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: gtnkicon
+
 v2rl:
 	idle:
 		Facings: 32

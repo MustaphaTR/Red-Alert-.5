@@ -394,6 +394,42 @@ M60mg.AP:
 			Heavy: 15
 			Concrete: 12
 
+GatlingAG:
+	Inherits: M60mg
+	ReloadDelay: 16
+	Range: 5c0
+	Burst: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 1500
+
+GatlingAG.AP:
+	Inherits: GatlingAG
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 35
+			Light: 50
+			Heavy: 15
+			Concrete: 12
+
+GatlingAA:
+	Inherits: GatlingAG
+	Range: 8c0
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
+	Warhead@2Eff: CreateEffect
+		ValidTargets: Air
+	-Warhead@3EffWater: CreateEffect
+
+GatlingAA.AP:
+	Inherits: GatlingAA
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 35
+			Light: 50
+			Heavy: 15
+			Concrete: 12
+
 ^SnipeWeapon:
 	ReloadDelay: 80
 	Range: 2c512
