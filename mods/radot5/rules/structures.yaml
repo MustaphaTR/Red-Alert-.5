@@ -1669,6 +1669,9 @@ ATEK:
 	ProvidesPrerequisite@lithuania:
 		Factions: lithuania
 		Prerequisite: upgrade.lithuania
+	ProvidesPrerequisite@japan:
+		Factions: japan
+		Prerequisite: upgrade.japan
 	ProvidesPrerequisite@buildingname:
 
 HPAD:

@@ -211,6 +211,14 @@
 		Condition: fortified_structures
 		Prerequisites: upgrade.fortified_structures
 
+^AffectedByNationalism:
+	ReloadDelayMultiplier@NATIONALISM:
+		RequiresCondition: nationalism
+		Modifier: 90
+	GrantConditionOnPrerequisite@NATIONALISM:
+		Condition: nationalism
+		Prerequisites: upgrade.nationalism
+
 ^AffectedByExplosiveRockets:
 	FirepowerMultiplier@EXPLOSIVE_ROCKETS:
 		RequiresCondition: explosive_rockets
@@ -303,6 +311,7 @@
 	Inherits@2: ^IronCurtainable
 	Inherits@3: ^SpriteActor
 	Inherits@4: ^AffectedByPropaganda
+	Inherits@5: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
 	OwnerLostAction:
@@ -388,6 +397,7 @@
 	Inherits@4: ^SpriteActor
 	Inherits@5: ^AffectedByPropaganda
 	Inherits@6: ^AffectedByAdvancedTraining
+	Inherits@7: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
 	OwnerLostAction:
@@ -584,6 +594,7 @@
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^SpriteActor
 	Inherits@5: ^AffectedByPropaganda
+	Inherits@6: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
 	OwnerLostAction:
@@ -638,6 +649,7 @@
 	Inherits@4: ^SpriteActor
 	Inherits@5: ^AffectedByPropaganda
 	Inherits@6: ^AffectedByAirRadar
+	Inherits@7: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
 	OwnerLostAction:

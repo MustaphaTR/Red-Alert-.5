@@ -79,3 +79,14 @@ upgrade.air_radar:
 		Description: Increases aircraft sight.
 	Valued:
 		Cost: 1000
+
+upgrade.nationalism:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Nationalism
+	Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: stek, ~upgrade.japan
+		Description: Increases Fire Speed of all units by 10%.
+	Valued:
+		Cost: 2500
