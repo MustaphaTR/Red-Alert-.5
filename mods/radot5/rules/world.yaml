@@ -236,27 +236,27 @@
 		Name: China
 		InternalName: china
 		Side: United Front
-		Description: China\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit: Camo Tank
+		Description: China\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit: Camo Tank
 	Faction@26:
 		Name: Guangxi
 		InternalName: guangxi
 		Side: United Front
-		Description: Guangxi Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit:
+		Description: Guangxi Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit:
 	Faction@27:
 		Name: Yunnan
 		InternalName: yunnan
 		Side: United Front
-		Description: Yunnan Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit:
+		Description: Yunnan Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit:
 	Faction@28:
 		Name: Xibei San Ma
 		InternalName: ma
 		Side: United Front
-		Description: Xibei San Ma\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit: Mountaineer
+		Description: Xibei San Ma\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit: Mountaineer
 	Faction@29:
 		Name: USA
 		InternalName: usa
 		Side: United Front
-		Description: United States of America\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - \n\nSubfaction Unit: Marine
+		Description: United States of America\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit: Marine
 	Faction@30:
 		Name: Co-Prosperity Sphere
 		InternalName: coprosperity

@@ -50,11 +50,32 @@
 	Warhead@4EffWater: CreateEffect
 		-ImpactSounds:
 
+25mm.Decoy:
+	Inherits: 25mm
+	-Report:
+	-Projectile: Bullet
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+	-Warhead@3Eff: CreateEffect
+	-Warhead@4EffWater: CreateEffect
+
 90mm:
 	Inherits: ^Cannon
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Heavy: 115
+
+90mm.Decoy:
+	Inherits: 90mm
+	-Report:
+	-Projectile: Bullet
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+	-Warhead@2Smu: LeaveSmudge
+	-Warhead@3Eff: CreateEffect
+	-Warhead@4EffWater: CreateEffect
 
 105mm:
 	Inherits: ^Cannon
@@ -138,6 +159,17 @@ SABOT:
 		Falloff: 100, 55, 20, 5
 		Versus:
 			None: 60
+
+155mm.Decoy:
+	Inherits: 155mm
+	-Report:
+	-Projectile: Bullet
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+	-Warhead@2Smu: LeaveSmudge
+	-Warhead@3Eff: CreateEffect
+	-Warhead@4EffWater: CreateEffect
 
 8Inch:
 	Inherits: ^Artillery

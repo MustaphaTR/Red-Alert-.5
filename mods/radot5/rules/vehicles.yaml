@@ -697,8 +697,8 @@ MRJ:
 		AddToArmyValue: true
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 140
-		Prerequisites: dome, ~vehicles.unitedfront, ~techlevel.high
+		BuildPaletteOrder: 75
+		Prerequisites: dome, ~vehicles.unitedfront, ~techlevel.medium
 		BuildDurationModifier: 50
 		Description: Makes nearby units heal and fire faster.\n  Unarmed
 	Health:

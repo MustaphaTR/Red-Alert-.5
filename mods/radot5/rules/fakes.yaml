@@ -642,3 +642,246 @@ FACF:
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
+
+HARF:
+	Inherits: HARV
+	Buildable:
+		BuildPaletteOrder: 920
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.infonly
+		Description: Looks like an Ore Miner.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Ore Miner
+		GenericName: Ore Miner
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 110
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	-Harvester:
+	-WithHarvestAnimation:
+	-WithDockingAnimation:
+	-HarvesterHuskModifier:
+	-SpawnActorOnDeath:
+	RenderSprites:
+		Image: HARV
+
+1TNF:
+	Inherits: 1TNK
+	Buildable:
+		BuildPaletteOrder: 940
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.low
+		Description: Looks like a Light Tank.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Light Tank
+		GenericName: Light Tank
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 70
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	Armament:
+		Weapon: 25mm.Decoy
+		Recoil: 0
+	-WithMuzzleOverlay:
+	-SpawnActorOnDeath:
+	RenderSprites:
+		Image: 1TNK
+
+FTRF:
+	Inherits: FTRK
+	Buildable:
+		BuildPaletteOrder: 950
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.low
+		Description: Looks like a Halftrack.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Halftrack
+		GenericName: Halftrack
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 60
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	Armament@AA:
+		Weapon: FLAK-23-AA.Decoy
+		Recoil: 0
+	Armament@AG:
+		Weapon: FLAK-23-AG.Decoy
+		Recoil: 0
+	-WithMuzzleOverlay:
+	-Cargo:
+	RenderSprites:
+		Image: FTRK
+
+ARTF:
+	Inherits: ARTY
+	Buildable:
+		BuildPaletteOrder: 960
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.medium
+		Description: Looks like an Artillery.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Artillery
+		GenericName: Artillery
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 85
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	Armament:
+		Weapon: 155mm.Decoy
+	-WithMuzzleOverlay:
+	RenderSprites:
+		Image: ARTY
+
+MRJF:
+	Inherits: MRJ
+	Buildable:
+		BuildPaletteOrder: 970
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.medium
+		Description: Looks like a Propaganda Truck.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Propaganda Truck
+		GenericName: Propaganda Truck
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 80
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	-ProximityExternalCondition@PROPAGANDA:
+	-WithRangeCircle:
+	RenderSprites:
+		Image: MRJ
+
+MCVF:
+	Inherits: MCV
+	Buildable:
+		BuildPaletteOrder: 980
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.medium
+		Description: Looks like a Mobile Construction Vehicle.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Mobile Construction Vehicle
+		GenericName: Mobile Construction Vehicle
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 200
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	-Transforms:
+	-TransferTimedExternalConditionOnTransform:
+	-SpawnActorOnDeath:
+	RenderSprites:
+		Image: MCV
+
+MNLF:
+	Inherits: MNLY
+	Buildable:
+		BuildPaletteOrder: 990
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.medium
+		Description: Looks like a Minelayer.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Minelayer
+		GenericName: Minelayer
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 80
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	-Minelayer:
+	-AmmoPool:
+	-DetectCloaked:
+	-RenderDetectionCircle:
+	RenderSprites:
+		Image: MNLY
+
+2TNF:
+	Inherits: 2TNK
+	Buildable:
+		BuildPaletteOrder: 1000
+		Prerequisites: ~vehicles.unitedfront, ~techlevel.high
+		Description: Looks like a Medium Tank.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Medium Tank
+		GenericName: Medium Tank
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Valued:
+		Cost: 85
+	WithDecoration@fake:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-fake
+		ReferencePoint: Top
+		ZOffset: 256
+	Armament:
+		Weapon: 90mm.Decoy
+		Recoil: 0
+	Explodes:
+		Weapon: Demolish
+		DamageThreshold: 70
+	-WithMuzzleOverlay:
+	-SpawnActorOnDeath:
+	RenderSprites:
+		Image: 2TNK

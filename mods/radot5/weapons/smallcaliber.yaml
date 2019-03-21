@@ -43,6 +43,15 @@ FLAK-23-AA:
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air, Ground, Water
 
+FLAK-23-AA.Decoy:
+	Inherits: FLAK-23-AA
+	-Report:
+	-Projectile: Bullet
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+	-Warhead@2Eff: CreateEffect
+
 FLAK-23-AG:
 	Inherits: ^AACannon
 	Range: 6c0
@@ -56,6 +65,16 @@ FLAK-23-AG:
 		Explosions: small_splash
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
+
+FLAK-23-AG.Decoy:
+	Inherits: FLAK-23-AG
+	-Report:
+	-Projectile: Bullet
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+	-Warhead@2Eff: CreateEffect
+	-Warhead@3EffWater: CreateEffect
 
 ^HeavyMG:
 	ReloadDelay: 30

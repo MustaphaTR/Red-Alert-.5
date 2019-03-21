@@ -3,6 +3,7 @@ mcv:
 		Facings: 32
 		UseClassicFacingFudge: True
 	icon: mcvicon
+	fake-icon: mcvficon
 
 mcvhusk:
 	idle:
@@ -52,7 +53,7 @@ harv:
 		Start: 104
 		Length: 7
 	icon: harvicon
-		Start: 0
+	fake-icon: harficon
 
 hhusk:
 	idle:
@@ -77,6 +78,7 @@ hhusk2:
 	muzzle: gunfire2
 		Length: 2
 	icon: 1tnkicon
+	fake-icon: 1tnficon
 
 1tnk.destroyed:
 	idle: 1tnk
@@ -100,6 +102,7 @@ hhusk2:
 	muzzle: gunfire2
 		Length: 5
 	icon: 2tnkicon
+	fake-icon: 2tnficon
 
 2tnk.destroyed:
 	idle: 2tnk
@@ -188,6 +191,7 @@ arty:
 	muzzle: gunfire2
 		Length: 5
 	icon: artyicon
+	fake-icon: artficon
 
 jeep:
 	idle:
@@ -259,6 +263,7 @@ mnly:
 		Facings: 32
 		UseClassicFacingFudge: True
 	icon: mnlyicon
+	fake-icon: mnlficon
 
 mrj:
 	idle:
@@ -268,6 +273,7 @@ mrj:
 		Start: 32
 		Length: 32
 	icon: mrjicon
+	fake-icon: mrjficon
 
 mgg:
 	idle:
@@ -313,6 +319,7 @@ ftrk:
 	muzzle: gunfire2
 		Length: 2
 	icon: ftrkicon
+	fake-icon: ftrficon
 
 dtrk:
 	idle:
