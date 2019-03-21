@@ -56,6 +56,8 @@ V2RL:
 		BuildPaletteOrder: 50
 		Prerequisites: ~techlevel.low
 		Description: Fast tank, good for scouting.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
+	Selectable:
+		Class: 1TNK
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -92,11 +94,22 @@ V2RL:
 	RenderSprites:
 		Image: 1TNK
 
+1TNKR1:
+	Inherits: 1TNK
+	RenderSprites:
+		Image: 1TNK
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 1
+	-Buildable:
+
 1TNK.Camo:
 	Inherits: 1TNK
 	Buildable:
 		Prerequisites: ~vehicles.china, ~techlevel.low
 		Description: Fast tank, capable of being invisible while not moving.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
+	Selectable:
+		Class: 1TNK.Camo
 	Tooltip:
 		Name: Camo Tank
 	Valued:

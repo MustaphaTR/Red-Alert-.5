@@ -1783,6 +1783,9 @@ AFLD:
 	ProvidesPrerequisite@latvia:
 		Factions: latvia
 		Prerequisite: aircraft.latvia
+	ProvidesPrerequisite@siam:
+		Factions: siam
+		Prerequisite: aircraft.siam
 	ParatroopersPower@paratroopers:
 		OrderName: SovietParatroopers
 		Prerequisites: aircraft.spain
@@ -1790,7 +1793,8 @@ AFLD:
 		ChargeInterval: 7500
 		Description: Paratroopers
 		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
-		DropItems: E1R1,E1R1,E2R1,E3R1,E3R1
+		DropItems: E1R2,E1R1,E1,E2R2,E2R1,E2,E3R2,E3R1,E3
+		SquadSize: 3
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
 		AllowImpassableCells: false
@@ -1815,6 +1819,25 @@ AFLD:
 		DisplayRadarPing: True
 		BeaconPoster: cminesicon
 		CameraActor: camera
+		ArrowSequence: arrow
+		ClockSequence: clock
+		CircleSequence: circles
+	ParatroopersPower@paratanks:
+		OrderName: SiameseParatanks
+		Prerequisites: aircraft.siam
+		Icon: tankdrop
+		ChargeInterval: 7500
+		Description: Tank Drop
+		LongDesc: 3 Badgers drops 3 light tanks\nanywhere on the map.
+		SquadSize: 3
+		DropItems: 1TNK, 1TNKR1, 1TNK
+		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
+		SelectTargetSpeechNotification: SelectTarget
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: true
+		BeaconPoster: tdropicon
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles

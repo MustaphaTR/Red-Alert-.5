@@ -281,7 +281,7 @@
 		Name: Siam
 		InternalName: siam
 		Side: Co-Prosperity Sphere
-		Description: Siam\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Unit:
+		Description: Siam\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Ability: Tank Drop
 	Faction@random:
 		Name: Any
 		InternalName: Random

@@ -170,6 +170,9 @@ beacon:
 	cminesicon: cminesbcon
 		Length: *
 		Offset: 0,-42
+	tdropicon: tdropbcon
+		Length: *
+		Offset: 0,-42
 	clock: beaconclock
 		Length: *
 		Offset: 0,-42
@@ -514,6 +517,7 @@ icon:
 	carpet: carpeticon
 	cmines: cminesicon
 	intel: intelicon
+	tankdrop: tdropicon
 
 quee:
 	idle:

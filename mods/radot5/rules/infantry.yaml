@@ -121,6 +121,11 @@ E1R1:
 		InitialLevels: 1
 	-Buildable:
 
+E1R2:
+	Inherits: E1R1
+	ProducibleWithLevel:
+		InitialLevels: 2
+
 E2:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
@@ -130,6 +135,8 @@ E2:
 		BuildPaletteOrder: 30
 		Prerequisites: ~barracks, ~techlevel.medium
 		Description: Infantry armed with grenades.\n  Strong vs Buildings, Infantry\n  Weak vs Vehicles, Aircraft
+	Selectable:
+		Class: E2
 	Valued:
 		Cost: 160
 	Tooltip:
@@ -172,6 +179,11 @@ E2R1:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
 	-Buildable:
+
+E2R2:
+	Inherits: E2R1
+	ProducibleWithLevel:
+		InitialLevels: 2
 
 E3:
 	Inherits: ^Soldier
@@ -225,6 +237,11 @@ E3R1:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
 	-Buildable:
+
+E3R2:
+	Inherits: E3R1
+	ProducibleWithLevel:
+		InitialLevels: 2
 
 E4:
 	Inherits: ^Soldier
