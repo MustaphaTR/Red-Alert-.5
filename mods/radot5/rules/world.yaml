@@ -327,7 +327,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, reich
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, reich, china, ma
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:
