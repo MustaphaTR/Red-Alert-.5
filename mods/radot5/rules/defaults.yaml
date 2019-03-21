@@ -203,6 +203,14 @@
 		Condition: horse_armor
 		Prerequisites: upgrade.horse_armor
 
+^AffectedByFortifiedStructures:
+	DamageMultiplier@FORTIFIED_STRUCTURES:
+		RequiresCondition: fortified_structures
+		Modifier: 75
+	GrantConditionOnPrerequisite@FORTIFIED_STRUCTURES:
+		Condition: fortified_structures
+		Prerequisites: upgrade.fortified_structures
+
 ^AffectedByExplosiveRockets:
 	FirepowerMultiplier@EXPLOSIVE_ROCKETS:
 		RequiresCondition: explosive_rockets
@@ -763,7 +771,8 @@
 	CommandBarBlacklist:
 
 ^Building:
-	Inherits: ^BasicBuilding
+	Inherits@1: ^BasicBuilding
+	Inherits@2: ^AffectedByFortifiedStructures
 	Huntable:
 	OwnerLostAction:
 		Action: Kill

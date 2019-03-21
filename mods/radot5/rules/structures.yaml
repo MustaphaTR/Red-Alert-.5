@@ -1690,6 +1690,9 @@ ATEK:
 	Power:
 		Amount: -100
 	Exit:
+	ProvidesPrerequisite@greece:
+		Factions: greece
+		Prerequisite: upgrade.greece
 	ProvidesPrerequisite@lithuania:
 		Factions: lithuania
 		Prerequisite: upgrade.lithuania

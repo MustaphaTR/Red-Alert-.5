@@ -23,16 +23,27 @@ upgrade.horse_armor:
 		Name: Improved Horse Armor
 	Buildable:
 		BuildPaletteOrder: 20
-		Description: Increases Cavalry health by 50%.
+		Description: Doubles the Cavalry health.
 	Valued:
 		Cost: 1250
+
+upgrade.fortified_structures:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Fortified Structures
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: ~upgrade.greece
+		Description: Increases Structure health by 33%.
+	Valued:
+		Cost: 1500
 
 upgrade.autoloaders:
 	Inherits: ^default.upgrade
 	Tooltip:
 		Name: Autoloaders
 	Buildable:
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 40
 		Description: Increases Artillery and Turret fire speed by 25%.
 	Valued:
 		Cost: 1500
@@ -42,7 +53,7 @@ upgrade.explosive_rockets:
 	Tooltip:
 		Name: Explosive Rockets
 	Buildable:
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 50
 		Description: Increases Rocket damage.
 	Valued:
 		Cost: 1500
@@ -52,7 +63,7 @@ upgrade.ap_bullets:
 	Tooltip:
 		Name: AP Bullets
 	Buildable:
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 60
 		Prerequisites: ~upgrade.lithuania
 		Description: Increases bullet damage versus armored units.
 	Valued:
@@ -63,7 +74,7 @@ upgrade.air_radar:
 	Tooltip:
 		Name: Air Radar
 	Buildable:
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 70
 		Prerequisites: dome
 		Description: Increases aircraft sight.
 	Valued:

@@ -4,6 +4,9 @@ upgrade.adv_training:
 upgrade.autoloaders:
 	icon: aloadicon
 
+upgrade.fortified_structures:
+	icon: fortstricon
+
 upgrade.horse_armor:
 	icon: armoricon
 
