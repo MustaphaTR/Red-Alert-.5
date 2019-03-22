@@ -255,3 +255,18 @@ MADTankDetonate:
 		Explosions: med_explosion
 		ImpactSounds: mineblo1.aud
 		ImpactActors: false
+
+MarineSapper:
+	ValidTargets: Ship, Underwater
+	InvalidTargets: Infantry
+	ReloadDelay: 125
+	Range: 1c512
+	Projectile: InstantHit
+	Warhead@1Dam: HealthPercentageDamage
+		Spread: 0c512
+		Damage: 100
+		ValidTargets: Ship, Underwater
+	Warhead@3Eff: CreateEffect
+		Explosions: med_explosion
+		ImpactSounds: mineblo1.aud
+		ImpactActors: false

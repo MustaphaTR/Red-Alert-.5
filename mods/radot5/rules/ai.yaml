@@ -344,6 +344,7 @@ Player:
 			e5: 15
 			sniper: 5
 			e8: 5
+			e9: 2
 			e22: 5
 			scoutcav: 5
 			riflecav: 15
@@ -401,6 +402,7 @@ Player:
 			e5: 15
 			sniper: 5
 			e8: 5
+			e9: 2
 			e22: 5
 			scoutcav: 5
 			riflecav: 15
@@ -468,6 +470,7 @@ Player:
 			e5: 15
 			sniper: 5
 			e8: 5
+			e9: 2
 			e22: 5
 			scoutcav: 5
 			riflecav: 15
@@ -521,13 +524,14 @@ Player:
 		RequiresCondition: enable-naval-ai
 		SquadSize: 1
 		ExcludeFromSquadsTypes: harv, mcv, dog
-		NavalUnitsTypes: ss,msub,dd,ca,lst,pt
+		NavalUnitsTypes: ss,msub,dd,ca,lst,pt,e9
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen,syrd
 	UnitBuilderBotModule@naval:
 		UnitQueues: Infantry, Cavalry, Vehicle, Aircraft, Ship, Upgrade
 		RequiresCondition: enable-naval-ai
 		UnitsToBuild:
+			e9: 2
 			harv: 1
 			heli: 30
 			hind: 30
@@ -545,4 +549,5 @@ Player:
 			upgrade.air_radar: 1
 			upgrade.nationalism: 1
 		UnitLimits:
+			e9: 4
 			harv: 8

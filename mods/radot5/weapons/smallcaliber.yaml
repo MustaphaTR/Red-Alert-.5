@@ -490,6 +490,14 @@ Colt45:
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
 
+MP5:
+	Inherits: Colt45
+	ValidTargets: Ground, Water, Infantry
+	InvalidTargets: Vehicle, Ship, Structure, Wall, Husk
+	Report: pillbox1.aud
+	ReloadDelay: 8
+	Range: 6c0
+
 Sniper:
 	Inherits: ^SnipeWeapon
 	ReloadDelay: 70

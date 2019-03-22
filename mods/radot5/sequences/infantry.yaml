@@ -1006,6 +1006,102 @@ e22:
 			INTERIOR: TEMPERAT
 	icon: e22icon
 
+e9:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 120
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	die1:
+		Start: 134
+		Length: 15
+	die2:
+		Start: 149
+		Length: 15
+	die3: e1
+		Start: 209
+		Length: 8
+	die4: e1
+		Start: 217
+		Length: 12
+	die5: e1
+		Start: 229
+		Length: 18
+	die6: electro
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+		Tick: 80
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 8
+		Tick: 80
+	liedown:
+		Start: 260
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 276
+		Length: 2
+		Facings: 8
+	prone-stand:
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+		Tick: 100
+	swim-stand:
+		Start: 340
+		Facings: 8
+		Length: 6
+		Tick: 160
+	swim-idle1:
+		Start: 484
+		Length: 15
+		Tick: 160
+	swim-idle2:
+		Start: 499
+		Length: 15
+		Tick: 160
+	swim-run:
+		Start: 388
+		Facings: 8
+		Length: 6
+		Tick: 120
+	swim-die1:
+		Start: 512
+		Length: 22
+	swim-die2:
+		Start: 534
+		Length: 20
+	swim-shoot:
+		Start: 436
+		Length: 6
+		Facings: 8
+		Tick: 80
+	paradrop:
+		Start: 602
+	icon: e9icon
+
 gnrl:
 	stand:
 		Facings: 8

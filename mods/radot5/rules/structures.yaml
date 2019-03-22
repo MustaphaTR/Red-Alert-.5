@@ -245,6 +245,9 @@ BARR:
 	ProvidesPrerequisite@ma:
 		Factions: ma
 		Prerequisite: infantry.ma
+	ProvidesPrerequisite@usa:
+		Factions: usa
+		Prerequisite: infantry.usa
 	ProvidesPrerequisite@coprosperity:
 		Factions: coprosperity, japan, manchukuo, mengkukuo, siam
 		Prerequisite: infantry.coprosperity

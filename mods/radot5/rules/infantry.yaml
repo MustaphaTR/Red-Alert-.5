@@ -4,7 +4,7 @@ DOG:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 60
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.infonly
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
@@ -74,7 +74,7 @@ E1:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.infonly
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Class: E1
@@ -133,7 +133,7 @@ E2:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 30
-		Prerequisites: ~barracks, ~techlevel.medium
+		Prerequisites: ~barr, ~techlevel.medium
 		Description: Infantry armed with grenades.\n  Strong vs Buildings, Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Class: E2
@@ -193,7 +193,7 @@ E3:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 80
-		Prerequisites: ~barracks, dome, ~techlevel.infonly
+		Prerequisites: ~barr, dome, ~techlevel.infonly
 		Description: Anti-tank/Anti-aircraft infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Selectable:
 		Class: E3
@@ -250,7 +250,7 @@ E4:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
-		Prerequisites: ~barracks, ftur, ~infantry.comintern, ~techlevel.low
+		Prerequisites: ~barr, ftur, ~infantry.comintern, ~techlevel.low
 		Description: Advanced anti-structure unit.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 300
@@ -290,7 +290,7 @@ E5:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 160
-		Prerequisites: ~barracks, stek, ~infantry.axis, ~techlevel.low
+		Prerequisites: ~barr, stek, ~infantry.axis, ~techlevel.low
 		Description: Advanced anti-infantry unit.\n  Strong vs Infantry, Light Vehicles\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 350
@@ -329,7 +329,7 @@ E6:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.infonly
 		Description: Infiltrates and captures\nenemy structures.\n  Unarmed
 	Valued:
 		Cost: 400
@@ -372,7 +372,7 @@ E8:
 	Inherits: E1
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: ~barracks, ~infantry.ma, ~techlevel.low
+		Prerequisites: ~barr, ~infantry.ma, ~techlevel.low
 		Description: Rifle infantry capable of moving over cliffs.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 125
@@ -386,6 +386,53 @@ E8:
 		HP: 4500
 	RenderSprites:
 		Image: E1
+
+e9:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@SWIMSUIT: ^WithSwimSuit
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 65
+		Prerequisites: ~barr, syrd, ~infantry.usa, ~techlevel.medium
+		Description: Elite commando infantry, armed with\na sub machine gun and C4 that can be placed on Ships.\nCan swim.\n  Strong vs Infantry, Ships\n  Weak vs Vehicles, Aircraft, Buildings.
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Marine
+	Health:
+		HP: 4500
+	Mobile:
+		Locomotor: swimsuit
+	RevealsShroud:
+		Range: 8c0
+	RevealOnDeath:
+		Radius: 4c0
+	Armor:
+		Type: None
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: MP5
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: MP5
+	Armament@sapper:
+		Weapon: MarineSapper
+		Cursor: c4
+		OutsideRangeCursor: c4
+	AttackFrontal:
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	TakeCover:
+		RequiresCondition: !swimming
 
 E22:
 	Inherits: ^Soldier

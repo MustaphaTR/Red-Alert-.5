@@ -513,6 +513,34 @@
 		Categories: Infantry
 	EdibleByLeap:
 
+^WithSwimSuit:
+	WithInfantryBody:
+		RequiresCondition: !swimming
+	WithDeathAnimation:
+		RequiresCondition: !swimming
+	GrantConditionOnTerrain@Water:
+		TerrainTypes: Water
+		Condition: swimming
+	WithInfantryBody@Water:
+		IdleSequences: swim-idle1,swim-idle2
+		MoveSequence: swim-run
+		StandSequences: swim-stand
+		DefaultAttackSequence: swim-shoot
+		RequiresCondition: swimming
+	WithDeathAnimation@Water:
+		RequiresCondition: swimming
+		DeathSequence: swim-die
+		DeathTypes:
+			DefaultDeath: 1
+			BulletDeath: 2
+			SmallExplosionDeath: 1
+			ExplosionDeath: 1
+			FireDeath: 2
+			ElectricityDeath: 2
+	Targetable@WaterBorne:
+		TargetTypes: Water
+		RequiresCondition: swimming
+
 ^Soldier:
 	Inherits: ^Infantry
 	UpdatesPlayerStatistics:
