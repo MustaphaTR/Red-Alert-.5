@@ -507,12 +507,10 @@ TENT:
 		RequiresCondition: !being-captured
 		SpawnOffset: -42,810,0
 		ExitCell: 1,2
-		ProductionTypes: Cavalry
 	Exit@2:
 		RequiresCondition: !being-captured
 		SpawnOffset: -725,640,0
 		ExitCell: 0,2
-		ProductionTypes: Cavalry
 	Production:
 		Produces: Cavalry
 	GrantExternalConditionToProduced:

@@ -11,11 +11,11 @@ BeachUnitTypes = { "e1", "e2", "e3", "e5", "e1", "e2", "e3", "e5", "e1", "e2", "
 ProxyType = "powerproxy.paratroopers"
 ProducedUnitTypes =
 {
-	{ factory = AlliedBarracks1, types = { "e1", "e2", "e3" } },
-	{ factory = AlliedBarracks2, types = { "e1", "e2", "e3" } },
-	{ factory = AxisBarracks1, types = { "dog", "e1", "e2", "e3", "e5" } },
-	{ factory = AxisBarracks2, types = { "dog", "e1", "e2", "e3", "e5" } },
-	{ factory = AxisBarracks3, types = { "dog", "e1", "e2", "e3", "e5" } },
+	{ factory = AlliedBarracks1, types = { "dog", "e1", "e2", "e3", "sniper" } },
+	{ factory = AlliedBarracks2, types = { "dog", "e1", "e2", "e3", "sniper" } },
+	{ factory = AxisBarracks1, types = { "dog", "e1", "e2", "e3", "sniper", "e5" } },
+	{ factory = AxisBarracks2, types = { "dog", "e1", "e2", "e3", "sniper", "e5" } },
+	{ factory = AxisBarracks3, types = { "dog", "e1", "e2", "e3", "sniper", "e5" } },
 	{ factory = AlliedStable1, types = { "riflecav", "grencav" } },
 	{ factory = AxisStable1, types = { "riflecav", "grencav" } },
 	{ factory = AxisStable2, types = { "riflecav", "grencav" } },

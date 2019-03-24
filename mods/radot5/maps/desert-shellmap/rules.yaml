@@ -77,6 +77,16 @@ TRAN.Husk2:
 	Burns:
 		Damage: 0
 
+BARR:
+	Exit@3:
+		RequiresCondition: !being-captured
+		SpawnOffset: -170,810,0
+		ExitCell: 1,2
+	Exit@4:
+		RequiresCondition: !being-captured
+		SpawnOffset: -725,640,0
+		ExitCell: 0,2
+
 MISS:
 	DamageMultiplier@INVULNERABLE:
 		Modifier: 0
