@@ -238,12 +238,16 @@ YAK:
 		DecorationBounds: 30,28,0,2
 	Rearmable:
 		RearmActors: afld, afld.ukraine
+	RenderSprites:
+		Scale: 0.8
+		Image: YAK
 
 BOMBER:
 	Inherits: YAK
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~afld, dome, fix, ~techlevel.medium
+		Description: Bombarment Plane that caries 6 bombs.\n  Strong vs Infantry, Buildings, Tanks\n  Weak vs Light Vehicles, Aircraft
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -253,19 +257,55 @@ BOMBER:
 	Armament@PRIMARY:
 		Weapon: PlaneBomb
 		LocalOffset: 0,0,0
-		PauseOnCondition: !ammo
+		-RequiresCondition:
 	-Armament@SECONDARY:
 	-Armament@PRIMARY-AP:
 	-Armament@SECONDARY-AP:
 	-WithMuzzleOverlay:
 	-GrantConditionOnPrerequisite@AP_BULLETS:
+	SpawnActorOnDeath:
+		Actor: BOMBER.Husk
 	AmmoPool:
 		Ammo: 6
 		PipCount: 6
 		ReloadDelay: 40
 	RenderSprites:
 		Scale: 1.2
-		Image: YAK
+
+KMKZ:
+	Inherits: YAK
+	Buildable:
+		BuildPaletteOrder: 35
+		Prerequisites: ~afld, dome, ~aircraft.coprosperity, ~techlevel.medium
+		Description: Suicide Plane armed with explosions.\n  Strong vs Infantry, Buildings, Light Vehicles\n  Weak vs Aircraft
+	Valued:
+		Cost: 1750
+	Tooltip:
+		Name: Kamikaze Plane
+	Aircraft:
+		Speed: 160
+	Armament@PRIMARY:
+		Weapon: KamikazeTargeting
+		LocalOffset: 0,0,0
+		-PauseOnCondition:
+		-RequiresCondition:
+	-Armament@SECONDARY:
+	-Armament@PRIMARY-AP:
+	-Armament@SECONDARY-AP:
+	-AmmoPool:
+	-WithMuzzleOverlay:
+	-GrantConditionOnPrerequisite@AP_BULLETS:
+	-ProducibleWithLevel:
+	GrantConditionOnAttack:
+		Condition: triggered
+	GrantConditionOnDeploy:
+		DeployedCondition: triggered
+	KillsSelf:
+		RequiresCondition: triggered
+	SpawnActorOnDeath:
+		Actor: KMKZ.Husk
+	RenderSprites:
+		Scale: 1
 
 BALLOON:
 	Inherits: ^Helicopter

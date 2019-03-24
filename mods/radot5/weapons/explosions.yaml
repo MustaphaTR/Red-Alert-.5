@@ -56,12 +56,28 @@ CrateExplosion:
 UnitExplode:
 	Inherits: ^Explosion
 	Warhead@1Dam: SpreadDamage
+		Damage: 2500
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 
 UnitExplodePlane:
 	Inherits: UnitExplode
 	Warhead@2Eff: CreateEffect
 		Explosions: large_napalm
+
+UnitExplodeBomber:
+	Inherits: UnitExplode
+	Warhead@1Dam: SpreadDamage
+		Damage: 3500
+	Warhead@2Eff: CreateEffect
+		Explosions: large_napalm
+
+UnitExplodeKamikaze:
+	Inherits: UnitExplode
+	Warhead@1Dam: SpreadDamage
+		Damage: 6000
+		Spread: 512
+	Warhead@2Eff: CreateEffect
+		Explosions: mininuke
 
 UnitExplodeHeli:
 	Inherits: UnitExplode

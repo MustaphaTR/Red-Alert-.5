@@ -328,7 +328,7 @@
 		Bounds: 24, 24
 	Targetable:
 		RequiresCondition: !parachute
-		TargetTypes: Ground, Vehicle
+		TargetTypes: Ground, Vehicle, DetonateAttack
 	Targetable@REPAIR:
 		RequiresCondition: !parachute && damaged
 		TargetTypes: Repair
@@ -420,7 +420,7 @@
 		DecorationBounds: 12,18,0,-8
 	Targetable:
 		RequiresCondition: !parachute
-		TargetTypes: Ground, Infantry, Disguise
+		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 	Targetable@HEAL:
 		RequiresCondition: !parachute && damaged
 		TargetTypes: Heal
@@ -636,7 +636,7 @@
 	Selectable:
 		Bounds: 24,24
 	Targetable:
-		TargetTypes: Ground, Water, Ship
+		TargetTypes: Ground, Water, DetonateAttack, Ship
 	Targetable@REPAIR:
 		RequiresCondition: damaged
 		TargetTypes: Repair

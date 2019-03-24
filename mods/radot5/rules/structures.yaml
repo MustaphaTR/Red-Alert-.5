@@ -1786,6 +1786,9 @@ AFLD:
 	ProvidesPrerequisite@latvia:
 		Factions: latvia
 		Prerequisite: aircraft.latvia
+	ProvidesPrerequisite@coprosperity:
+		Factions: coprosperity, japan, manchukuo, mengkukuo, siam
+		Prerequisite: aircraft.coprosperity
 	ProvidesPrerequisite@siam:
 		Factions: siam
 		Prerequisite: aircraft.siam

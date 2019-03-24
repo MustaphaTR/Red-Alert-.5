@@ -235,6 +235,13 @@ DemoTruckTargeting:
 	Warhead@1Dam: TargetDamage
 		ValidTargets: DetonateAttack
 
+KamikazeTargeting:
+	ValidTargets: DetonateAttack
+	Range: 4c0
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: DetonateAttack
+
 MADTankThump:
 	InvalidTargets: MADTank, Infantry
 	Warhead@1Dam: HealthPercentageDamage

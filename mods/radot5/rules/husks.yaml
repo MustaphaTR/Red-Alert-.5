@@ -145,6 +145,7 @@ BALLOON.Husk:
 	RevealsShroud@GAPGEN:
 		Range: 10c0
 		Type: GroundPosition
+	-WithShadow:
 	RenderSprites:
 		Image: balloon
 
@@ -215,7 +216,7 @@ MIG.Husk:
 YAK.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Yak Attack Plane
+		Name: Fighter Plane
 	Contrail:
 		Offset: -853,0,0
 	Aircraft:
@@ -234,11 +235,30 @@ YAK.Husk:
 		Type: GroundPosition
 	RenderSprites:
 		Image: yak
+		Scale: 0.8
+
+BOMBER.Husk:
+	Inherits: YAK.Husk
+	Tooltip:
+		Name: Bomber Plane
+	FallsToEarth:
+		Explosion: UnitExplodeBomber
+	RenderSprites:
+		Scale: 1.2
+
+KMKZ.Husk:
+	Inherits: YAK.Husk
+	Tooltip:
+		Name: Kamikaze Plane
+	FallsToEarth:
+		Explosion: UnitExplodeKamikaze
+	RenderSprites:
+		Scale: 1
 
 HELI.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Longbow
+		Name: Helicopter
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 149
