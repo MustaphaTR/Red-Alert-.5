@@ -263,6 +263,19 @@ MADTankDetonate:
 		ImpactSounds: mineblo1.aud
 		ImpactActors: false
 
+^default.spawner:
+	ReloadDelay: 5
+	Range: 1c0
+	Projectile: Bullet
+		Speed: 10c0
+	Warhead@1Dam: TargetDamage
+
+hack.spawn_cav_ambush:
+	Inherits: ^default.spawner
+	Report: sambusha.aud
+	Warhead@2Spawner: SpawnActor
+		Actors: riflecav, riflecav, riflecav, riflecav, grencav, grencav
+
 MarineSapper:
 	ValidTargets: Ship, Underwater
 	InvalidTargets: Infantry

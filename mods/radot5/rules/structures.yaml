@@ -526,9 +526,24 @@ TENT:
 	ProvidesPrerequisite@tuva:
 		Factions: tuva
 		Prerequisite: cavalry.tuva
+	ProvidesPrerequisite@hungary:
+		Factions: hungary
+		Prerequisite: cavalry.hungary
 	ProvidesPrerequisite@intermarium:
 		Factions: intermarium, poland, romania, lithuania, latvia, estonia
 		Prerequisite: cavalry.intermarium
+	SpawnActorPower@AMBUSH:
+		Actor: hack.cav_ambush_spawner
+		Prerequisites: cavalry.hungary, dome
+		LifeTime: 2
+		ChargeInterval: 6000
+		Icon: ambush
+		Description: Cavalry Ambush
+		LongDesc: Spawns 4 Rifle and 2 Grenadier Cavalry\nanywhere on the map.
+		StartFullyCharged: false
+		SelectTargetSpeechNotification: SelectTarget
+		OrderName: AmbushPowerInfoOrder
+	SupportPowerChargeBar:
 	Power:
 		Amount: -25
 	ProvidesPrerequisite@buildingname:

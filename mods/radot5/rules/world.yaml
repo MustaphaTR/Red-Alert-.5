@@ -194,7 +194,7 @@
 		Name: Hungary
 		InternalName: hungary
 		Side: Axis
-		Description: Hungary\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit:
+		Description: Hungary\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Ability: Cavalry Ambush
 	Faction@15:
 		Name: Third Reich
 		InternalName: reich
@@ -340,7 +340,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, reich, romania, lithuania, latvia, china, guangxi, ma, usa, japan, siam
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, reich, romania, lithuania, latvia, china, guangxi, ma, usa, japan, siam
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:

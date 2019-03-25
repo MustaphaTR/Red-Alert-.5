@@ -199,6 +199,12 @@ camera.intelligence:
 		Condition: stek
 		Prerequisites: stek
 
+hack.cav_ambush_spawner:
+	Inherits: CAMERA
+	-RevealsShroud:
+	ExplodeWeapon:
+		Weapon: hack.spawn_cav_ambush
+
 SONAR:
 	Inherits: camera.spyplane
 	EditorOnlyTooltip:

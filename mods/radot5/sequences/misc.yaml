@@ -519,6 +519,7 @@ icon:
 	cmines: cminesicon
 	intel: intelicon
 	tankdrop: tdropicon
+	ambush: ambshicon
 
 quee:
 	idle:
