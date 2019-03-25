@@ -24,7 +24,7 @@ ProducedUnitTypes =
 }
 
 ShipUnitTypes = { "1tnk", "1tnk", "jeep", "2tnk", "2tnk" }
-HelicopterUnitTypes = { "e1", "e1", "e2", "e2", "e3", "e3" };
+HelicopterUnitTypes = { "e1", "e1", "e2", "e3", "e3" };
 
 ParadropWaypoints = { Paradrop1, Paradrop2, Paradrop3, Paradrop4, Paradrop5, Paradrop6, Paradrop7, Paradrop8 }
 
@@ -81,7 +81,7 @@ ShipAlliedUnits = function()
 end
 
 InsertAlliedChinookReinforcements = function(entry, hpad)
-	local units = Reinforcements.ReinforceWithTransport(allies, "tran",
+	local units = Reinforcements.ReinforceWithTransport(allies, "balloon",
 		HelicopterUnitTypes, { entry.Location, hpad.Location + CVec.New(1, 2) }, { entry.Location })[2]
 
 	Utils.Do(units, function(unit)
