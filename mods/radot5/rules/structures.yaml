@@ -770,6 +770,9 @@ SYRD:
 		CloakTypes: Underwater
 		Range: 10c0
 	RenderDetectionCircle:
+	ProvidesPrerequisite@guangxi:
+		Factions: guangxi
+		Prerequisite: naval.guangxi
 	ProvidesPrerequisite@buildingname:
 	MapEditorData:
 		ExcludeTilesets: INTERIOR

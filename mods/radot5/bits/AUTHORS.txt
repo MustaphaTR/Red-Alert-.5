@@ -4,13 +4,16 @@ CombinE:
 	Oil Pump:						custom/oiler*.shp
 	Oil Pump Cameo:					custom/oilericon.shp
 
+Holloweye:
+	WW1 Mod Artwork:				custom/wwi/*
+
+Nolt:
+	Flak Boat:						custom/fbot.shp
+
 Nooze:
 	Tank Destroyer:					custom/tnkd.shp
 	Tank Destroyer Cameo:			custom/tnkdicon.shp
 	Tank Destroyer Firing Sound:	custom/audio/tnkd_fire.aud
-
-Holloweye:
-	WW1 Mod Artwork:				custom/wwi/*
 
 MustaphaTR:
 	Civilian Flags:					custom/flags/*

@@ -326,7 +326,7 @@ Player:
 		RequiresCondition: enable-rush-ai
 		SquadSize: 20
 		ExcludeFromSquadsTypes: harv, mcv, dog
-		NavalUnitsTypes: ss,msub,dd,ca,lst,pt
+		NavalUnitsTypes: ss,msub,dd,ca,lst,pt,fbot
 		ConstructionYardTypes: fact
 	McvManagerBotModule:
 		RequiresCondition: enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai
@@ -388,7 +388,7 @@ Player:
 		RequiresCondition: enable-normal-ai
 		SquadSize: 40
 		ExcludeFromSquadsTypes: harv, mcv, dog
-		NavalUnitsTypes: ss,msub,dd,ca,lst,pt
+		NavalUnitsTypes: ss,msub,dd,ca,lst,pt,fbot
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen,syrd
 	UnitBuilderBotModule@normal:
@@ -437,6 +437,7 @@ Player:
 			dd: 10
 			ca: 10
 			pt: 10
+			fbot: 5
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
 			upgrade.fortified_structures: 1
@@ -456,7 +457,7 @@ Player:
 		RequiresCondition: enable-turtle-ai
 		SquadSize: 10
 		ExcludeFromSquadsTypes: harv, mcv, dog
-		NavalUnitsTypes: ss,msub,dd,ca,lst,pt
+		NavalUnitsTypes: ss,msub,dd,ca,lst,pt,fbot
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen,syrd
 	UnitBuilderBotModule@turtle:
@@ -505,6 +506,7 @@ Player:
 			dd: 10
 			ca: 10
 			pt: 10
+			fbot: 5
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
 			upgrade.fortified_structures: 1
@@ -524,7 +526,7 @@ Player:
 		RequiresCondition: enable-naval-ai
 		SquadSize: 1
 		ExcludeFromSquadsTypes: harv, mcv, dog
-		NavalUnitsTypes: ss,msub,dd,ca,lst,pt,e9
+		NavalUnitsTypes: ss,msub,dd,ca,lst,pt,fbot,e9
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen,syrd
 	UnitBuilderBotModule@naval:
@@ -542,6 +544,7 @@ Player:
 			dd: 30
 			ca: 20
 			pt: 10
+			fbot: 5
 			upgrade.autoloaders: 1
 			upgrade.fortified_structures: 1
 			upgrade.ap_bullets: 1

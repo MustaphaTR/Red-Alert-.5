@@ -254,7 +254,7 @@
 		Name: Guangxi
 		InternalName: guangxi
 		Side: United Front
-		Description: Guangxi Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit:
+		Description: Guangxi Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit: Flak Boat
 	Faction@27:
 		Name: Yunnan
 		InternalName: yunnan
@@ -340,7 +340,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, reich, romania, lithuania, latvia, china, ma, usa, japan, siam
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, reich, romania, lithuania, latvia, china, guangxi, ma, usa, japan, siam
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:

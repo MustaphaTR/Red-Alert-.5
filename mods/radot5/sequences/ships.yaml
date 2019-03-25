@@ -47,3 +47,13 @@ msub:
 	idle:
 		Facings: 16
 	icon: msubicon
+
+fbot:
+	idle:
+		Facings: -32
+	turret: fbot
+		Start: 32
+		Facings: -32
+	muzzle: gunfire2
+		Length: 2
+	icon: fboticon

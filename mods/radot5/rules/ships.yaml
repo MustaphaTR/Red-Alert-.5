@@ -342,3 +342,48 @@ PT:
 	RenderDetectionCircle:
 	Selectable:
 		DecorationBounds: 36,36
+
+FBOT:
+	Inherits: ^Ship
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Buildable:
+		Queue: Ship
+		BuildAtProductionType: Boat
+		BuildPaletteOrder: 25
+		Prerequisites: ~syrd, ~naval.guangxi, ~techlevel.low
+		Description: Light scout & support ship with anti-air capabilities.\n  Strong vs Infantry, Aircraft\n  Weak vs Ships, Submarines
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Flak Boat
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 20000
+	Armor:
+		Type: Heavy
+	Mobile:
+		TurnSpeed: 7
+		Speed: 128
+	RevealsShroud:
+		Range: 7c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
+	Turreted:
+		TurnSpeed: 7
+		Offset: -512,0,128
+	Armament@AA:
+		Weapon: FLAK-23-AA
+		LocalOffset: 384,0,384
+		MuzzleSequence: muzzle
+	Armament@AG:
+		Weapon: FLAK-23-AG
+		LocalOffset: 384,0,384
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	SelectionDecorations:
+	WithSpriteTurret:
+	Selectable:
+		DecorationBounds: 36,36
