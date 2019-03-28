@@ -435,7 +435,7 @@ SILO:
 		Bounds: 24,24
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 35
+		BuildPaletteOrder: 50
 		Prerequisites: proc, ~techlevel.infonly
 		Description: Stores excess refined\nOre and Gems.
 	Valued:
@@ -977,7 +977,7 @@ HQ:
 		Name: Airforce Command HeadQuarters
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 140
+		BuildPaletteOrder: 150
 		Prerequisites: stek, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Provides Carpet Bombing support power.\nRequires power to operate.\nMaximum 1 can be built.
@@ -1034,7 +1034,7 @@ GAP:
 		Name: Propaganda Tower
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 140
 		Prerequisites: dome, ~structures.sinkiang, ~techlevel.medium
 		Description: Makes nearby units heal and fire faster.
 	Selectable:
@@ -1261,7 +1261,7 @@ AGUN:
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 130
 		Prerequisites: dome, ~techlevel.medium
 		Description: Anti-Air base defense.\nRequires power to operate.\n  Strong vs Aircraft\n  Weak vs Ground units
 	Valued:
@@ -1364,7 +1364,7 @@ PBOX:
 	Building:
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 80
 		Prerequisites: barracks, ~techlevel.low
 		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
@@ -1414,7 +1414,7 @@ HBOX:
 	Building:
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 90
 		Prerequisites: barracks, ~structures.france, ~techlevel.medium
 		Description: Foritifed static defense with a fireport\nfor 2 garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
@@ -1463,7 +1463,7 @@ TBOX:
 	Building:
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 55
+		BuildPaletteOrder: 120
 		Prerequisites: weap, ~structures.axis, ~techlevel.low
 		Description: Static defense capable of hosting a vehicle.\nCan detect cloaked units.
 	Valued:
@@ -1509,7 +1509,7 @@ GUN:
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 110
 		Prerequisites: barracks, ~techlevel.medium
 		Description: Anti-Armor base defense.\nCan detect cloaked units.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
@@ -1552,7 +1552,7 @@ FTUR:
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 100
 		Prerequisites: barracks, ~structures.comintern, ~techlevel.low
 		Description: Anti-Infantry base defense.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
@@ -2064,6 +2064,8 @@ BRIK:
 		Types: concrete
 	WithWallSpriteBody:
 		Type: concrete
+	Replaceable:
+		Types: gate
 
 CYCL:
 	Inherits: ^Wall
@@ -2108,7 +2110,7 @@ HEDGEHOG:
 	Inherits: ^Defense
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 70
 		BuildDurationModifier: 300
 		Prerequisites: ~structures.intermarium, ~techlevel.medium
 		Description: Tough unit blockade.
@@ -2132,6 +2134,40 @@ HEDGEHOG:
 		RequiresCondition: art2
 	GrantRandomCondition:
 		Conditions: art1, art2
+
+VGATE:
+	Inherits: ^Gate
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -512, -1536
+			BottomRight: 512, 1536
+	Building:
+		Footprint: x x x
+		Dimensions: 1,3
+	WithGateSpriteBody:
+		WallConnections: 0,-1, 0,3
+	LineBuildNode:
+		Connections: 0,-1, 0,1
+	Tooltip:
+		Name: Vertical Gate
+
+HGATE:
+	Inherits: ^Gate
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -1536, -512
+			BottomRight: 1536, 512
+	Building:
+		Footprint: xxx
+		Dimensions: 3,1
+	WithGateSpriteBody:
+		WallConnections: -1,0, 3,0
+	LineBuildNode:
+		Connections: -1,0, 1,0
+	Tooltip:
+		Name: Horizontal Gate
 
 BARRACKS:
 	AlwaysVisible:

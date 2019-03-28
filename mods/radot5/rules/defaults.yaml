@@ -921,6 +921,46 @@
 	MapEditorData:
 		Categories: Wall
 
+^Gate:
+	Inherits: ^BasicBuilding
+	OwnerLostAction:
+		Action: ChangeOwner
+	Valued:
+		Cost: 75
+	Health:
+		HP: 35000
+	Armor:
+		Type: Wall
+	LineBuildNode:
+		Types: concrete, gate
+	-WithSpriteBody:
+	WithGateSpriteBody:
+		Type: concrete
+		OpenSequence: open
+	Tooltip:
+		Name: Gate
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 40
+		Description: Automated barrier that opens for allied units.
+	Building:
+		BuildSounds: place2.aud
+		TerrainTypes: Clear,Road
+	Sellable:
+		RequiresCondition: !being-demolished
+		SellSounds: cashturn.aud
+	MapEditorData:
+		Categories: Wall
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 7
+	Gate:
+		OpeningSound: cashturn.aud
+		ClosingSound: cashturn.aud
+		BlocksProjectilesHeight: 0
+	Replacement:
+		ReplaceableTypes: gate
+
 ^TechBuilding:
 	Inherits: ^BasicBuilding
 	Huntable:

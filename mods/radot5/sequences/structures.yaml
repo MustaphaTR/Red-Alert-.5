@@ -706,3 +706,31 @@ hedgehog:
 	idle: tanktrap1
 	idle-2: tanktrap2
 	icon: tanktrap1
+
+vgate:
+	Defaults:
+		ZOffset: -1c511
+	idle:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: 7
+	open:
+	damaged-idle:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: 7
+	damaged-open:
+		Start: 7
+	icon: brikicon
+
+hgate:
+	Defaults:
+		ZOffset: -1c511
+	idle:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: 7
+	open:
+	damaged-idle:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: 7
+	damaged-open:
+		Start: 7
+	icon: brikicon
