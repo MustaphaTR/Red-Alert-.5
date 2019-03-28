@@ -4,6 +4,9 @@ CombinE:
 	Oil Pump:						custom/oiler*.shp
 	Oil Pump Cameo:					custom/oilericon.shp
 
+ELoyros:
+	Gate Cameos:					custom/?gaticon.shp
+
 Holloweye:
 	WW1 Mod Artwork:				custom/wwi/*
 

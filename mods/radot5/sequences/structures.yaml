@@ -719,7 +719,7 @@ vgate:
 		Length: 7
 	damaged-open:
 		Start: 7
-	icon: brikicon
+	icon: vgaticon
 
 hgate:
 	Defaults:
@@ -733,4 +733,4 @@ hgate:
 		Length: 7
 	damaged-open:
 		Start: 7
-	icon: brikicon
+	icon: hgaticon
