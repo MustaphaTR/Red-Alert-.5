@@ -9,6 +9,9 @@ ELoyros:
 Holloweye:
 	WW1 Mod Artwork:				custom/wwi/*
 
+Lucipurr:
+	Katyusha Cameo:					custom/ktysicon.shp
+
 Nolt:
 	Flak Boat:						custom/fbot.shp
 

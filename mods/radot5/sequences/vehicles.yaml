@@ -384,4 +384,4 @@ msam:
 		Start: 64
 		Facings: 32
 		UseClassicFacingFudge: True
-	icon: msamicon
+	icon: ktysicon
