@@ -2,7 +2,6 @@ CombinE:
 	Mortar:							custom/e22.shp
 	Mortar Cameo:					custom/e22icon.shp
 	Oil Pump:						custom/oiler*.shp
-	Oil Pump Cameo:					custom/oilericon.shp
 
 ELoyros:
 	Gate Cameos:					custom/?gaticon.shp
@@ -20,3 +19,4 @@ Nooze:
 
 MustaphaTR:
 	Civilian Flags:					custom/flags/*
+	Oil Pump Cameo:					custom/oilericon.shp
