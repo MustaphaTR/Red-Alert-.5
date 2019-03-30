@@ -81,11 +81,12 @@ fact:
 	
 oiler:
 	idle:
+		Frames: 3, 2, 1, 0, 9, 8, 7, 6, 5, 4
 		Length: 10
 		Tick: 120
 	damaged-idle:
+		Frames: 13, 12, 11, 10, 19, 18, 17, 16, 15, 14
 		Length: 10
-		Start: 10
 		Tick: 120
 	dead:
 		Start: 18
