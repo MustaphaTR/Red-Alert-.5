@@ -19,4 +19,5 @@ Nooze:
 
 MustaphaTR:
 	Civilian Flags:					custom/flags/*
+	Hedgehog Cameo:					custom/hedgicon.shp
 	Oil Pump Cameo:					custom/oilericon.shp

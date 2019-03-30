@@ -705,7 +705,7 @@ cycl:
 hedgehog:
 	idle: tanktrap1
 	idle-2: tanktrap2
-	icon: tanktrap1
+	icon: hedgicon
 
 vgate:
 	Defaults:
