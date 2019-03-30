@@ -67,7 +67,7 @@ riflecav:
 		UseTilesetExtension: true
 		TilesetOverrides:
 			DESERT: TEMPERAT
-	icon: dragoon_icon
+	icon: rcavicon
 
 grencav:
 	stand: mount_grenadier_idle
