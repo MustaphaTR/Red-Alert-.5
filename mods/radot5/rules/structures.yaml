@@ -1283,6 +1283,7 @@ AGUN:
 	Turreted:
 		TurnSpeed: 15
 		InitialFacing: 224
+		PreviewFacing: 224
 	-WithSpriteBody:
 	WithEmbeddedTurretSpriteBody:
 	Armament:
@@ -1528,6 +1529,7 @@ GUN:
 	Turreted:
 		TurnSpeed: 12
 		InitialFacing: 56
+		PreviewFacing: 56
 	-WithSpriteBody:
 	WithEmbeddedTurretSpriteBody:
 	Armament:
@@ -1599,15 +1601,15 @@ SAM:
 		Type: Rectangle
 			TopLeft: -768,-512
 			BottomRight: 768,512
-	Buildable:
-		Queue: Defense
-		BuildPaletteOrder: 100
-		Prerequisites: dome, ~structures.soviet, ~techlevel.medium
-		Description: Anti-Air base defense.\nRequires power to operate.\n  Strong vs Aircraft\n  Weak vs Ground units
 	Valued:
-		Cost: 700
+		Cost: 650
 	Tooltip:
 		Name: SAM Site
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 125
+		Prerequisites: dome, ~structures.yunnan, ~techlevel.medium
+		Description: Anti-Aircraft base defense.\nCloaked while not firing.\n  Strong vs Aircraft\n  Cannot target Ground units.
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -1616,29 +1618,29 @@ SAM:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 8c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c0
-	WithBuildingBib:
-		HasMinibib: Yes
+		Range: 6c0
 	Turreted:
-		TurnSpeed: 30
+		TurnSpeed: 10
 		InitialFacing: 0
+		PreviewFacing: 0
+		RealignDelay: -1
 	-WithSpriteBody:
 	WithEmbeddedTurretSpriteBody:
 	Armament:
 		Weapon: Nike
-		LocalOffset: 0,0,320
 		MuzzleSequence: muzzle
-	AttackTurreted:
+	AttackPopupTurreted:
 		RequiresCondition: !build-incomplete
 		PauseOnCondition: disabled
 	WithMuzzleOverlay:
-	RenderRangeCircle:
-		RangeCircleType: aa
+	Cloak:
+		InitialDelay: 125
+		CloakDelay: 125
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		CloakTypes: Cloak, Thief
+		IsPlayerPalette: true
 	Power:
-		Amount: -40
+		Amount: -20
 	BodyOrientation:
 		UseClassicFacingFudge: True
 

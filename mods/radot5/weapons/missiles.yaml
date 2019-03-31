@@ -138,15 +138,15 @@ MammothTusk:
 Nike:
 	Inherits: ^AntiAirMissile
 	ReloadDelay: 15
-	Range: 7c512
+	Range: 8c0
 	Report: missile1.aud
 	Projectile: Missile
 		Arm: 3
 		Inaccuracy: 0
 		Image: MISSILE
 		HorizontalRateOfTurn: 25
-		RangeLimit: 9c0
-		Speed: 341
+		RangeLimit: 9c512
+		Speed: 512
 	Warhead@1Dam: SpreadDamage
 		Damage: 5000
 		ValidTargets: Air
@@ -158,10 +158,12 @@ Nike:
 
 RedEye:
 	Inherits: Nike
+	Range: 7c512
 	ReloadDelay: 50
 	Projectile: Missile
 		Inaccuracy: 0
 		HorizontalRateOfTurn: 20
+		RangeLimit: 9c0
 		Speed: 298
 	Warhead@1Dam: SpreadDamage
 		Damage: 4000

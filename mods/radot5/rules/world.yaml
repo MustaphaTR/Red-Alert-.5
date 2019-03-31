@@ -259,7 +259,7 @@
 		Name: Yunnan
 		InternalName: yunnan
 		Side: United Front
-		Description: Yunnan Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit:
+		Description: Yunnan Clique\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Building: SAM Site
 	Faction@28:
 		Name: Xibei San Ma
 		InternalName: ma
@@ -340,7 +340,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, reich, romania, lithuania, latvia, china, guangxi, ma, usa, japan, siam
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, reich, romania, lithuania, latvia, china, guangxi, yunnan, ma, usa, japan, siam
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:
