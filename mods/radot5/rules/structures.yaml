@@ -1315,7 +1315,7 @@ DOME:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 70
-		Prerequisites: proc, ~techlevel.medium
+		Prerequisites: barr, ~techlevel.medium
 		Description: Provides an overview\nof the battlefield.\nCan detect cloaked units.\nRequires power to operate.
 	Valued:
 		Cost: 1400
