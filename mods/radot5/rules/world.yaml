@@ -249,7 +249,7 @@
 		Name: China
 		InternalName: china
 		Side: United Front
-		Description: China\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Unit: Camo Tank
+		Description: China\nFaction Units:\n - Hijacker\n - Propaganda Truck\n - Fake Vehicles\n\nSubfaction Upgrade: Light Tank Camouflage
 	Faction@26:
 		Name: Guangxi
 		InternalName: guangxi

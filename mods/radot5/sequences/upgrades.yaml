@@ -10,6 +10,9 @@ upgrade.fortified_structures:
 upgrade.horse_armor:
 	icon: armoricon
 
+upgrade.light_tank_camo:
+	icon: camoicon
+
 upgrade.nationalism:
 	icon: nationicon
 

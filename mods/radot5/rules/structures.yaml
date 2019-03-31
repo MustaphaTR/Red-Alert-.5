@@ -871,9 +871,6 @@ WEAP:
 	ProvidesPrerequisite@unitedfront:
 		Factions: unitedfront, china, guangxi, yunnan, ma, usa
 		Prerequisite: vehicles.unitedfront
-	ProvidesPrerequisite@china:
-		Factions: china
-		Prerequisite: vehicles.china
 	ProvidesPrerequisite@coprosperity:
 		Factions: coprosperity, japan, manchukuo, mengkukuo, siam
 		Prerequisite: vehicles.coprosperity
@@ -1688,6 +1685,9 @@ ATEK:
 	ProvidesPrerequisite@lithuania:
 		Factions: lithuania
 		Prerequisite: upgrade.lithuania
+	ProvidesPrerequisite@china:
+		Factions: china
+		Prerequisite: upgrade.china
 	ProvidesPrerequisite@japan:
 		Factions: japan
 		Prerequisite: upgrade.japan

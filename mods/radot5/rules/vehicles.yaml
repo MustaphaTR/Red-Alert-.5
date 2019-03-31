@@ -87,6 +87,21 @@ V2RL:
 	AttackTurreted:
 	WithMuzzleOverlay:
 	WithSpriteTurret:
+	Cloak:
+		InitialDelay: 75
+		CloakDelay: 75
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		CloakSound: appear1.aud
+		UncloakSound: appear1.aud
+		IsPlayerPalette: true
+		PauseOnCondition: cloak-force-disabled
+		RequiresCondition: light_tank_camo
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	GrantConditionOnPrerequisite@LIGHT_TANK_CAMO:
+		Condition: light_tank_camo
+		Prerequisites: upgrade.light_tank_camo
 	SpawnActorOnDeath:
 		Actor: 1TNK.Husk
 	ProducibleWithLevel:
@@ -102,29 +117,6 @@ V2RL:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
 	-Buildable:
-
-1TNK.Camo:
-	Inherits: 1TNK
-	Buildable:
-		Prerequisites: ~vehicles.china, ~techlevel.low
-		Description: Fast tank, capable of being invisible while not moving.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
-	Selectable:
-		Class: 1TNK.Camo
-	Tooltip:
-		Name: Camo Tank
-	Valued:
-		Cost: 850
-	Cloak:
-		InitialDelay: 125
-		CloakDelay: 175
-		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
-		CloakSound: appear1.aud
-		UncloakSound: appear1.aud
-		IsPlayerPalette: true
-		PauseOnCondition: cloak-force-disabled
-	GrantConditionOnDamageState@UNCLOAK:
-		Condition: cloak-force-disabled
-		ValidDamageStates: Critical
 
 2TNK:
 	Inherits: ^TrackedVehicle

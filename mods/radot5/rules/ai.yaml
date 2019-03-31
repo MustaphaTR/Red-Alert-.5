@@ -376,7 +376,6 @@ Player:
 			msam: 40
 			ftrk: 30
 			1tnk: 50
-			1tnk.camo: 5
 			2tnk: 50
 			3tnk: 50
 			4tnk: 25
@@ -386,6 +385,7 @@ Player:
 			mrj: 1
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
+			upgrade.light_tank_camo: 1
 			upgrade.fortified_structures: 1
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
@@ -434,7 +434,6 @@ Player:
 			msam: 40
 			ftrk: 30
 			1tnk: 40
-			1tnk.camo: 5
 			2tnk: 50
 			3tnk: 50
 			4tnk: 25
@@ -454,6 +453,7 @@ Player:
 			fbot: 5
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
+			upgrade.light_tank_camo: 1
 			upgrade.fortified_structures: 1
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
@@ -503,7 +503,6 @@ Player:
 			msam: 40
 			ftrk: 50
 			1tnk: 50
-			1tnk.camo: 5
 			2tnk: 50
 			3tnk: 50
 			4tnk: 25
@@ -523,6 +522,7 @@ Player:
 			fbot: 5
 			upgrade.adv_training: 1
 			upgrade.horse_armor: 1
+			upgrade.light_tank_camo: 1
 			upgrade.fortified_structures: 1
 			upgrade.autoloaders: 1
 			upgrade.explosive_rockets: 1
