@@ -296,9 +296,9 @@ Player:
 		ConstructionYardTypes: fact
 		RefineryTypes: proc
 		PowerTypes: powr,apwr
-		BarracksTypes: barr,tent
+		BarracksTypes: barr
 		VehiclesFactoryTypes: weap
-		ProductionTypes: barr,tent,weap,afld,hpad
+		ProductionTypes: barr,weap,afld,hpad
 		NavalProductionTypes: spen,syrd
 		SiloTypes: silo
 		BuildingLimits:
@@ -306,7 +306,6 @@ Player:
 			oiler: 2
 			dome: 1
 			barr: 1
-			tent: 1
 			spen: 1
 			syrd: 1
 			hpad: 8
