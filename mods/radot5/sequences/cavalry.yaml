@@ -169,6 +169,13 @@ hussar:
 	die6:
 		Start: 269
 		Length: 6
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
 	muzzle: minigun
 		Length: 6
 		Facings: 8
