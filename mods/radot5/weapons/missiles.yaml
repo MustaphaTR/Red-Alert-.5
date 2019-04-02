@@ -354,7 +354,7 @@ SCUD:
 	Burst: 4
 	BurstDelays: 4
 	Report: rocket1.aud
-	ValidTargets: Ground
+	ValidTargets: Ground, Water
 	TargetActorCenter: true
 	# Remove default Missile properties
 	-Projectile:
@@ -369,7 +369,7 @@ SCUD:
 		Speed: 341
 	Warhead@1Dam: SpreadDamage
 		Spread: 683
-		ValidTargets: Ground
+		ValidTargets: Ground, Water
 		Versus:
 			None: 24
 			Wood: 60
