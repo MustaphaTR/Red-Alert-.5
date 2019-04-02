@@ -518,7 +518,7 @@ Actors:
 	Actor38: brik
 		Location: 72,67
 		Owner: Allies
-	Actor208: e7
+	Actor208: rmbo
 		Location: 39,81
 		Owner: Allies
 		Facing: 64

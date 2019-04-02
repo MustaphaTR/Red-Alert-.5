@@ -222,8 +222,6 @@ BARR:
 		SelectionNotification: PrimaryBuildingSelected
 	ProductionBar:
 		ProductionType: Infantry
-	ProvidesPrerequisite:
-		Prerequisite: barracks
 	ProvidesPrerequisite@allies:
 		Factions: allies, greece, uk, germany, france, spain
 		Prerequisite: infantry.allies
@@ -908,7 +906,7 @@ MSLO:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 140
-		Prerequisites: ~disabled # techcenter, ~techlevel.unrestricted
+		Prerequisites: ~disabled # stek, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Provides an atomic bomb.\nRequires power to operate.\nMaximum 1 can be built.\n  Special Ability: Atom Bomb
 	Building:
@@ -1363,7 +1361,7 @@ PBOX:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 80
-		Prerequisites: barracks, ~techlevel.low
+		Prerequisites: barr, ~techlevel.low
 		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
@@ -1413,7 +1411,7 @@ HBOX:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 90
-		Prerequisites: barracks, ~structures.france, ~techlevel.medium
+		Prerequisites: barr, ~structures.france, ~techlevel.medium
 		Description: Foritifed static defense with a fireport\nfor 2 garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 925
@@ -1508,7 +1506,7 @@ GUN:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 110
-		Prerequisites: barracks, ~techlevel.medium
+		Prerequisites: barr, ~techlevel.medium
 		Description: Anti-Armor base defense.\nCan detect cloaked units.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 800
@@ -1552,7 +1550,7 @@ FTUR:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 100
-		Prerequisites: barracks, ~structures.comintern, ~techlevel.low
+		Prerequisites: barr, ~structures.comintern, ~techlevel.low
 		Description: Anti-Infantry base defense.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
@@ -1658,8 +1656,6 @@ ATEK:
 		Cost: 1500
 	Tooltip:
 		Name: Research Center
-	ProvidesPrerequisite:
-		Prerequisite: techcenter
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -1906,8 +1902,6 @@ STEK:
 		Cost: 1800
 	Tooltip:
 		Name: Tech Center
-	ProvidesPrerequisite:
-		Prerequisite: techcenter
 	Building:
 		Footprint: XxX XxX ===
 		Dimensions: 3,3
@@ -2170,22 +2164,6 @@ HGATE:
 		Connections: -1,0, 1,0
 	Tooltip:
 		Name: Horizontal Gate
-
-BARRACKS:
-	AlwaysVisible:
-	Interactable:
-	Tooltip:
-		Name: Infantry Production
-	Buildable:
-		Description: Infantry Production
-
-TECHCENTER:
-	AlwaysVisible:
-	Interactable:
-	Tooltip:
-		Name: Tech Center
-	Buildable:
-		Description: Tech Center
 
 ANYPOWER:
 	AlwaysVisible:

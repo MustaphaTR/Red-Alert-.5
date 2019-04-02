@@ -121,6 +121,18 @@ TanyaVoice:
 		Kill: gotit1,lefty1
 		Demolish: keepem1,tuffguy1
 
+CommandoVoice:
+	Voices:
+		Select: yeah2,yes2,yo2
+		Move: cmon2,onit2,gotit2
+		Action: onit2,gotit2,noprblm2
+		Die: ramyell2
+		Burned: ramyell2
+		Zapped: ramyell2
+		Build: rokroll2
+		Kill: keepem2,laugh2,lefty2,tuffguy2
+		Demolish: bombit2
+
 DogVoice:
 	Voices:
 		Select: dogw3px

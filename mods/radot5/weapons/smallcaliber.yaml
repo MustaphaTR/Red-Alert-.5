@@ -490,6 +490,12 @@ Colt45:
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
 
+RamboGun:
+	Inherits: Colt45
+	Report: ramgun2.aud
+	Warhead@1Dam: SpreadDamage
+		Damage: 10000
+
 MP5:
 	Inherits: Colt45
 	ValidTargets: Ground, Water, Infantry

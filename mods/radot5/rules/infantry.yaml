@@ -441,7 +441,7 @@ E22:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 110
-		Prerequisites: ~barracks, dome, ~infantry.coprosperity, ~techlevel.medium
+		Prerequisites: ~barr, dome, ~infantry.coprosperity, ~techlevel.medium
 		Description: Slow infantry armed with a Mortar. \n  Strong vs Buildings, slow-moving targets
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -478,7 +478,7 @@ SPY:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 100
-		Prerequisites: ~barracks, dome, ~infantry.allies, ~techlevel.medium
+		Prerequisites: ~barr, dome, ~infantry.allies, ~techlevel.medium
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n  Special Ability: Disguised
 	Valued:
 		Cost: 500
@@ -529,14 +529,14 @@ SPY:
 	Voiced:
 		VoiceSet: SpyVoice
 
-E7:
+RMBO:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
-		Prerequisites: ~barracks, stek, ~techlevel.high
+		Prerequisites: ~barr, stek, ~techlevel.high
 		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nCan detect cloaked units.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
 	Valued:
 		Cost: 1200
@@ -560,12 +560,10 @@ E7:
 		PipType: Red
 		Voice: Move
 	Armament@PRIMARY:
-		Weapon: Colt45
-	Armament@SECONDARY:
-		Weapon: Colt45
+		Weapon: RamboGun
 	Armament@GARRISONED:
 		Name: garrisoned
-		Weapon: Colt45
+		Weapon: RamboGun
 		MuzzleSequence: garrison-muzzle
 	AttackFrontal:
 	WithInfantryBody:
@@ -580,9 +578,22 @@ E7:
 	DetectCloaked:
 		CloakTypes: Cloak, Thief
 	Voiced:
-		VoiceSet: TanyaVoice
+		VoiceSet: CommandoVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
+
+E7:
+	Inherits: RMBO
+	Buildable:
+		Prerequisites: ~disabled
+	Armament@PRIMARY:
+		Weapon: Colt45
+	Armament@SECONDARY:
+		Weapon: Colt45
+	Armament@GARRISONED:
+		Weapon: Colt45
+	Voiced:
+		VoiceSet: TanyaVoice
 
 MEDI:
 	Inherits: ^Soldier
@@ -590,7 +601,7 @@ MEDI:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 50
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.infonly
 		Description: Heals nearby infantry.\n  Unarmed
 	Valued:
 		Cost: 200
@@ -629,7 +640,7 @@ MECH:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 120
-		Prerequisites: ~barracks, fix, ~infantry.germany, ~techlevel.medium
+		Prerequisites: ~barr, fix, ~infantry.germany, ~techlevel.medium
 		Description: Repairs nearby vehicles and restores\nhusks to working condition by capturing them.\n  Unarmed
 	Valued:
 		Cost: 500
@@ -735,7 +746,7 @@ THF:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barracks, fix, ~infantry.unitedfront, ~techlevel.medium
+		Prerequisites: ~barr, fix, ~infantry.unitedfront, ~techlevel.medium
 		Description: Steals enemy credits.\nHijacks enemy vehicles.\n  Unarmed
 	Valued:
 		Cost: 500
@@ -838,7 +849,7 @@ SNIPER:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
-		Prerequisites: ~barracks, dome, ~techlevel.medium
+		Prerequisites: ~barr, dome, ~techlevel.medium
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Health:
 		HP: 8000
@@ -890,7 +901,7 @@ SABOT:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 150
-		Prerequisites: ~barracks, ~infantry.comchina, stek, ~techlevel.high
+		Prerequisites: ~barr, ~infantry.comchina, stek, ~techlevel.high
 		Description: Infantry armed with explosions to blow up structures.\nCloaked while not moving.\n  Strong vs Buildings\n  Weak vs Infantry, Vehicles, Aircraft
 	Passenger:
 		PipType: Red
@@ -924,7 +935,7 @@ Zombie:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 200
-		Prerequisites: ~barracks, ~bio
+		Prerequisites: ~barr, ~bio
 		Description: Slow undead. Attacks in close combat.
 	Health:
 		HP: 25000
@@ -956,7 +967,7 @@ Ant:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 1954
-		Prerequisites: ~barracks, ~bio
+		Prerequisites: ~barr, ~bio
 		Description: Irradiated insect that grew oversize.
 	Selectable:
 		Bounds: 24,24,0,-5
