@@ -426,7 +426,7 @@ e9:
 		OutsideRangeCursor: c4
 	AttackFrontal:
 	ProducibleWithLevel:
-		Prerequisites: barracks.infiltrated
+		Prerequisites: barracks.upgraded
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	WithInfantryBody:
