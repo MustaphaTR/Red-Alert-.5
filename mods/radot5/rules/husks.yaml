@@ -184,6 +184,8 @@ BADR.Husk:
 		Offset: -432,-560,0
 		Interval: 2
 		MinDamage: Undamaged
+	FallsToEarth:
+		Explosion: UnitExplodeBomber
 	RenderSprites:
 		Image: badr
 	-RevealOnDeath:
