@@ -7,8 +7,9 @@
 		Speed: 213
 		Arm: 2
 		Blockable: false
-		ContrailLength: 10
 		Inaccuracy: 128
+		TrailImage: smokey
+		TrailInterval: 1
 		Image: DRAGON
 		Shadow: True
 		HorizontalRateOfTurn: 5
@@ -67,8 +68,6 @@ Maverick:
 
 Dragon:
 	Inherits: ^AntiGroundMissile
-	Projectile: Missile
-		TrailImage: smokey
 
 HellfireAG:
 	Inherits: ^AntiGroundMissile
@@ -210,7 +209,6 @@ APTusk:
 	Range: 6c0
 	Projectile: Missile
 		Speed: 298
-		TrailImage: smokey
 		HorizontalRateOfTurn: 10
 		RangeLimit: 7c204
 	Warhead@1Dam: SpreadDamage
@@ -271,8 +269,6 @@ TorpTube:
 		HorizontalRateOfTurn: 15
 		RangeLimit: 9c0
 		Image: MISSILE
-		TrailImage: smokey
-		ContrailLength: 30
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 2500
@@ -301,10 +297,10 @@ SubMissile:
 		Blockable: false
 		LaunchAngle: 120
 		Inaccuracy: 0c614
+		TrailImage: smokey
+		TrailInterval: 1
 		Image: MISSILE
 		Shadow: True
-		TrailImage: smokey
-		ContrailLength: 30
 
 SubMissileAA:
 	Inherits: ^SubMissileDefault
@@ -362,10 +358,10 @@ SCUD:
 		Blockable: false
 		Image: DRAGON
 		Shadow: true
-		TrailImage: smokey
 		Inaccuracy: 853
+		TrailImage: smokey
+		TrailInterval: 1
 		LaunchAngle: 62
-		ContrailLength: 10
 		Speed: 341
 	Warhead@1Dam: SpreadDamage
 		Spread: 683
