@@ -101,7 +101,7 @@ V2RL:
 		ValidDamageStates: Critical
 	GrantConditionOnPrerequisite@LIGHT_TANK_CAMO:
 		Condition: light_tank_camo
-		Prerequisites: upgrade.light_tank_camo
+		Prerequisites: upgrade.light_tank_camo, atek
 	SpawnActorOnDeath:
 		Actor: 1TNK.Husk
 	ProducibleWithLevel:

@@ -185,7 +185,7 @@
 		Modifier: 200
 	GrantConditionOnPrerequisite@ADV_TRAINING:
 		Condition: adv_training
-		Prerequisites: upgrade.adv_training
+		Prerequisites: upgrade.adv_training, atek
 
 ^AffectedByAutoloaders:
 	ReloadDelayMultiplier@AUTOLOADERS:
@@ -193,7 +193,7 @@
 		Modifier: 80
 	GrantConditionOnPrerequisite@AUTOLOADERS:
 		Condition: autoloaders
-		Prerequisites: upgrade.autoloaders
+		Prerequisites: upgrade.autoloaders, atek
 
 ^AffectedByHorseArmor:
 	DamageMultiplier@HORSE_ARMOR:
@@ -201,7 +201,7 @@
 		Modifier: 50
 	GrantConditionOnPrerequisite@HORSE_ARMOR:
 		Condition: horse_armor
-		Prerequisites: upgrade.horse_armor
+		Prerequisites: upgrade.horse_armor, atek
 
 ^AffectedByFortifiedStructures:
 	DamageMultiplier@FORTIFIED_STRUCTURES:
@@ -209,7 +209,7 @@
 		Modifier: 75
 	GrantConditionOnPrerequisite@FORTIFIED_STRUCTURES:
 		Condition: fortified_structures
-		Prerequisites: upgrade.fortified_structures
+		Prerequisites: upgrade.fortified_structures, atek
 
 ^AffectedByNationalism:
 	ReloadDelayMultiplier@NATIONALISM:
@@ -217,7 +217,7 @@
 		Modifier: 90
 	GrantConditionOnPrerequisite@NATIONALISM:
 		Condition: nationalism
-		Prerequisites: upgrade.nationalism
+		Prerequisites: upgrade.nationalism, atek
 
 ^AffectedByExplosiveRockets:
 	FirepowerMultiplier@EXPLOSIVE_ROCKETS:
@@ -225,12 +225,12 @@
 		Modifier: 125
 	GrantConditionOnPrerequisite@EXPLOSIVE_ROCKETS:
 		Condition: explosive_rockets
-		Prerequisites: upgrade.explosive_rockets
+		Prerequisites: upgrade.explosive_rockets, atek
 
 ^AffectedByAPBullets:
 	GrantConditionOnPrerequisite@AP_BULLETS:
 		Condition: ap_bullets
-		Prerequisites: upgrade.ap_bullets
+		Prerequisites: upgrade.ap_bullets, atek
 
 ^AffectedByAirRadar:
 	RevealsShroudMultiplier@AIR_RADAR:
@@ -238,7 +238,7 @@
 		Modifier: 125
 	GrantConditionOnPrerequisite@AIR_RADAR:
 		Condition: air_radar
-		Prerequisites: upgrade.air_radar
+		Prerequisites: upgrade.air_radar, atek
 
 ^IronCurtainable:
 	WithColoredOverlay@IRONCURTAIN:

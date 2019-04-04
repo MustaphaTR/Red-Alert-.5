@@ -1651,7 +1651,7 @@ ATEK:
 		Queue: Building
 		BuildPaletteOrder: 110
 		Prerequisites: dome, ~techlevel.high
-		Description: Researches upgrades.
+		Description: Researches upgrades./n/nLosing your Research Center temporarily removes effects of upgrades.
 	Valued:
 		Cost: 1500
 	Tooltip:
