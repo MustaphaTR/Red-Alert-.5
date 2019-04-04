@@ -364,7 +364,8 @@ SCUD:
 		LaunchAngle: 62
 		Speed: 341
 	Warhead@1Dam: SpreadDamage
-		Spread: 683
+		Spread: 512
+		Damage: 2500
 		ValidTargets: Ground, Water
 		Versus:
 			None: 24
