@@ -520,6 +520,7 @@ icon:
 	intel: intelicon
 	tankdrop: tdropicon
 	ambush: ambshicon
+	mainicon: mainicon
 
 quee:
 	idle:

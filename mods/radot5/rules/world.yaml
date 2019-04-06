@@ -204,7 +204,7 @@
 		Name: Yugoslavia
 		InternalName: yugoslavia
 		Side: Axis
-		Description: Yugoslavia\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit:
+		Description: Yugoslavia\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Ability: Maintenance
 	Faction@17:
 		Name: Nat. Spain
 		InternalName: natspain
@@ -340,7 +340,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, reich, natspain, romania, lithuania, latvia, china, guangxi, yunnan, ma, usa, japan, siam
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, yugoslavia, reich, natspain, romania, lithuania, latvia, china, guangxi, yunnan, ma, usa, japan, siam
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:

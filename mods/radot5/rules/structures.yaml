@@ -845,6 +845,7 @@ WEAP:
 		ExitCell: 1,2
 	Production:
 		Produces: Vehicle
+		PauseOnCondition: disabled
 	ProvidesPrerequisite@allies:
 		Factions: allies, greece, uk, germany, france, spain
 		Prerequisite: vehicles.allies
@@ -863,6 +864,9 @@ WEAP:
 	ProvidesPrerequisite@reich:
 		Factions: reich
 		Prerequisite: vehicles.reich
+	ProvidesPrerequisite@yugoslavia:
+		Factions: yugoslavia
+		Prerequisite: vehicles.yugoslavia
 	ProvidesPrerequisite@intermarium:
 		Factions: intermarium, poland, romania, lithuania, latvia, estonia
 		Prerequisite: vehicles.intermarium
@@ -892,6 +896,24 @@ WEAP:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	ProduceActorPower@Maintenance:
+		Description: Maintenance
+		LongDesc: Gives $3000 but disables all war factories for 1 minute.
+		Icon: mainicon
+		PauseOnCondition: disabled
+		Prerequisites: vehicles.yugoslavia
+		Actors: maintenance
+		Type: Vehicle
+		ChargeInterval: 2250
+		BlockedAudio: NoBuild
+		OrderName: MaintenancePower
+	SupportPowerChargeBar:
+	GrantConditionOnPrerequisite@IDISABLE:
+		Condition: disabled
+		Prerequisites: maintenance
+	WithColoredOverlay@IDISABLE:
+		RequiresCondition: disabled
+		Palette: disabled
 
 MSLO:
 	Inherits: ^ScienceBuilding

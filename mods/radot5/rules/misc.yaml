@@ -205,6 +205,18 @@ hack.cav_ambush_spawner:
 	ExplodeWeapon:
 		Weapon: hack.spawn_cav_ambush
 
+maintenance:
+	Inherits: CAMERA
+	-RevealsShroud:
+	ProvidesPrerequisite@proxyname:
+	KillsSelf:
+		Delay: 1500
+		RemoveInstead: true
+	CashTrickler:
+		Amount: 3000
+		InitialDelay: 0
+		Interval: 1501
+
 SONAR:
 	Inherits: camera.spyplane
 	EditorOnlyTooltip:
