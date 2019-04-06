@@ -227,6 +227,11 @@
 		Condition: explosive_rockets
 		Prerequisites: upgrade.explosive_rockets, atek
 
+^AffectedByChemicalShells:
+	GrantConditionOnPrerequisite@CHEMICAL_SHELLS:
+		Condition: chemical_shells
+		Prerequisites: upgrade.chemical_shells, atek
+
 ^AffectedByAPBullets:
 	GrantConditionOnPrerequisite@AP_BULLETS:
 		Condition: ap_bullets

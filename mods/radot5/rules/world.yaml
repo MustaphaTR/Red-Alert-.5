@@ -209,7 +209,7 @@
 		Name: Nat. Spain
 		InternalName: natspain
 		Side: Axis
-		Description: Nationalist Spain\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Unit:
+		Description: Nationalist Spain\nFaction Units:\n - Chemical Trooper\n - IFV\n - Tank Bunker\n\nSubfaction Upgrade: Chemical Shells
 	Faction@18:
 		Name: Intermarium
 		InternalName: intermarium
@@ -340,7 +340,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, reich, romania, lithuania, latvia, china, guangxi, yunnan, ma, usa, japan, siam
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, reich, natspain, romania, lithuania, latvia, china, guangxi, yunnan, ma, usa, japan, siam
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:

@@ -69,12 +69,23 @@ upgrade.explosive_rockets:
 	Valued:
 		Cost: 1500
 
+upgrade.chemical_shells:
+	Inherits: ^default.upgrade
+	Tooltip:
+		Name: Chemical Shells
+	Buildable:
+		BuildPaletteOrder: 70
+		Prerequisites: ~upgrade.natspain
+		Description: Increases tank cannon damage versus infantry.
+	Valued:
+		Cost: 1500
+
 upgrade.ap_bullets:
 	Inherits: ^default.upgrade
 	Tooltip:
 		Name: AP Bullets
 	Buildable:
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 80
 		Prerequisites: ~upgrade.lithuania
 		Description: Increases bullet damage versus armored units.
 	Valued:
@@ -85,7 +96,7 @@ upgrade.air_radar:
 	Tooltip:
 		Name: Air Radar
 	Buildable:
-		BuildPaletteOrder: 80
+		BuildPaletteOrder: 90
 		Prerequisites: dome
 		Description: Increases aircraft sight.
 	Valued:
@@ -96,7 +107,7 @@ upgrade.nationalism:
 	Tooltip:
 		Name: Nationalism
 	Buildable:
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 100
 		Prerequisites: stek, ~upgrade.japan
 		Description: Increases Fire Speed of all units by 10%.
 	Valued:

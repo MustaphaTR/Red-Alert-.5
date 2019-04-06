@@ -39,16 +39,26 @@
 	Warhead@1Dam: SpreadDamage
 		Damage: 2500
 		Versus:
-			None: 32
-			Wood: 52
-			Light: 116
-			Heavy: 48
-			Concrete: 32
+			None: 30
+			Wood: 50
+			Light: 100
+			Heavy: 50
+			Concrete: 30
 	-Warhead@2Smu: LeaveSmudge
 	Warhead@3Eff: CreateEffect
 		-ImpactSounds:
 	Warhead@4EffWater: CreateEffect
 		-ImpactSounds:
+
+25mm.Chemical:
+	Inherits: 25mm
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 60
+			Wood: 50
+			Light: 110
+			Heavy: 55
+			Concrete: 30
 
 25mm.Decoy:
 	Inherits: 25mm
@@ -65,6 +75,16 @@
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Heavy: 115
+
+90mm.Chemical:
+	Inherits: 90mm
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 60
+			Wood: 75
+			Light: 80
+			Heavy: 105
+			Concrete: 50
 
 90mm.Decoy:
 	Inherits: 90mm
@@ -85,6 +105,16 @@
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Heavy: 115
+
+105mm.Chemical:
+	Inherits: 105mm
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 60
+			Wood: 75
+			Light: 80
+			Heavy: 105
+			Concrete: 50
 
 120mm:
 	Inherits: ^Cannon
@@ -120,6 +150,16 @@ SABOT:
 			Wood: 10
 			Light: 240
 			Heavy: 200
+			Concrete: 3
+
+SABOT.Chemical:
+	Inherits: SABOT
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 2
+			Wood: 10
+			Light: 250
+			Heavy: 205
 			Concrete: 3
 
 ^Artillery:

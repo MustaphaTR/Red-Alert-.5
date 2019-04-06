@@ -19,6 +19,9 @@ upgrade.nationalism:
 upgrade.explosive_rockets:
 	icon: aprockicon
 
+upgrade.chemical_shells:
+	icon: txslicon
+
 upgrade.ap_bullets:
 	icon: apbullicon
 

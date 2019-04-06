@@ -1680,6 +1680,9 @@ ATEK:
 	ProvidesPrerequisite@greece:
 		Factions: greece
 		Prerequisite: upgrade.greece
+	ProvidesPrerequisite@natspain:
+		Factions: natspain
+		Prerequisite: upgrade.natspain
 	ProvidesPrerequisite@lithuania:
 		Factions: lithuania
 		Prerequisite: upgrade.lithuania
