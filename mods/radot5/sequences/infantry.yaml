@@ -1402,7 +1402,7 @@ sabot:
 		Length: 6
 		Facings: 8
 		Tick: 80
-	icon: terroricon
+	icon: saboicon
 
 c1:
 	stand:
