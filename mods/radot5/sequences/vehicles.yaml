@@ -244,6 +244,12 @@ bggy:
 		Length: 13
 	icon: bggyicon
 
+bike:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: bikeicon
+
 apc:
 	idle:
 		Facings: 32

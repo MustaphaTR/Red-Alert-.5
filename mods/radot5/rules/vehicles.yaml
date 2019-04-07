@@ -543,8 +543,8 @@ JEEP:
 
 BGGY:
 	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 120
@@ -800,8 +800,8 @@ TTNK:
 
 FTRK:
 	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
@@ -853,6 +853,40 @@ FTRK:
 	Selectable:
 		DecorationBounds: 28,28
 
+BIKE:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@EXPLOSIVE_ROCKETS: ^AffectedByExplosiveRockets
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Recon Bike
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		Prerequisites: ~vehicles.estonia, ~techlevel.low
+		Description: Fast scout vehicle, armed with\nrockets.\nCan attack Aircraft.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
+	Mobile:
+		TurnSpeed: 10
+		Speed: 213
+	Health:
+		HP: 11000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 6c0
+	Armament:
+		Weapon: BikeRockets
+		LocalOffset: -128, -170, 170, -128, 170, 170
+		LocalYaw: 100, -100
+	AttackFrontal:
+
 DTRK:
 	Inherits: ^Vehicle
 	Buildable:
@@ -894,8 +928,9 @@ DTRK:
 
 CTNK:
 	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@EXPLOSIVE_ROCKETS: ^AffectedByExplosiveRockets
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 200

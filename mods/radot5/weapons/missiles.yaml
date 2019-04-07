@@ -372,3 +372,22 @@ SCUD:
 			Wood: 60
 			Light: 100
 			Heavy: 48
+
+BikeRockets:
+	Inherits: ^AntiGroundMissile
+	Range: 6c0
+	Burst: 2
+	BurstDelays: 10
+	ReloadDelay: 60
+	ValidTargets: Ground, Water, Air
+	Projectile: Missile
+		HorizontalRateOfTurn: 10
+		Speed: 213
+	Warhead@1Dam: SpreadDamage
+		Damage: 2500
+		Versus:
+			None: 25
+			Wood: 90
+			Light: 125
+			Heavy: 125
+		ValidTargets: Ground, Water, Air

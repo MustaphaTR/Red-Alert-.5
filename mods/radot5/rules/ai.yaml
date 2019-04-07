@@ -375,6 +375,7 @@ Player:
 			v2rl: 40
 			msam: 40
 			ftrk: 30
+			bike: 30
 			1tnk: 50
 			2tnk: 50
 			3tnk: 50
@@ -397,6 +398,7 @@ Player:
 			jeep: 4
 			gtnk: 4
 			ftrk: 4
+			bike: 4
 			mrj: 1
 	SquadManagerBotModule@normal:
 		RequiresCondition: enable-normal-ai
@@ -433,6 +435,7 @@ Player:
 			v2rl: 40
 			msam: 40
 			ftrk: 30
+			bike: 30
 			1tnk: 40
 			2tnk: 50
 			3tnk: 50
@@ -466,6 +469,7 @@ Player:
 			jeep: 4
 			gtnk: 4
 			ftrk: 4
+			bike: 4
 			mrj: 1
 	SquadManagerBotModule@turtle:
 		RequiresCondition: enable-turtle-ai
@@ -502,6 +506,7 @@ Player:
 			v2rl: 40
 			msam: 40
 			ftrk: 50
+			bike: 50
 			1tnk: 50
 			2tnk: 50
 			3tnk: 50
@@ -535,6 +540,7 @@ Player:
 			jeep: 4
 			gtnk: 4
 			ftrk: 4
+			bike: 4
 			mrj: 1
 	SquadManagerBotModule@naval:
 		RequiresCondition: enable-naval-ai

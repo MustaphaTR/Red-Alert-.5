@@ -239,7 +239,7 @@
 		Name: Estonia
 		InternalName: estonia
 		Side: Intermarium
-		Description: Estonia\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+		Description: Estonia\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit: Recon Bike
 	Faction@24:
 		Name: United Front
 		InternalName: unitedfront
@@ -340,7 +340,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, yugoslavia, reich, natspain, romania, lithuania, latvia, china, guangxi, yunnan, ma, usa, japan, siam
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, yugoslavia, reich, natspain, romania, lithuania, latvia, estonia, china, guangxi, yunnan, ma, usa, japan, siam
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:
