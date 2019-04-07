@@ -219,7 +219,7 @@
 		Name: Poland
 		InternalName: poland
 		Side: Intermarium
-		Description: Poland\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit:
+		Description: Poland\nFaction Units:\n - Hussar\n - Tank Destroyer\n - Hedgehog\n\nSubfaction Unit: Transport Plane
 	Faction@20:
 		Name: Romania
 		InternalName: romania
@@ -284,12 +284,12 @@
 		Name: Manchukuo
 		InternalName: manchukuo
 		Side: Co-Prosperity Sphere
-		Description: Manchukuo\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Unit:
+		Description: Manchukuo\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Building: Tunnel Network
 	Faction@33:
 		Name: Mengkukuo
 		InternalName: mengkukuo
 		Side: Co-Prosperity Sphere
-		Description: Mengkukuo\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Unit:
+		Description: Mengkukuo\nFaction Units:\n - Mortar\n - Gatling Tank\n - Kamikaze Plane\n\nSubfaction Unit: War Miner
 	Faction@34:
 		Name: Siam
 		InternalName: siam
@@ -340,7 +340,7 @@
 	Faction@randomcomplete:
 		Name: Complete
 		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, yugoslavia, reich, natspain, romania, lithuania, latvia, estonia, china, guangxi, yunnan, ma, usa, japan, siam
+		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, yugoslavia, reich, natspain, poland, romania, lithuania, latvia, estonia, china, guangxi, yunnan, ma, usa, japan, siam
 		Side: Random
 		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:

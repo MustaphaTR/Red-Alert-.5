@@ -1826,6 +1826,9 @@ AFLD:
 	ProvidesPrerequisite@spain:
 		Factions: spain
 		Prerequisite: aircraft.spain
+	ProvidesPrerequisite@poland:
+		Factions: poland
+		Prerequisite: aircraft.poland
 	ProvidesPrerequisite@latvia:
 		Factions: latvia
 		Prerequisite: aircraft.latvia

@@ -35,6 +35,8 @@ BADR:
 	RejectsOrders:
 	GivesExperience:
 		Experience: 1000
+	RenderSprites:
+		Image: badr
 	Interactable:
 
 BADR.Bomber:
@@ -73,10 +75,10 @@ BADR.Bomber:
 	-EjectOnDeath:
 	-MapEditorData:
 	RejectsOrders:
-	RenderSprites:
-		Image: badr
 	GivesExperience:
 		Experience: 1000
+	RenderSprites:
+		Image: badr
 	Interactable:
 
 BADR.ClusterMines:
@@ -89,6 +91,49 @@ BADR.ClusterMines:
 	AmmoPool:
 		Ammo: 1
 		AmmoCondition: ammo
+
+BADR.Buildable:
+	Inherits: BADR
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Plane
+		BuildPaletteOrder: 15
+		Prerequisites: ~aircraft.poland, ~techlevel.medium
+		Description: Big aircraft capable of carrying infantry and vehicles\nfrom an airfield or service depot to another.\n  Unarmed
+	Valued:
+		Cost: 900
+	GivesExperience:
+		Experience: 900
+	Tooltip:
+		Name: Transport Plane
+	RevealsShroud:
+		Range: 6c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+		Type: GroundPosition
+	Aircraft:
+		Speed: 196
+		TakeOffOnCreation: false
+		LandWhenIdle: true
+		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
+	Cargo:
+		Types: Infantry, Vehicle
+		PipCount: 10
+		MaxWeight: 10
+	-RejectsOrders:
+	-Interactable:
+	Selectable:
+		Bounds: 48,48
+	SelectionDecorations:
+		RenderSelectionBars: True
+	Rearmable:
+		RearmActors: afld, fix
+	Repairable:
+		RepairActors: fix
+	Voiced:
+		VoiceSet: GenericVoice
 
 MIG:
 	Inherits: ^Plane
