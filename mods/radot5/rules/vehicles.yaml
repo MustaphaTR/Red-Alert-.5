@@ -601,7 +601,7 @@ APC:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 142
+		Speed: 99
 		PauseOnCondition: notmobile || being-captured
 	RevealsShroud:
 		Range: 5c0
