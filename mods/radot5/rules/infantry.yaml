@@ -436,6 +436,7 @@ e9:
 
 E22:
 	Inherits: ^Soldier
+	Inherits@AUTOLOADERS: ^AffectedByAutoloaders
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Infantry
