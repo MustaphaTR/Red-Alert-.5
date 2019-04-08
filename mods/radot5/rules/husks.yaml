@@ -83,6 +83,24 @@ HARV.EmptyHusk:
 	RenderSprites:
 		Image: hhusk2
 
+WHRV.FullHusk:
+	Inherits: HARV.FullHusk
+	Tooltip:
+		Name: Husk (War Miner)
+	TransformOnCapture:
+		IntoActor: whrv
+	InfiltrateForTransform:
+		IntoActor: whrv
+
+WHRV.EmptyHusk:
+	Inherits: HARV.EmptyHusk
+	Tooltip:
+		Name: Husk (War Miner)
+	TransformOnCapture:
+		IntoActor: whrv
+	InfiltrateForTransform:
+		IntoActor: whrv
+
 MCV.Husk:
 	Inherits: ^Husk
 	Tooltip:
