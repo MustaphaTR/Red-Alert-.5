@@ -163,3 +163,5 @@ Player:
 	ResourceStorageWarning:
 	PlayerExperience:
 	ConditionManager:
+	SharedCargoManager:
+		MaxWeight: 8

@@ -32,6 +32,9 @@ FACT:
 	ProvidesPrerequisite@romania:
 		Factions: romania
 		Prerequisite: structures.romania
+	ProvidesPrerequisite@manchukuo:
+		Factions: manchukuo
+		Prerequisite: structures.manchukuo
 	Health:
 		HP: 150000
 	Armor:
@@ -1152,80 +1155,38 @@ IRON:
 		RequiredForShortGame: false
 
 PDOX:
-	Inherits: ^ScienceBuilding
-	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
+	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Selectable:
 		Bounds: 48,48
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 120
-		Prerequisites: ~disabled # atek, ~structures.allies, ~techlevel.unrestricted
-		BuildLimit: 1
-		Description: Teleports a group of units across the\nmap for a short time.\nRequires power to operate.\nMaximum 1 can be built.\n  Special Ability: Chronoshift
+		Prerequisites: dome, ~structures.manchukuo, techlevel.medium
+		Description: Allows unit movement from one to another quickly.\nLosing your last tunnel network kills units in them.
 	Valued:
-		Cost: 1500
+		Cost: 1200
 	Tooltip:
-		Name: Chronosphere
+		Name: Tunnel Network
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Health:
 		HP: 100000
 	Armor:
-		Type: Wood
+		Type: Heavy
 	RevealsShroud:
 		Range: 6c0
-		RequiresCondition: !disabled
 		RevealGeneratedShroud: False
-	RevealsShroud@Offline:
-		Range: 5c0
-		RequiresCondition: disabled
 	RevealsShroud@GAPGEN:
 		Range: 5c0
-		RequiresCondition: !disabled
 	WithBuildingBib:
 		HasMinibib: Yes
-	ProvidesPrerequisite@germany:
-		Factions: germany
-		Prerequisite: pdox.germany
-	ProvidesPrerequisite@germanstructure:
-		RequiresPrerequisites: structures.germany
-		Prerequisite: pdox.germany
-	ChronoshiftPower@chronoshift:
-		OrderName: Chronoshift
-		PauseOnCondition: disabled
-		Prerequisites: !pdox.germany
-		Icon: chrono
-		ChargeInterval: 3000
-		Description: Chronoshift
-		LongDesc: Teleports a group of units across\nthe map for 20 seconds.
-		SelectTargetSpeechNotification: SelectTarget
-		InsufficientPowerSpeechNotification: InsufficientPower
-		BeginChargeSpeechNotification: ChronosphereCharging
-		EndChargeSpeechNotification: ChronosphereReady
-		Duration: 400
-		KillCargo: yes
-		DisplayRadarPing: True
-	ChronoshiftPower@advancedchronoshift:
-		OrderName: AdvancedChronoshift
-		PauseOnCondition: disabled
-		Prerequisites: pdox.germany
-		Icon: chrono
-		ChargeInterval: 3000
-		Description: Advanced Chronoshift
-		LongDesc: Teleports a large group of units across\nthe map for 20 seconds.
-		SelectTargetSpeechNotification: SelectTarget
-		InsufficientPowerSpeechNotification: InsufficientPower
-		BeginChargeSpeechNotification: ChronosphereCharging
-		EndChargeSpeechNotification: ChronosphereReady
-		Duration: 400
-		KillCargo: yes
-		DisplayRadarPing: True
-		Range: 2
-	SupportPowerChargeBar:
+	SharedCargo:
+		Types: Infantry, Vehicle
+		PipCount: 8
 	Power:
-		Amount: -200
+		Amount: -50
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	ProvidesPrerequisite@buildingname:

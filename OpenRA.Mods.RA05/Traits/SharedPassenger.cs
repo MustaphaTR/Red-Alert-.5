@@ -25,17 +25,6 @@ namespace OpenRA.Mods.Common.Traits
 		public readonly PipType PipType = PipType.Green;
 		public readonly int Weight = 1;
 
-		[Desc("Use to set when to use alternate transports (Never, Force, Default, Always).",
-			"Force - use force move modifier (Alt) to enable.",
-			"Default - use force move modifier (Alt) to disable.")]
-		public readonly AlternateTransportsMode AlternateTransportsMode = AlternateTransportsMode.Force;
-
-		[Desc("Number of retries using alternate transports.")]
-		public readonly int MaxAlternateTransportAttempts = 1;
-
-		[Desc("Range from self for looking for an alternate transport (default: 5.5 cells).")]
-		public readonly WDist AlternateTransportScanRange = WDist.FromCells(11) / 2;
-
 		[GrantedConditionReference]
 		[Desc("The condition to grant to when this actor is loaded inside any transport.")]
 		public readonly string CargoCondition = null;

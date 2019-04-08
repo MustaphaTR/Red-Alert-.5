@@ -345,6 +345,8 @@
 	Chronoshiftable:
 	Passenger:
 		CargoType: Vehicle
+	SharedPassenger:
+		CargoType: Vehicle
 	AttackMove:
 	HiddenUnderFog:
 	ActorLostNotification:
@@ -446,6 +448,9 @@
 		CrushedSequence: die-crushed
 	AttackMove:
 	Passenger:
+		CargoType: Infantry
+		CargoCondition: disable-experience
+	SharedPassenger:
 		CargoType: Infantry
 		CargoCondition: disable-experience
 	GainsExperienceMultiplier:
