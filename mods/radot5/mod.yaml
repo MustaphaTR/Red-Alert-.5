@@ -92,6 +92,7 @@ Chrome:
 
 Assemblies:
 	as|OpenRA.Mods.AS.dll
+	radot5|OpenRA.Mods.RA05.dll
 	common|OpenRA.Mods.Common.dll
 	common|OpenRA.Mods.Cnc.dll
 
