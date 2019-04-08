@@ -1157,8 +1157,9 @@ STNK:
 
 MSAM:
 	Inherits: ^Vehicle
-	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@EXPLOSIVE_ROCKETS: ^AffectedByExplosiveRockets
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Valued:
 		Cost: 950
 	Tooltip:
