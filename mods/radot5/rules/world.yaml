@@ -337,12 +337,6 @@
 		RandomFactionMembers: japan, manchukuo, mengkukuo, siam
 		Side: Random
 		Description: Random member of Co-Prosperity Sphere\nA random member of Co-Prosperity Sphere will be chosen when the game starts.
-	Faction@randomcomplete:
-		Name: Complete
-		InternalName: RandomComplete
-		RandomFactionMembers: greece, uk, germany, france, spain, ussr, mongolia, tuva, sinkiang, comchina, italy, hungary, yugoslavia, reich, natspain, poland, romania, lithuania, latvia, estonia, china, guangxi, yunnan, ma, usa, japan, siam
-		Side: Random
-		Description: A random country that has all special units they should have implemented.
 	ResourceType@ore:
 		Type: Ore
 		Name: Valuable Minerals

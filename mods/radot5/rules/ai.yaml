@@ -367,6 +367,7 @@ Player:
 			dog: 15
 			shok: 15
 			harv: 10
+			whrv: 10
 			apc: 30
 			jeep: 20
 			gtnk: 20
@@ -395,6 +396,7 @@ Player:
 		UnitLimits:
 			dog: 4
 			harv: 8
+			whrv: 8
 			jeep: 4
 			gtnk: 4
 			ftrk: 4
@@ -427,6 +429,7 @@ Player:
 			dog: 15
 			shok: 15
 			harv: 15
+			whrv: 15
 			apc: 30
 			jeep: 20
 			gtnk: 20
@@ -466,6 +469,7 @@ Player:
 		UnitLimits:
 			dog: 4
 			harv: 8
+			whrv: 8
 			jeep: 4
 			gtnk: 4
 			ftrk: 4
@@ -498,6 +502,7 @@ Player:
 			dog: 15
 			shok: 15
 			harv: 15
+			whrv: 15
 			apc: 10
 			jeep: 20
 			gtnk: 20
@@ -537,6 +542,7 @@ Player:
 		UnitLimits:
 			dog: 4
 			harv: 8
+			whrv: 8
 			jeep: 4
 			gtnk: 4
 			ftrk: 4
@@ -555,6 +561,7 @@ Player:
 		UnitsToBuild:
 			e9: 2
 			harv: 1
+			whrv: 1
 			heli: 30
 			hind: 30
 			bomber: 30
@@ -574,3 +581,4 @@ Player:
 		UnitLimits:
 			e9: 4
 			harv: 8
+			whrv: 8

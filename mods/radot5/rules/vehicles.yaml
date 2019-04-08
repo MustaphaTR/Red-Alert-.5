@@ -403,7 +403,7 @@ HARV:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
-		Prerequisites: proc, ~techlevel.infonly
+		Prerequisites: proc, ~vehicles.not_mengkukuo, ~techlevel.infonly
 		Description: Collects Ore and Gems for processing.\n  Unarmed
 	Valued:
 		Cost: 1100
@@ -448,6 +448,42 @@ HARV:
 	Explodes:
 		RequiresCondition: !no-ore
 		Weapon: OreExplosion
+
+WHRV:
+	Inherits: HARV
+	Inherits@APBULLETS: ^AffectedByAPBullets
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Buildable:
+		Prerequisites: proc, ~vehicles.mengkukuo, ~techlevel.infonly
+		Description: Collects Ore and Gems for processing.\n  Good vs Infantry\n  Bad vs Vehicles, Aircraft
+	Tooltip:
+		Name: War Miner
+	Health:
+		HP: 65000
+	Turreted:
+		TurnSpeed: 10
+		Offset: 448,0,256
+	Armament:
+		Weapon: M60mg
+		MuzzleSequence: muzzle
+		LocalOffset: 128,0,43
+		RequiresCondition: !ap_bullets
+	Armament@AP:
+		Weapon: M60mg.AP
+		MuzzleSequence: muzzle
+		LocalOffset: 128,0,43
+		RequiresCondition: ap_bullets
+	AttackTurreted:
+	WithSpriteTurret:
+	WithMuzzleOverlay:
+	SpawnActorOnDeath:
+		Actor: WHRV.EmptyHusk
+	HarvesterHuskModifier:
+		FullHuskActor: WHRV.FullHusk
+		FullnessThreshold: 50
+	RenderSprites:
+		Image: HARV
 
 MCV:
 	Inherits: ^Vehicle
