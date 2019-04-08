@@ -4,7 +4,7 @@ Red Alert .5 is an OpenRA mod aiming to have a campaign acting around 1936 to st
 
 Mod contains 6 factions with total 29 subfactions, but with minimal faction differences like in Dune 2000. Current plan is to give each faction 3 and each subfaction an additional unit per subfaction.
 
-Mod is currently in pretty early stage, all (sub)faction specialities are now in but no missions are done yet.
+Mod is currently in pretty early stage, all (sub)faction specialities are now in but no missions are done yet. You can find a spreadsheet containing plans at [here](https://docs.google.com/spreadsheets/d/1eP2ZRnTEk9JIzQxNkHmFKg3IV_r5bj1N1ibE6QU6W4k/edit#gid=0).
 
 # Installation
 
