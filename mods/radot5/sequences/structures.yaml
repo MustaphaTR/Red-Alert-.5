@@ -632,7 +632,7 @@ pdox:
 		Length: *
 		Offset: 0,-4
 		UseTilesetExtension: true
-	icon: pdoxicon
+	icon: tnnlicon
 	fake-icon: pdoficon
 
 mslo:
