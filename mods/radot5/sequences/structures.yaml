@@ -593,7 +593,7 @@ gap:
 	bib: mbGAP
 		Length: *
 		UseTilesetExtension: true
-	icon: gapicon
+	icon: ptwricon
 
 iron:
 	idle:
