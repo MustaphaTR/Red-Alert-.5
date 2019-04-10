@@ -926,6 +926,8 @@ SABOT:
 		DeployedCondition: deployed
 		CooldownTicks: 1250
 		DeployedTicks: 375
+		ChargingColor: FF00FFFF
+		DischargingColor: FF00FFFF
 	-MustBeDestroyed:
 
 Zombie:
