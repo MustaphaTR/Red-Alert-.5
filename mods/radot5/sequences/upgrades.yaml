@@ -8,7 +8,7 @@ upgrade.fortified_structures:
 	icon: fortstricon
 
 upgrade.horse_armor:
-	icon: armoricon
+	icon: harmicon
 
 upgrade.light_tank_camo:
 	icon: camoicon

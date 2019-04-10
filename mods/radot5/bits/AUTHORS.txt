@@ -22,5 +22,7 @@ Nooze:
 
 MustaphaTR:
 	Civilian Flags:					custom/flags/*
+	Horse Armor Cameo:				custom/harmicon.shp
 	Hedgehog Cameo:					custom/hedgicon.shp
 	Oil Pump Cameo:					custom/oilericon.shp
+	Rifle Cavalry Cameo:			custom/rcavicon.shp
