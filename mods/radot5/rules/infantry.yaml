@@ -903,7 +903,7 @@ SABOT:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 150
 		Prerequisites: ~barr, ~infantry.comchina, stek, ~techlevel.high
-		Description: Infantry armed with explosions to blow up structures.\nCloaked while not moving.\n  Strong vs Buildings\n  Weak vs Infantry, Vehicles, Aircraft
+		Description: Infantry armed with explosions to blow up structures.\nCan be deployed to cloak.\n  Strong vs Buildings\n  Weak vs Infantry, Vehicles, Aircraft
 	Passenger:
 		PipType: Red
 	Demolition:
@@ -911,16 +911,21 @@ SABOT:
 		Flashes: 0
 		EnterBehaviour: Suicide
 	Cloak:
-		InitialDelay: 250
-		CloakDelay: 120
+		InitialDelay: 0
+		CloakDelay: 0
 		CloakSound:
 		UncloakSound:
-		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		UncloakOn: Attack, Unload, Infiltrate, Demolish
 		IsPlayerPalette: true
 		PauseOnCondition: cloak-force-disabled
+		RequiresCondition: deployed
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
+	GrantTimedConditionOnDeploy:
+		DeployedCondition: deployed
+		CooldownTicks: 1250
+		DeployedTicks: 375
 	-MustBeDestroyed:
 
 Zombie:
