@@ -61,6 +61,7 @@ harv:
 		Facings: 8
 	icon: harvicon
 	fake-icon: harficon
+	war-icon: whrvicon
 
 hhusk:
 	idle:

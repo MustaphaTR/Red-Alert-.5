@@ -457,6 +457,7 @@ WHRV:
 	Buildable:
 		Prerequisites: proc, ~vehicles.mengkukuo, ~techlevel.infonly
 		Description: Collects Ore and Gems for processing.\n  Good vs Infantry\n  Bad vs Vehicles, Aircraft
+		Icon: war-icon
 	Tooltip:
 		Name: War Miner
 	Health:
