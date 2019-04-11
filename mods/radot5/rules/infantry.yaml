@@ -27,6 +27,8 @@ DOG:
 		Voice: Move
 	Passenger:
 		Voice: Move
+	SharedPassenger:
+		Voice: Move
 	RevealsShroud:
 		Range: 5c512
 	Armament:
@@ -344,6 +346,8 @@ E6:
 		RequiresCondition: parachute
 	Passenger:
 		PipType: Yellow
+	SharedPassenger:
+		PipType: Yellow
 	EngineerRepair:
 	RepairsBridges:
 	CaptureManager:
@@ -414,6 +418,8 @@ e9:
 	Armor:
 		Type: None
 	Passenger:
+		PipType: Red
+	SharedPassenger:
 		PipType: Red
 	Armament@primary:
 		Weapon: MP5
@@ -497,6 +503,9 @@ SPY:
 	Passenger:
 		PipType: Blue
 		Voice: Move
+	SharedPassenger:
+		PipType: Blue
+		Voice: Move
 	Disguise:
 		DisguisedCondition: disguise
 	Infiltrates:
@@ -560,6 +569,9 @@ RMBO:
 	Passenger:
 		PipType: Red
 		Voice: Move
+	SharedPassenger:
+		PipType: Red
+		Voice: Move
 	Armament@PRIMARY:
 		Weapon: RamboGun
 	Armament@GARRISONED:
@@ -618,6 +630,8 @@ MEDI:
 		Range: 3c0
 	Passenger:
 		PipType: Blue
+	SharedPassenger:
+		PipType: Blue
 	Armament:
 		Weapon: Heal
 		Cursor: heal
@@ -657,6 +671,9 @@ MECH:
 	RevealsShroud:
 		Range: 3c0
 	Passenger:
+		PipType: Blue
+		Voice: Move
+	SharedPassenger:
 		PipType: Blue
 		Voice: Move
 	Armament:
@@ -729,6 +746,8 @@ GNRL:
 		Voice: Move
 	Passenger:
 		Voice: Move
+	SharedPassenger:
+		Voice: Move
 	Guard:
 		Voice: Move
 	Voiced:
@@ -760,6 +779,8 @@ THF:
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
+		PipType: Blue
+	SharedPassenger:
 		PipType: Blue
 	CaptureManager:
 	Captures:
@@ -825,6 +846,8 @@ SHOK:
 		Voice: Move
 	Passenger:
 		Voice: Move
+	SharedPassenger:
+		Voice: Move
 	Guard:
 		Voice: Move
 	WithInfantryBody:
@@ -855,6 +878,8 @@ SNIPER:
 	Health:
 		HP: 8000
 	Passenger:
+		PipType: Red
+	SharedPassenger:
 		PipType: Red
 	RevealsShroud:
 		Range: 6c0
@@ -905,6 +930,8 @@ SABOT:
 		Prerequisites: ~barr, ~infantry.comchina, stek, ~techlevel.high
 		Description: Infantry armed with explosions to blow up structures.\nCan be deployed to cloak.\n  Strong vs Buildings\n  Weak vs Infantry, Vehicles, Aircraft
 	Passenger:
+		PipType: Red
+	SharedPassenger:
 		PipType: Red
 	Demolition:
 		DetonationDelay: 0
