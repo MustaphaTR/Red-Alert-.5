@@ -78,7 +78,7 @@ CRATE:
 		Units: e1,e1,e2,e2,medi
 	GiveUnitCrateAction@squadheavy:
 		SelectionShares: 7
-		Units: e1,e1,e1,e2,e2,e2,e3,e3,snipe,e6,medi
+		Units: e1,e1,e1,e2,e2,e2,e3,e3,sniper,e6,medi
 		Prerequisites: techlevel.medium, dome
 	GrantExternalConditionCrateAction@invuln:
 		SelectionShares: 5
