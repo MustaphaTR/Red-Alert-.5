@@ -1177,7 +1177,7 @@ PDOX:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 120
-		Prerequisites: dome, ~structures.manchukuo, techlevel.medium
+		Prerequisites: dome, ~structures.manchukuo, ~techlevel.medium
 		Description: Allows unit movement from one to another quickly.\nLosing your last tunnel network kills units in them.
 	Valued:
 		Cost: 1200
