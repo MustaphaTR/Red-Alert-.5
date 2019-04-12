@@ -952,6 +952,7 @@
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 40
+		Prerequisites: ~techlevel.3
 		Description: Automated barrier that opens for allied units.
 	Building:
 		BuildSounds: place2.aud

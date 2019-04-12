@@ -5,7 +5,7 @@ V2RL:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 130
-		Prerequisites: stek, ~vehicles.reich, ~techlevel.high
+		Prerequisites: stek, ~vehicles.reich, ~techlevel.8
 		Description: Long-range rocket artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 900
@@ -55,7 +55,7 @@ V2RL:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.4
 		Description: Fast tank, good for scouting.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	Selectable:
 		Class: 1TNK
@@ -135,7 +135,7 @@ V2RL:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
-		Prerequisites: stek, ~techlevel.high
+		Prerequisites: stek, ~techlevel.8
 		Description: Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 850
@@ -190,7 +190,7 @@ V2RL:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 120
-		Prerequisites: stek, ~vehicles.comintern, ~techlevel.medium
+		Prerequisites: stek, ~vehicles.comintern, ~techlevel.8
 		Description: Soviet Main Battle Tank, with dual cannons\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 1150
@@ -244,7 +244,7 @@ V2RL:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 180
-		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high
+		Prerequisites: ~disabled # fix, stek, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Big and slow tank, with anti-air capability.\nCan crush concrete walls.\nCan detect cloaked units.\n  Strong vs Vehicles, Infantry, Aircraft\n  Weak vs Nothing
 	Valued:
@@ -310,7 +310,7 @@ GTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
-		Prerequisites: ~vehicles.coprosperity, ~techlevel.low
+		Prerequisites: ~vehicles.coprosperity, ~techlevel.4
 		Description: Anti-infantry & anti-air vehicle.\nFires faster as it continues to fire.
 	Valued:
 		Cost: 650
@@ -362,7 +362,7 @@ ARTY:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: dome, ~techlevel.medium
+		Prerequisites: dome, ~techlevel.6
 		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 850
@@ -403,7 +403,7 @@ HARV:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
-		Prerequisites: proc, ~vehicles.not_mengkukuo, ~techlevel.infonly
+		Prerequisites: proc, ~vehicles.not_mengkukuo, ~techlevel.1
 		Description: Collects Ore and Gems for processing.\n  Unarmed
 	Valued:
 		Cost: 1100
@@ -455,7 +455,7 @@ WHRV:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
-		Prerequisites: proc, ~vehicles.mengkukuo, ~techlevel.infonly
+		Prerequisites: proc, ~vehicles.mengkukuo, ~techlevel.1
 		Description: Collects Ore and Gems for processing.\n  Good vs Infantry\n  Bad vs Vehicles, Aircraft
 		Icon: war-icon
 	Tooltip:
@@ -491,7 +491,7 @@ MCV:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 90
-		Prerequisites: fix, ~techlevel.medium
+		Prerequisites: fix, ~techlevel.5
 		BuildDurationModifier: 50
 		Description: Deploys into another Construction Yard.\n  Unarmed
 	Valued:
@@ -533,7 +533,7 @@ JEEP:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
-		Prerequisites: ~vehicles.allies, ~techlevel.low
+		Prerequisites: ~vehicles.allies, ~techlevel.4
 		Description: Fast scout & anti-infantry vehicle.\nCan carry one infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 500
@@ -585,7 +585,7 @@ BGGY:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 120
-		Prerequisites: stek, ~vehicles.italy, ~techlevel.low
+		Prerequisites: stek, ~vehicles.italy, ~techlevel.8
 		Description: Fast anti-infantry vehicle.\n  Strong vs Infantry, Light Vehicles\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 650
@@ -625,7 +625,7 @@ APC:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
-		Prerequisites: ~vehicles.axis, ~techlevel.low
+		Prerequisites: ~vehicles.axis, ~techlevel.4
 		Description: Tough infantry transport with fireports for 5 infantry.\n  Strengths and weaknesses depends on units inside.
 	Valued:
 		Cost: 850
@@ -662,7 +662,7 @@ MNLY:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 100
-		Prerequisites: fix, ~techlevel.medium
+		Prerequisites: fix, ~techlevel.5
 		Description: Lays mines to destroy\nunwary enemy units.\nCan detect mines.\n  Unarmed
 	Valued:
 		Cost: 800
@@ -705,7 +705,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.1
 		Description: Transports cash to other players.\n  Unarmed
 	Valued:
 		Cost: 500
@@ -732,7 +732,7 @@ MGG:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 150
-		Prerequisites: atek, ~vehicles.england, ~techlevel.high
+		Prerequisites: ~disabled # stek, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Regenerates the shroud nearby, \nobscuring the area.\n  Unarmed
 	Valued:
@@ -772,7 +772,7 @@ MRJ:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 75
-		Prerequisites: dome, ~vehicles.unitedfront, ~techlevel.medium
+		Prerequisites: dome, ~vehicles.unitedfront, ~techlevel.6
 		BuildDurationModifier: 50
 		Description: Makes nearby units heal and fire faster.\n  Unarmed
 	Health:
@@ -801,7 +801,7 @@ TTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 170
-		Prerequisites: tsla, stek, ~vehicles.russia, ~techlevel.high
+		Prerequisites: ~disabled # tsla, stek, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Tank with mounted Tesla coil.\n  Strong vs Infantry, Vehicles, Buildings\n  Weak vs Aircraft
 	Valued:
@@ -842,7 +842,7 @@ FTRK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.4
 		Description: Mobile unit with mounted Flak cannon.\nCan carry 2 infantry.\n  Strong vs Infantry, Light armor, Aircraft\n  Weak vs Tanks
 	Valued:
 		Cost: 600
@@ -904,7 +904,7 @@ BIKE:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
-		Prerequisites: ~vehicles.estonia, ~techlevel.low
+		Prerequisites: ~vehicles.estonia, ~techlevel.4
 		Description: Fast scout vehicle, armed with\nrockets.\nCan attack Aircraft.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
 		TurnSpeed: 10
@@ -929,7 +929,7 @@ DTRK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 160
-		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
+		Prerequisites: ~disabled # stek, ~techlevel.8
 		Description: Truck with actively armed nuclear\nexplosives. Has very weak armor.
 	Valued:
 		Cost: 2500
@@ -971,7 +971,7 @@ CTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 200
-		Prerequisites: atek, ~vehicles.germany, ~techlevel.high
+		Prerequisites: ~disabled # stek, ~vehicles.germany, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Armed with anti-ground missiles.\nTeleports to areas within range.\n  Strong vs Vehicles, Buildings\n  Weak vs Infantry, Aircraft\n  Special ability: Can teleport
 	Valued:
@@ -1018,7 +1018,7 @@ TNKD:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 130
-		Prerequisites: stek, ~vehicles.intermarium, ~techlevel.high
+		Prerequisites: stek, ~vehicles.intermarium, ~techlevel.8
 		Description: Anti-Tank Tank.\n  Strong vs Vehicles, Base Defenses\n  Weak vs Infantry, Aircraft, Buildings
 	Valued:
 		Cost: 1050
@@ -1064,7 +1064,7 @@ QTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 190
-		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high
+		Prerequisites: ~disabled # fix, stek, ~techlevel.8
 		Description: Deals seismic damage to nearby vehicles\nand structures.\n  Strong vs Vehicles, Buildings\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 2000
@@ -1103,7 +1103,7 @@ STNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 130
-		Prerequisites: atek, ~vehicles.france, ~techlevel.high
+		Prerequisites: ~disabled # stek, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Lightly armored infantry transport which\ncan cloak. Armed with anti-ground missiles.\nCan detect cloaked units.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	Valued:
@@ -1170,7 +1170,7 @@ MSAM:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 140
-		Prerequisites: stek, ~vehicles.ussr, ~techlevel.high
+		Prerequisites: stek, ~vehicles.ussr, ~techlevel.8
 		Description: Long range rocket artillery.\n  Strong vs all Ground units.
 	Mobile:
 		Speed: 85

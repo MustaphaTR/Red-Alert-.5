@@ -6,7 +6,7 @@ SCOUTCAV:
 	Buildable:
 		Queue: Cavalry
 		BuildPaletteOrder: 10
-		Prerequisites: ~cavalry.mongolia, ~techlevel.low
+		Prerequisites: ~cavalry.mongolia, ~techlevel.2
 		Description: Scouting unit.\n  Strong vs Infantry\n  Weak vs Vehicles
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -40,7 +40,7 @@ RIFLECAV:
 	Buildable:
 		Queue: Cavalry
 		BuildPaletteOrder: 20
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.2
 		Description: Cavalry unit equiped with a rifle.\n  Strong vs Infantry\n  Weak vs Vehicles
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -76,7 +76,7 @@ GRENCAV:
 	Buildable:
 		Queue: Cavalry
 		BuildPaletteOrder: 30
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.2
 		Description: Mounted grenadier.\n  Strong vs Structures\n  Weak vs Vehicles
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -105,7 +105,7 @@ HUSSAR:
 	Buildable:
 		Queue: Cavalry
 		BuildPaletteOrder: 40
-		Prerequisites: ~cavalry.intermarium, ~techlevel.low
+		Prerequisites: ~cavalry.intermarium, ~techlevel.2
 		Description: Cavalry unit equiped with a shotgun.\n  Strong vs Infantry\n  Weak vs Vehicles
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -141,7 +141,7 @@ ENGICAV:
 	Buildable:
 		Queue: Cavalry
 		BuildPaletteOrder: 50
-		Prerequisites: ~cavalry.tuva, ~techlevel.low
+		Prerequisites: ~cavalry.tuva, ~techlevel.2
 		Description: Cavalry unit that infiltrates and captures enemy structures.\nCaptures slower than a normal engineer but has higher mobility.\n  Unarmed
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true

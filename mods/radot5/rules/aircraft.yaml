@@ -98,7 +98,7 @@ BADR.Buildable:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 15
-		Prerequisites: ~aircraft.poland, ~techlevel.medium
+		Prerequisites: ~aircraft.poland, ~techlevel.7
 		Description: Big aircraft capable of carrying infantry and vehicles\nfrom an airfield or service depot to another.\n  Unarmed
 	Valued:
 		Cost: 900
@@ -142,7 +142,7 @@ MIG:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 50
-		Prerequisites: ~disabled # ~afld, stek, ~techlevel.high
+		Prerequisites: ~disabled # ~afld, stek, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Fast Ground-Attack Plane.\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
@@ -207,7 +207,7 @@ YAK:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 30
-		Prerequisites: ~afld, dome, ~techlevel.medium
+		Prerequisites: ~afld, dome, ~techlevel.7
 		Description: Attack Plane armed with\ndual machine guns.\n  Strong vs Infantry, Light Vehicles, Aircraft\n  Weak vs Tanks
 	Valued:
 		Cost: 1350
@@ -291,7 +291,7 @@ BOMBER:
 	Inherits: YAK
 	Buildable:
 		BuildPaletteOrder: 40
-		Prerequisites: ~afld, dome, fix, ~techlevel.medium
+		Prerequisites: ~afld, dome, fix, ~techlevel.7
 		Description: Bombarment Plane that caries 6 bombs.\n  Strong vs Infantry, Buildings, Tanks\n  Weak vs Light Vehicles, Aircraft
 	Valued:
 		Cost: 2000
@@ -321,7 +321,7 @@ KMKZ:
 	Inherits: YAK
 	Buildable:
 		BuildPaletteOrder: 35
-		Prerequisites: ~afld, dome, ~aircraft.coprosperity, ~techlevel.medium
+		Prerequisites: ~afld, dome, ~aircraft.coprosperity, ~techlevel.7
 		Description: Suicide Plane armed with explosions.\n  Strong vs Infantry, Buildings, Light Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1750
@@ -357,7 +357,7 @@ BALLOON:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
-		Prerequisites: ~techlevel.medium
+		Prerequisites: ~techlevel.7
 		Description: Slow aircraft with high vision range.\nCan carry 5 infantry.\nCan be built from an Airfield or a Helipad.
 	Valued:
 		Cost: 900
@@ -396,7 +396,7 @@ TRAN:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
-		Prerequisites: ~disabled #~hpad, ~techlevel.medium
+		Prerequisites: ~disabled # ~hpad, ~techlevel.9
 		Description: Fast Infantry Transport Helicopter.\n  Unarmed
 	Valued:
 		Cost: 900
@@ -452,7 +452,7 @@ HELI:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 40
-		Prerequisites: ~hpad, ~techlevel.high
+		Prerequisites: ~hpad, ~techlevel.9
 		BuildDurationModifier: 50
 		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
 	Valued:
@@ -517,7 +517,7 @@ HIND:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
-		Prerequisites: ~disabled # ~hpad, ~techlevel.medium
+		Prerequisites: ~disabled # ~hpad, ~techlevel.9
 		Description: Helicopter gunship armed\nwith dual chainguns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 1500

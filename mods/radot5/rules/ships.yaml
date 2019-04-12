@@ -4,7 +4,7 @@ SS:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30
-		Prerequisites: ~syrd, fix, ~techlevel.low
+		Prerequisites: ~syrd, fix, ~techlevel.5
 		Description: Submerged anti-ship unit\narmed with torpedoes.\nCan detect other submarines.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft\n  Special Ability: Submerge
 	Valued:
 		Cost: 950
@@ -73,7 +73,7 @@ MSUB:
 		Queue: Ship
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 60
-		Prerequisites: ~spen, stek, ~techlevel.high
+		Prerequisites: ~spen, stek, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Submerged anti-ground siege unit\nwith anti-air capabilities.\nCan detect other submarines.\n  Strong vs Buildings, Ground units, Aircraft\n  Weak vs Naval units\n  Special Ability: Submerge
 	Valued:
@@ -146,7 +146,7 @@ DD:
 		Queue: Ship
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 40
-		Prerequisites: ~syrd, dome, ~techlevel.medium
+		Prerequisites: ~syrd, dome, ~techlevel.6
 		Description: Fast multi-role ship.\nCan detect submarines.\n  Strong vs Naval units, Vehicles, Aircraft\n  Weak vs Infantry
 	Valued:
 		Cost: 1000
@@ -198,7 +198,7 @@ CA:
 		Queue: Ship
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 50
-		Prerequisites: ~syrd, stek, ~techlevel.high
+		Prerequisites: ~syrd, stek, ~techlevel.8
 		BuildDurationModifier: 50
 		Description: Very slow long-range ship.\n  Strong vs Buildings, Ground units\n  Weak vs Naval units, Aircraft
 	Valued:
@@ -260,7 +260,7 @@ LST:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.2
 		Description: General-purpose naval transport.\nCan carry infantry and tanks.\n  Unarmed
 	Valued:
 		Cost: 700
@@ -301,7 +301,7 @@ PT:
 		Queue: Ship
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 20
-		Prerequisites: ~syrd, ~techlevel.low
+		Prerequisites: ~syrd, ~techlevel.3
 		Description: Light scout & support ship.\nCan detect submarines.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
 		Cost: 500
@@ -350,7 +350,7 @@ FBOT:
 		Queue: Ship
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 25
-		Prerequisites: ~syrd, ~naval.guangxi, ~techlevel.low
+		Prerequisites: ~syrd, ~naval.guangxi, ~techlevel.3
 		Description: Light scout & support ship with anti-air capabilities.\n  Strong vs Infantry, Aircraft\n  Weak vs Ships, Submarines
 	Valued:
 		Cost: 500

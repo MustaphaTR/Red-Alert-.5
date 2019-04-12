@@ -401,6 +401,7 @@ World:
 		AllyBuildRadiusCheckboxDisplayOrder: 4
 		BuildRadiusCheckboxDisplayOrder: 5
 	MapOptions:
+		TechLevel: 10
 		ShortGameCheckboxDisplayOrder: 2
 		TechLevelDropdownDisplayOrder: 2
 		GameSpeedDropdownDisplayOrder: 3

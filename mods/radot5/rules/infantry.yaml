@@ -4,7 +4,7 @@ DOG:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 60
-		Prerequisites: ~barr, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.1
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
@@ -76,7 +76,7 @@ E1:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
-		Prerequisites: ~barr, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.1
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Class: E1
@@ -135,7 +135,7 @@ E2:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 30
-		Prerequisites: ~barr, ~techlevel.medium
+		Prerequisites: ~barr, ~techlevel.1
 		Description: Infantry armed with grenades.\n  Strong vs Buildings, Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Class: E2
@@ -195,7 +195,7 @@ E3:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 80
-		Prerequisites: ~barr, dome, ~techlevel.infonly
+		Prerequisites: ~barr, dome, ~techlevel.6
 		Description: Anti-tank/Anti-aircraft infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Selectable:
 		Class: E3
@@ -252,7 +252,7 @@ E4:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
-		Prerequisites: ~barr, ftur, ~infantry.comintern, ~techlevel.low
+		Prerequisites: ~barr, ftur, ~infantry.comintern, ~techlevel.2
 		Description: Advanced anti-structure unit.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 300
@@ -292,7 +292,7 @@ E5:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 160
-		Prerequisites: ~barr, stek, ~infantry.axis, ~techlevel.low
+		Prerequisites: ~barr, stek, ~infantry.axis, ~techlevel.8
 		Description: Advanced anti-infantry unit.\n  Strong vs Infantry, Light Vehicles\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 350
@@ -331,7 +331,7 @@ E6:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
-		Prerequisites: ~barr, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.1
 		Description: Infiltrates and captures\nenemy structures.\n  Unarmed
 	Valued:
 		Cost: 400
@@ -376,7 +376,7 @@ E8:
 	Inherits: E1
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: ~barr, ~infantry.ma, ~techlevel.low
+		Prerequisites: ~barr, ~infantry.ma, ~techlevel.1
 		Description: Rifle infantry capable of moving over cliffs.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 125
@@ -399,7 +399,7 @@ e9:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 65
-		Prerequisites: ~barr, syrd, ~infantry.usa, ~techlevel.medium
+		Prerequisites: ~barr, syrd, ~infantry.usa, ~techlevel.3
 		Description: Elite commando infantry, armed with\na sub machine gun and C4 that can be placed on Ships.\nCan swim.\n  Strong vs Infantry, Ships\n  Weak vs Vehicles, Aircraft, Buildings.
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -448,7 +448,7 @@ E22:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 110
-		Prerequisites: ~barr, dome, ~infantry.coprosperity, ~techlevel.medium
+		Prerequisites: ~barr, dome, ~infantry.coprosperity, ~techlevel.6
 		Description: Slow infantry armed with a Mortar. \n  Strong vs Buildings, slow-moving targets
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -485,7 +485,7 @@ SPY:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 100
-		Prerequisites: ~barr, dome, ~infantry.allies, ~techlevel.medium
+		Prerequisites: ~barr, dome, ~infantry.allies, ~techlevel.6
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n  Special Ability: Disguised
 	Valued:
 		Cost: 500
@@ -546,7 +546,7 @@ RMBO:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
-		Prerequisites: ~barr, stek, ~techlevel.high
+		Prerequisites: ~barr, stek, ~techlevel.8
 		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nCan detect cloaked units.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
 	Valued:
 		Cost: 1200
@@ -614,7 +614,7 @@ MEDI:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 50
-		Prerequisites: ~barr, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.2
 		Description: Heals nearby infantry.\n  Unarmed
 	Valued:
 		Cost: 200
@@ -655,7 +655,7 @@ MECH:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 120
-		Prerequisites: ~barr, fix, ~infantry.germany, ~techlevel.medium
+		Prerequisites: ~barr, fix, ~infantry.germany, ~techlevel.5
 		Description: Repairs nearby vehicles and restores\nhusks to working condition by capturing them.\n  Unarmed
 	Valued:
 		Cost: 500
@@ -766,7 +766,7 @@ THF:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, fix, ~infantry.unitedfront, ~techlevel.medium
+		Prerequisites: ~barr, fix, ~infantry.unitedfront, ~techlevel.5
 		Description: Steals enemy credits.\nHijacks enemy vehicles.\n  Unarmed
 	Valued:
 		Cost: 500
@@ -818,7 +818,7 @@ SHOK:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high
+		Prerequisites: ~disabled # ~barr, stek, tsla, ~techlevel.8
 		Description: Elite infantry with portable Tesla coils.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 350
@@ -873,7 +873,7 @@ SNIPER:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
-		Prerequisites: ~barr, dome, ~techlevel.medium
+		Prerequisites: ~barr, dome, ~techlevel.6
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Health:
 		HP: 8000
@@ -927,7 +927,7 @@ SABOT:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 150
-		Prerequisites: ~barr, ~infantry.comchina, stek, ~techlevel.high
+		Prerequisites: ~barr, ~infantry.comchina, stek, ~techlevel.8
 		Description: Infantry armed with explosions to blow up structures.\nCan be deployed to cloak.\n  Strong vs Buildings\n  Weak vs Infantry, Vehicles, Aircraft
 	Passenger:
 		PipType: Red
