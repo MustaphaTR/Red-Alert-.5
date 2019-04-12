@@ -454,7 +454,7 @@ HELI:
 		BuildPaletteOrder: 40
 		Prerequisites: ~hpad, ~techlevel.9
 		BuildDurationModifier: 50
-		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
+		Description: Helicopter gunship armed\nwith anti-ground missiles.\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -473,10 +473,6 @@ HELI:
 	Armament@PRIMARY:
 		Weapon: HellfireAA
 		LocalOffset: 0,-213,-85, 0,213,-85
-		PauseOnCondition: !ammo
-	Armament@SECONDARY:
-		Weapon: HellfireAG
-		LocalOffset: 0,213,-85, 0,-213,-85
 		PauseOnCondition: !ammo
 	AttackAircraft:
 		FacingTolerance: 20
