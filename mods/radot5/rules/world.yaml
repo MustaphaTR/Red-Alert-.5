@@ -39,7 +39,7 @@
 		SharesCell: true
 		TerrainSpeeds:
 			Clear: 90
-			Rock: 50
+			Rock: 80
 			Rough: 80
 			Road: 100
 			Bridge: 100
