@@ -379,10 +379,21 @@ HussarShotgun:
 	Inherits: M1Carbine
 	Report: shotgun.wav
 	Warhead@1Dam: SpreadDamage
-		Spread: 512
 		Damage: 1250
+		ValidStances: Ally
 		Versus:
 			Wood: 40
+	Warhead@2Dam: SpreadDamage
+		Spread: 512
+		Damage: 1250
+		ValidStances: Enemy, Neutral
+		Versus:
+			None: 150
+			Wood: 40
+			Light: 40
+			Heavy: 10
+			Concrete: 10
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffs
 	Warhead@3EffWater: CreateEffect
@@ -391,6 +402,12 @@ HussarShotgun:
 HussarShotgun.AP:
 	Inherits: HussarShotgun
 	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 45
+			Light: 50
+			Heavy: 15
+			Concrete: 12
+	Warhead@2Dam: SpreadDamage
 		Versus:
 			Wood: 45
 			Light: 50
