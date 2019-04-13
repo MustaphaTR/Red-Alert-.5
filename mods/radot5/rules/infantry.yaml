@@ -63,7 +63,7 @@ DOG:
 		RequiresCondition: run
 	IgnoresDisguise:
 	DetectCloaked:
-		CloakTypes: Cloak, Thief
+		Range: 5c0
 	Voiced:
 		VoiceSet: DogVoice
 	-TakeCover:
@@ -530,7 +530,7 @@ SPY:
 		RequiresCondition: disguise
 	IgnoresDisguise:
 	DetectCloaked:
-		CloakTypes: Cloak, Thief
+		Range: 5c0
 	Armament:
 		Weapon: SilencedPPK
 	AttackFrontal:
@@ -588,8 +588,6 @@ RMBO:
 		RequiresCondition: produced
 		Voice: Build
 	AnnounceOnKill:
-	DetectCloaked:
-		CloakTypes: Cloak, Thief
 	Voiced:
 		VoiceSet: CommandoVoice
 	ProducibleWithLevel:
@@ -802,7 +800,6 @@ THF:
 		InitialDelay: 250
 		CloakDelay: 120
 		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
-		CloakTypes: Cloak, Thief
 		IsPlayerPalette: true
 		PauseOnCondition: cloak-force-disabled
 	GrantConditionOnDamageState@UNCLOAK:
@@ -909,8 +906,7 @@ SNIPER:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
 	DetectCloaked:
-		CloakTypes: Cloak, Thief
-		Range: 6c0
+		Range: 5c0
 	-MustBeDestroyed:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
