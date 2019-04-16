@@ -1043,7 +1043,6 @@ HQ:
 	AirstrikePower:
 		OrderName: CarpetBombing
 		PauseOnCondition: disabled
-		Prerequisites: ~techlevel.unrestricted
 		Icon: carpet
 		ChargeInterval: 13500
 		SquadSize: 3
