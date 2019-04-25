@@ -634,7 +634,7 @@ APC:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 30000
+		HP: 25000
 	Armor:
 		Type: Heavy
 	Mobile:
