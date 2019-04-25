@@ -1197,7 +1197,7 @@ PDOX:
 	WithBuildingBib:
 		HasMinibib: Yes
 	SharedCargo:
-		Types: Infantry, Vehicle
+		Types: Infantry, Cavalry, Vehicle
 		PipCount: 8
 	Power:
 		Amount: -50

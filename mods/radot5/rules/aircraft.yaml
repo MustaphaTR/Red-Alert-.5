@@ -119,7 +119,7 @@ BADR.Buildable:
 		LandWhenIdle: true
 		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
 	Cargo:
-		Types: Infantry, Vehicle
+		Types: Infantry, Cavalry, Vehicle
 		PipCount: 10
 		MaxWeight: 10
 	-RejectsOrders:
@@ -380,7 +380,7 @@ BALLOON:
 		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
 		AltitudeVelocity: 0c58
 	Cargo:
-		Types: Infantry
+		Types: Infantry, Cavalry
 		MaxWeight: 5
 		PipCount: 5
 	-WithShadow:
@@ -435,7 +435,7 @@ TRAN:
 		Sequence: slow-rotor2
 		RequiresCondition: !airborne
 	Cargo:
-		Types: Infantry
+		Types: Infantry, Cavalry
 		MaxWeight: 8
 		PipCount: 8
 	SpawnActorOnDeath:

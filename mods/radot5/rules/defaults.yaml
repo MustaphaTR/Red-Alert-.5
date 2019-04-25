@@ -573,6 +573,10 @@
 	Inherits@1: ^AffectedByHorseArmor
 	-TakeCover:
 	-Crushable:
+	Passenger:
+		CargoType: Cavalry
+	SharedPassenger:
+		CargoType: Cavalry
 	Targetable:
 		TargetTypes: Ground, Infantry, Cavalry
 	WithDeathAnimation:
