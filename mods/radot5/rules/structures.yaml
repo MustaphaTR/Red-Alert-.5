@@ -32,6 +32,9 @@ FACT:
 	ProvidesPrerequisite@romania:
 		Factions: romania
 		Prerequisite: structures.romania
+	ProvidesPrerequisite@yunnan:
+		Factions: yunnan
+		Prerequisite: structures.yunnan
 	ProvidesPrerequisite@manchukuo:
 		Factions: manchukuo
 		Prerequisite: structures.manchukuo
