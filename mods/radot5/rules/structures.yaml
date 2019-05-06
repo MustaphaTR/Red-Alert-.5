@@ -1952,7 +1952,7 @@ FIX:
 		Queue: Building
 		BuildPaletteOrder: 90
 		Prerequisites: weap, ~techlevel.5
-		Description: Repairs vehicles for credits.
+		Description: Repairs and sells vehicles and aircraft.\nTransport units must be empty before selling.
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -1981,6 +1981,13 @@ FIX:
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
+	ProximityExternalCondition:
+		Condition: unit.sellable
+		Range: 1c0
+	Sellable:
+		RequiresCondition: !unit.docked && !build-incomplete && !being-demolished
+	ExternalCondition@Docked:
+		Condition: unit.docked
 	WithBuildingBib:
 		HasMinibib: Yes
 	WithResupplyAnimation:

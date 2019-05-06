@@ -574,7 +574,10 @@ JEEP:
 		Types: Infantry
 		MaxWeight: 1
 		PipCount: 1
+		LoadedCondition: loaded
 		LoadingCondition: notmobile
+	Sellable:
+		RequiresCondition: unit.sellable && !loaded
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 
@@ -654,7 +657,10 @@ APC:
 		MaxWeight: 5
 		PipCount: 5
 		InitialUnits: e1
+		LoadedCondition: loaded
 		LoadingCondition: notmobile
+	Sellable:
+		RequiresCondition: unit.sellable && !loaded
 
 MNLY:
 	Inherits: ^TrackedVehicle
@@ -882,7 +888,10 @@ FTRK:
 		Types: Infantry
 		MaxWeight: 2
 		PipCount: 2
+		LoadedCondition: loaded
 		LoadingCondition: notmobile
+	Sellable:
+		RequiresCondition: unit.sellable && !loaded
 	SelectionDecorations:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
@@ -1138,7 +1147,10 @@ STNK:
 		Types: Infantry
 		MaxWeight: 4
 		PipCount: 4
+		LoadedCondition: loaded
 		LoadingCondition: notmobile
+	Sellable:
+		RequiresCondition: unit.sellable && !loaded
 	Cloak:
 		InitialDelay: 125
 		CloakDelay: 175

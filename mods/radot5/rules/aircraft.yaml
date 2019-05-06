@@ -122,6 +122,9 @@ BADR.Buildable:
 		Types: Infantry, Cavalry, Vehicle
 		PipCount: 10
 		MaxWeight: 10
+		LoadedCondition: loaded
+	Sellable:
+		RequiresCondition: unit.sellable && !airborne && !loaded
 	-RejectsOrders:
 	-Interactable:
 	Selectable:
@@ -383,6 +386,9 @@ BALLOON:
 		Types: Infantry, Cavalry
 		MaxWeight: 5
 		PipCount: 5
+		LoadedCondition: loaded
+	Sellable:
+		RequiresCondition: unit.sellable && !airborne && !loaded
 	-WithShadow:
 	SpawnActorOnDeath:
 		Actor: BALLOON.Husk
@@ -438,6 +444,10 @@ TRAN:
 		Types: Infantry, Cavalry
 		MaxWeight: 8
 		PipCount: 8
+		LoadedCondition: loaded
+		LoadingCondition: notmobile
+	Sellable:
+		RequiresCondition: unit.sellable && !airborne && !loaded
 	SpawnActorOnDeath:
 		Actor: TRAN.Husk
 	SelectionDecorations:
