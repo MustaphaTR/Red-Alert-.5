@@ -898,7 +898,7 @@ WEAP:
 		Factions: coprosperity, japan, manchukuo, mengkukuo, siam
 		Prerequisite: vehicles.coprosperity
 	ProvidesPrerequisite@not_mengkukuo:
-		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, coprosperity, japan, manchukuo, siam
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, siam
 		Prerequisite: vehicles.not_mengkukuo
 	ProvidesPrerequisite@mengkukuo:
 		Factions: mengkukuo
