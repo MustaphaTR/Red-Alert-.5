@@ -357,7 +357,7 @@ Player:
 			e4: 15
 			e5: 15
 			sniper: 5
-			e8: 5
+			e8: 65
 			e9: 2
 			e22: 5
 			scoutcav: 5
@@ -419,7 +419,7 @@ Player:
 			e4: 15
 			e5: 15
 			sniper: 5
-			e8: 5
+			e8: 65
 			e9: 2
 			e22: 5
 			scoutcav: 5
@@ -492,7 +492,7 @@ Player:
 			e4: 15
 			e5: 15
 			sniper: 5
-			e8: 5
+			e8: 65
 			e9: 2
 			e22: 5
 			scoutcav: 5

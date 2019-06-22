@@ -246,6 +246,9 @@ BARR:
 	ProvidesPrerequisite@unitedfront:
 		Factions: unitedfront, china, guangxi, yunnan, ma, usa
 		Prerequisite: infantry.unitedfront
+	ProvidesPrerequisite@not_ma:
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, usa, coprosperity, japan, manchukuo, mengkukuo, siam
+		Prerequisite: infantry.not_ma
 	ProvidesPrerequisite@ma:
 		Factions: ma
 		Prerequisite: infantry.ma

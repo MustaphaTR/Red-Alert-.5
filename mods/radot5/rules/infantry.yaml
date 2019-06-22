@@ -76,7 +76,7 @@ E1:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
-		Prerequisites: ~barr, ~techlevel.1
+		Prerequisites: ~barr, ~infantry.not_ma, ~techlevel.1
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Class: E1
@@ -378,16 +378,12 @@ E8:
 		BuildPaletteOrder: 20
 		Prerequisites: ~barr, ~infantry.ma, ~techlevel.1
 		Description: Rifle infantry capable of moving over cliffs.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
-	Valued:
-		Cost: 125
 	Tooltip:
 		Name: Mountainer
 	RevealsShroud:
 		Range: 6c0
 	Mobile:
 		Locomotor: mountainer
-	Health:
-		HP: 4500
 	RenderSprites:
 		Image: E1
 
