@@ -337,6 +337,12 @@
 		RandomFactionMembers: japan, manchukuo, mengkukuo, siam
 		Side: Random
 		Description: Random member of Co-Prosperity Sphere\nA random member of Co-Prosperity Sphere will be chosen when the game starts.
+	Faction@35:
+		Name: Ethiopia
+		InternalName: ethiopia
+		Side: Non-Aligned
+		Description: Ethiopia\nSubfaction Ability:
+		Selectable: false
 	ResourceType@ore:
 		Type: Ore
 		Name: Valuable Minerals
@@ -409,12 +415,12 @@ World:
 	MPStartUnits@mcvonly:
 		Class: none
 		ClassName: MCV Only
-		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam, ethiopia
 		BaseActor: mcv
 	MPStartUnits@dog:
 		Class: dog
 		ClassName: MCV and Dog
-		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam, ethiopia
 		BaseActor: mcv
 		SupportActors: dog
 		InnerSupportRadius: 3
@@ -422,7 +428,7 @@ World:
 	MPStartUnits@light:
 		Class: light
 		ClassName: Light Support
-		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam, ethiopia
 		BaseActor: mcv
 		SupportActors: e1,e1,e2,dog,riflecav,ftrk
 		InnerSupportRadius: 3
@@ -430,7 +436,7 @@ World:
 	MPStartUnits@medium:
 		Class: medium
 		ClassName: Medium Support
-		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam, ethiopia
 		BaseActor: mcv
 		SupportActors: e1,e1,e2,e2,dog,e3,riflecav,grencav,1tnk,ftrk
 		InnerSupportRadius: 3
@@ -438,7 +444,7 @@ World:
 	MPStartUnits@heavy:
 		Class: heavy
 		ClassName: Heavy Support
-		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam
+		Factions: allies, greece, uk, germany, france, spain, comintern, ussr, mongolia, tuva, sinkiang, comchina, axis, italy, hungary, reich, yugoslavia, natspain, intermarium, poland, romania, lithuania, latvia, estonia, unitedfront, china, guangxi, yunnan, ma, usa, coprosperity, japan, manchukuo, mengkukuo, siam, ethiopia
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e2,e2,dog,e3,e3,sniper,riflecav,riflecav,grencav,1tnk,1tnk,ftrk,arty,2tnk
 		InnerSupportRadius: 3

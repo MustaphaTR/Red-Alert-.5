@@ -1034,6 +1034,38 @@ flags: flags.png
 	manchukuo: 150,45,30,15
 	mengkukuo: 150,60,30,15
 	siam: 150,75,30,15
+	
+	finland: 0,120,30,15
+	sweden: 0,135,30,15
+	austria: 30,120,30,15
+	ethiopia: 30,135,30,15
+	czechoslovakia: 60,120,30,15
+	netherlands: 90,120,30,15
+	luxemburg: 90,135,30,15
+	shanxi: 120,120,30,15
+
+	raj: 226,0,30,15
+	canada: 226,15,30,15
+	malaya: 226,30,30,15
+	safrica: 226,45,30,15
+	australia: 226,60,30,15
+	zealand: 226,75,30,15
+
+	russia: 226,90,30,15
+	ukraine: 226,105,30,15
+	azerbaijan: 226,120,30,15
+	armenia: 226,135,30,15
+	moldovia: 226,150,30,15
+	belarus: 226,165,30,15
+	tajikistan: 226,181,30,15
+	kyrgyzstan: 226,196,30,15
+	ssrlithuania: 226,211,30,15
+	ssrlatvia: 226,226,30,15
+	ssrestonia: 226,241,30,15
+	georgia: 196,241,30,15
+	uzbekistan: 196,226,30,15
+	turkmenistan: 196,211,30,15
+	kazakhstan: 196,196,30,15
 
 music: buttons.png
 	pause: 0,193,25,25

@@ -35,6 +35,7 @@ GenericVoice:
 		manchukuo: .v01,.v03
 		mengkukuo: .v01,.v03
 		siam: .v01,.v03
+		ethiopia: .v01,.v03
 	Voices:
 		Select: await1,ready,report1,yessir1
 		Action: ackno,affirm1,noprob,overout,ritaway,roger,ugotit
@@ -80,6 +81,7 @@ VehicleVoice:
 		manchukuo: .v00,.v02
 		mengkukuo: .v00,.v02
 		siam: .v00,.v02
+		ethiopia: .v00,.v02
 	Voices:
 		Select: vehic1,yessir1,report1,await1
 		Action: ackno,affirm1
