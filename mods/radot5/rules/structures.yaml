@@ -48,7 +48,7 @@ FACT:
 	RevealsShroud@GAPGEN:
 		Range: 4c0
 	Production:
-		Produces: Building, Defense
+		Produces: Building, Support
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -69,8 +69,8 @@ FACT:
 		Prerequisites: global-factundeploy
 	ProductionBar@Building:
 		ProductionType: Building
-	ProductionBar@Defense:
-		ProductionType: Defense
+	ProductionBar@Support:
+		ProductionType: Support
 		Color: 8A8A8A
 	BaseProvider:
 		PauseOnCondition: being-captured
@@ -450,7 +450,7 @@ SILO:
 	Selectable:
 		Bounds: 24,24
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 50
 		Prerequisites: proc, ~techlevel.1
 		Description: Stores excess refined\nOre and Gems.
@@ -953,7 +953,7 @@ MSLO:
 	Tooltip:
 		Name: Missile Silo
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 140
 		Prerequisites: ~disabled # stek, ~techlevel.10
 		BuildLimit: 1
@@ -1020,7 +1020,7 @@ HQ:
 	Tooltip:
 		Name: Airforce Command HeadQuarters
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 150
 		Prerequisites: stek, ~techlevel.10
 		BuildLimit: 1
@@ -1076,7 +1076,7 @@ GAP:
 	Tooltip:
 		Name: Propaganda Tower
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 140
 		Prerequisites: dome, ~structures.sinkiang, ~techlevel.6
 		Description: Makes nearby units heal and fire faster.
@@ -1122,7 +1122,7 @@ IRON:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@shape: ^2x1Shape
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 130
 		Prerequisites: ~disabled # stek, ~techlevel.9
 		BuildLimit: 1
@@ -1180,7 +1180,7 @@ PDOX:
 	Selectable:
 		Bounds: 48,48
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 120
 		Prerequisites: dome, ~structures.manchukuo, ~techlevel.6
 		Description: Allows unit movement from one to another quickly.\nLosing your last tunnel network kills units in them.
@@ -1216,7 +1216,7 @@ TSLA:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 80
 		Prerequisites: ~disabled # weap, ~techlevel.4
 		Description: Advanced base defense.\nRequires power to operate.\nCan detect cloaked units.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
@@ -1261,7 +1261,7 @@ AGUN:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 130
 		Prerequisites: dome, ~techlevel.7
 		Description: Anti-Air base defense.\nRequires power to operate.\n  Strong vs Aircraft\n  Weak vs Ground units
@@ -1365,7 +1365,7 @@ PBOX:
 		Name: Pillbox
 	Building:
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 80
 		Prerequisites: barr, ~techlevel.2
 		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
@@ -1415,7 +1415,7 @@ HBOX:
 		Name: Fortified Pillbox
 	Building:
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 90
 		Prerequisites: barr, ~structures.france, ~techlevel.2
 		Description: Foritifed static defense with a fireport\nfor 2 garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
@@ -1464,7 +1464,7 @@ TBOX:
 		Name: Tank Bunker
 	Building:
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 120
 		Prerequisites: weap, ~structures.axis, ~techlevel.4
 		Description: Static defense capable of hosting a vehicle.\nCan detect cloaked units.
@@ -1510,7 +1510,7 @@ GUN:
 	Inherits@AUTOLOADERS: ^AffectedByAutoloaders
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 110
 		Prerequisites: barr, ~techlevel.4
 		Description: Anti-Armor base defense.\nCan detect cloaked units.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
@@ -1554,7 +1554,7 @@ FTUR:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 100
 		Prerequisites: barr, ~structures.comintern, ~techlevel.2
 		Description: Anti-Infantry base defense.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
@@ -1611,7 +1611,7 @@ SAM:
 	Tooltip:
 		Name: SAM Site
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 125
 		Prerequisites: dome, ~structures.yunnan, ~techlevel.7
 		Description: Anti-Aircraft base defense.\nCloaked while not firing.\n  Strong vs Aircraft\n  Cannot target Ground units.
@@ -2006,7 +2006,7 @@ FIX:
 SBAG:
 	Inherits: ^Wall
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: fact, ~techlevel.1
 		Description: Stops infantry and light vehicles.\nCan be crushed by tanks.
@@ -2030,7 +2030,7 @@ SBAG:
 FENC:
 	Inherits: ^Wall
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 20
 		Prerequisites: fact, ~techlevel.1
 		Description: Stops infantry and light vehicles.\nCan be crushed by tanks.
@@ -2054,7 +2054,7 @@ FENC:
 BRIK:
 	Inherits: ^Wall
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: fact, ~techlevel.3
 		Description: Stop units and blocks enemy fire.
@@ -2125,7 +2125,7 @@ WOOD:
 HEDGEHOG:
 	Inherits: ^Defense
 	Buildable:
-		Queue: Defense
+		Queue: Support
 		BuildPaletteOrder: 70
 		BuildDurationModifier: 300
 		Prerequisites: ~structures.intermarium, ~techlevel.3

@@ -509,7 +509,7 @@ Container@PLAYER_WIDGETS:
 									X: 6
 									Y: 6
 									ImageCollection: production-icons
-						ProductionTypeButton@DEFENSE:
+						ProductionTypeButton@SUPPORT:
 							Logic: AddFactionSuffixLogic
 							Y: 31
 							Width: 28
@@ -519,7 +519,7 @@ Container@PLAYER_WIDGETS:
 							TooltipText: Support
 							TooltipContainer: TOOLTIP_CONTAINER
 							ProductionGroup: Support
-							Key: ProductionTypeDefense
+							Key: ProductionTypeSupport
 							Children:
 								Image@ICON:
 									X: 6
