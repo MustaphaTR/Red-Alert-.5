@@ -32,8 +32,18 @@ World:
 		ShortGameCheckboxLocked: True
 		ShortGameCheckboxEnabled: False
 
-E7:
+RMBO:
 	-Crushable:
+
+RMBO.noautotarget:
+	Inherits: RMBO
+	-AutoTarget:
+	-AutoTargetPriority@DEFAULT:
+	-AutoTargetPriority@ATTACKANYTHING:
+	AttackMove:
+		-AssaultMoveScanCondition:
+	RenderSprites:
+		Image: RMBO
 
 E7.noautotarget:
 	Inherits: E7

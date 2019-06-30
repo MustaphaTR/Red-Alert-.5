@@ -44,6 +44,7 @@ Packages:
 	radot5|bits/ra2
 	radot5|bits/wwi
 	radot5|uibits
+	radot5|scripts
 
 MapFolders:
 	radot5|maps: System

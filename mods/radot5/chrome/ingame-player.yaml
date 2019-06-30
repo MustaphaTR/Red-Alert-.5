@@ -516,9 +516,9 @@ Container@PLAYER_WIDGETS:
 							Height: 28
 							VisualHeight: 0
 							Background: sidebar-button
-							TooltipText: Defense
+							TooltipText: Support
 							TooltipContainer: TOOLTIP_CONTAINER
-							ProductionGroup: Defense
+							ProductionGroup: Support
 							Key: ProductionTypeDefense
 							Children:
 								Image@ICON:

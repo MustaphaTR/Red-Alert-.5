@@ -1,0 +1,76 @@
+Player:
+	PlayerResources:
+		DefaultCash: 2000
+
+World:
+	LuaScript:
+		Scripts: training-01.lua, campaign-global.lua
+	MissionData:
+		Briefing: Location: Eritrea\n\nWelcome to Africa commander. Congratulations on the promotion.\n\nBefore we strike on Ethiopia once again we need to improve the infastructure in Erirea and Somalia more. We are gonna establish a new naval port. A Mobile Construction Vehicle is on its way.
+	MapOptions:
+		TechLevel: 3
+
+^Palettes:
+	IndexedPlayerPalette:
+		PlayerIndex:
+			Italy: 208, 208, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 154, 155, 143
+
+BARR:
+	Buildable:
+		Prerequisites: proc
+
+SYRD:
+	Buildable:
+		Prerequisites: proc
+
+BRIK:
+	Buildable:
+		Prerequisites: ~disabled
+
+SBAG:
+	Buildable:
+		Prerequisites: ~disabled
+
+TENT:
+	Buildable:
+		Prerequisites: ~disabled
+
+VGATE:
+	Buildable:
+		Prerequisites: ~disabled
+
+HGATE:
+	Buildable:
+		Prerequisites: ~disabled
+
+FENC:
+	Buildable:
+		Prerequisites: ~disabled
+
+PBOX:
+	Buildable:
+		Prerequisites: ~disabled
+
+E2:
+	Buildable:
+		Prerequisites: ~disabled
+
+E6:
+	Buildable:
+		Prerequisites: ~disabled
+
+MEDI:
+	Buildable:
+		Prerequisites: ~disabled
+
+PT:
+	Buildable:
+		Prerequisites: ~disabled
+
+LST.MCV:
+	Inherits: LST
+	-Buildable:
+	Cargo:
+		InitialUnits: mcv
+	RenderSprites:
+		Image: lst

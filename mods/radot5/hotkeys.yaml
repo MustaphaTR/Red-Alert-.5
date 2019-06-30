@@ -2,8 +2,8 @@ ProductionTypeBuilding: E
 	Description: Building Tab
 	Types: Production
 
-ProductionTypeDefense: R
-	Description: Defense Tab
+ProductionTypeSupport: R
+	Description: Support Tab
 	Types: Production
 
 ProductionTypeInfantry: T

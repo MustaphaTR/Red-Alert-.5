@@ -1,0 +1,139 @@
+MapFormat: 11
+RequiresMod: radot5
+Title: 01 - (ITA) Expansion
+Author: MustaphaTR
+Tileset: DESERT
+MapSize: 50,50
+Bounds: 1,1,48,48
+Visibility: MissionSelector
+Categories: Campaign
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: Random
+	PlayerReference@Italy:
+		Name: Italy
+		Playable: True
+		LockFaction: True
+		Faction: italy
+		LockColor: True
+		Color: 33FF33
+Actors:
+	OreMine: mine
+		Owner: Neutral
+		Location: 6,18
+	MCVSpawn: waypoint
+		Owner: Neutral
+		Location: 1,5
+	MCVMove1: waypoint
+		Owner: Neutral
+		Location: 9,7
+	MCVMove2: waypoint
+		Owner: Neutral
+		Location: 25,15
+	Actor4: v20
+		Owner: Neutral
+		Location: 39,39
+	Actor5: v25
+		Owner: Neutral
+		Location: 36,42
+	Actor6: v24
+		Owner: Neutral
+		Location: 42,36
+	Actor7: v35
+		Owner: Neutral
+		Location: 36,40
+	Actor8: v33
+		Owner: Neutral
+		Location: 42,33
+	Actor9: v29
+		Owner: Neutral
+		Location: 39,37
+	Actor10: v26
+		Owner: Neutral
+		Location: 33,38
+	Actor11: v31
+		Owner: Neutral
+		Location: 40,35
+	Actor12: tc01
+		Owner: Neutral
+		Location: 31,29
+	Actor13: t08
+		Owner: Neutral
+		Location: 11,16
+	Actor14: tc01
+		Owner: Neutral
+		Location: 7,32
+	Actor15: t09
+		Owner: Neutral
+		Location: 10,46
+	Actor16: t04
+		Owner: Neutral
+		Location: 20,35
+	Actor17: tc01
+		Owner: Neutral
+		Location: 24,42
+	Actor18: tc01
+		Owner: Neutral
+		Location: 38,41
+	Actor19: v22
+		Owner: Neutral
+		Location: 37,45
+	Actor20: v23
+		Owner: Neutral
+		Location: 42,34
+	Actor21: v21
+		Owner: Neutral
+		Location: 33,41
+	Actor22: v24
+		Owner: Neutral
+		Location: 34,46
+	Actor23: v33
+		Owner: Neutral
+		Location: 44,40
+	Actor24: v35
+		Owner: Neutral
+		Location: 40,46
+	Actor25: c1
+		Owner: Neutral
+		Location: 37,39
+		SubCell: 3
+		Facing: 92
+	Actor26: c3
+		Owner: Neutral
+		Location: 41,42
+		SubCell: 3
+		Facing: 92
+	Actor27: c1
+		Owner: Neutral
+		Location: 34,44
+		SubCell: 3
+		Facing: 92
+	Actor28: c5
+		Owner: Neutral
+		Location: 41,37
+		SubCell: 3
+		Facing: 92
+	Actor30: c8
+		Owner: Neutral
+		Location: 34,40
+		SubCell: 3
+		Facing: 92
+	Actor31: c5
+		Owner: Neutral
+		Location: 41,34
+		SubCell: 3
+		Facing: 92
+	LandingZone: waypoint
+		Owner: Neutral
+		Location: 25,22
+	ConstructionZone: waypoint
+		Owner: Neutral
+		Location: 16,23
+Rules: radot5|rules/campaign-palettes.yaml, radot5|rules/campaign-rules.yaml, rules.yaml
