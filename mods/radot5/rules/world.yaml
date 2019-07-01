@@ -461,6 +461,7 @@ World:
 	ObjectivesPanel:
 		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
+	ScriptTriggers:
 
 EditorWorld:
 	Inherits: ^BaseWorld
