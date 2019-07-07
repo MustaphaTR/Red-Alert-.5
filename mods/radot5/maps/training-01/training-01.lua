@@ -187,7 +187,7 @@ Tick = function()
 		completed = true
 
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Media.DisplayMessage("Good work, commander. This base is now good for future use.", "Lieutenant", italy.Color)
+			Media.DisplayMessage("Good work, Commander. This base is now good for future use.", "Lieutenant", italy.Color)
 
 			Trigger.AfterDelay(DateTime.Seconds(3), function()
 				italy.MarkCompletedObjective(MainObjective)

@@ -1,0 +1,58 @@
+Player:
+	PlayerResources:
+		DefaultCash: 2000
+
+World:
+	LuaScript:
+		Scripts: training-02.lua, training-02-AI.lua, campaign-global.lua
+	MissionData:
+		Briefing: Location: Ethiopia\n\nThe Ethiopian forces have set up a defensive base here. We need to destroy it to process further.
+	MapOptions:
+		TechLevel: 5
+
+^Palettes:
+	IndexedPlayerPalette:
+		PlayerIndex:
+			Italy: 208, 208, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 154, 155, 143
+			Ethiopia: 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223
+
+PROC:
+	ExternalCondition@INVULN:
+		Condition: invuln
+	DamageMultiplier:
+		Modifier: 0
+		RequiresCondition: invuln
+
+SYRD:
+	Buildable:
+		Prerequisites: ~disabled
+
+VGATE:
+	Buildable:
+		Prerequisites: ~disabled
+
+HGATE:
+	Buildable:
+		Prerequisites: ~disabled
+
+TBOX:
+	Buildable:
+		Prerequisites: ~disabled
+
+TRUK:
+	Buildable:
+		Prerequisites: ~disabled
+
+FTRK:
+	RejectsOrders:
+		RequiresCondition: RejectsOrders
+	ExternalCondition@RejectsOrders:
+		Condition: RejectsOrders
+
+MCV:
+	Buildable:
+		Prerequisites: ~disabled
+
+MNLY:
+	Buildable:
+		Prerequisites: ~disabled
