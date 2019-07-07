@@ -930,7 +930,7 @@ WEAP:
 		PauseOnCondition: disabled
 		Prerequisites: vehicles.yugoslavia
 		Actors: maintenance
-		Type: Vehicle
+		Type: Maintenance
 		ChargeInterval: 2250
 		BlockedAudio: NoBuild
 		OrderName: MaintenancePower

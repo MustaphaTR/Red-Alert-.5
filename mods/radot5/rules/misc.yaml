@@ -176,6 +176,8 @@ hack.cav_ambush_spawner:
 
 maintenance:
 	Inherits: CAMERA
+	Buildable:
+		Queue: Maintenance
 	-RevealsShroud:
 	ProvidesPrerequisite@proxyname:
 	KillsSelf:
