@@ -419,7 +419,7 @@ HARV:
 		Resources: Ore,Gems
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 30
-		SearchFromOrderRadius: 11
+		SearchFromHarvesterRadius: 11
 		EmptyCondition: no-ore
 	Health:
 		HP: 60000
@@ -431,7 +431,6 @@ HARV:
 	RevealsShroud:
 		Range: 4c0
 	WithHarvestAnimation:
-		PrefixByFullness: empty-, half-, full-
 	WithDockingAnimation:
 	GpsDot:
 		String: Harvester
@@ -448,6 +447,9 @@ HARV:
 	Explodes:
 		RequiresCondition: !no-ore
 		Weapon: OreExplosion
+	WithHarvesterSpriteBody:
+		ImageByFullness: harvempty, harvhalf, harv
+	-WithFacingSpriteBody:
 
 WHRV:
 	Inherits: HARV
@@ -482,7 +484,6 @@ WHRV:
 		Actor: WHRV.EmptyHusk
 	HarvesterHuskModifier:
 		FullHuskActor: WHRV.FullHusk
-		FullnessThreshold: 50
 	RenderSprites:
 		Image: HARV
 
@@ -548,7 +549,7 @@ JEEP:
 	Mobile:
 		TurnSpeed: 10
 		Speed: 170
-		RequiresCondition: !being-captured && !notmobile
+		PauseOnCondition: notmobile || being-captured
 	RevealsShroud:
 		Range: 8c0
 		RevealGeneratedShroud: False
@@ -862,7 +863,7 @@ FTRK:
 	Mobile:
 		TurnSpeed: 10
 		Speed: 128
-		RequiresCondition: !being-captured && !notmobile
+		PauseOnCondition: notmobile || being-captured
 	RevealsShroud:
 		Range: 6c0
 		RevealGeneratedShroud: False

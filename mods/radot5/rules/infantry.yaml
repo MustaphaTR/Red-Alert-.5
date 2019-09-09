@@ -1071,4 +1071,3 @@ WarriorAnt:
 		Prerequisites: ~disabled
 	RenderSprites:
 		Image: Ant
-

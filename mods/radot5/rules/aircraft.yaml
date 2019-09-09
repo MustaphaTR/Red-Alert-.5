@@ -116,8 +116,8 @@ BADR.Buildable:
 	Aircraft:
 		Speed: 196
 		TakeOffOnCreation: false
-		LandWhenIdle: true
 		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
+		IdleBehavior: Land
 	Cargo:
 		Types: Infantry, Cavalry, Vehicle
 		PipCount: 10
@@ -183,7 +183,6 @@ MIG:
 	AmmoPool:
 		Ammo: 8
 		AmmoCondition: ammo
-	ReturnOnIdle:
 	Selectable:
 		Bounds: 36,28,0,2
 		DecorationBounds: 40,29,0,1
@@ -270,7 +269,6 @@ YAK:
 		PipCount: 6
 		ReloadDelay: 11
 		AmmoCondition: ammo
-	ReturnOnIdle:
 	SelectionDecorations:
 	WithMuzzleOverlay:
 	Contrail:
@@ -485,9 +483,9 @@ HELI:
 		LocalOffset: 0,-213,-85, 0,213,-85
 		PauseOnCondition: !ammo
 	AttackAircraft:
+		AttackType: Hover
 		FacingTolerance: 20
 	Aircraft:
-		LandWhenIdle: false
 		TurnSpeed: 4
 		Speed: 149
 	AutoTarget:
@@ -552,9 +550,9 @@ HIND:
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
 	AttackAircraft:
+		AttackType: Hover
 		FacingTolerance: 20
 	Aircraft:
-		LandWhenIdle: false
 		TurnSpeed: 4
 		Speed: 112
 	AutoTarget:

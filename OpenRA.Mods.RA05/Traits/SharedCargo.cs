@@ -25,7 +25,7 @@ namespace OpenRA.Mods.Common.Traits
 		[Desc("Number of pips to display when this actor is selected.")]
 		public readonly int PipCount = 0;
 
-		[Desc("`Passenger.CargoType`s that can be loaded into this actor.")]
+		[Desc("`SharedPassenger.CargoType`s that can be loaded into this actor.")]
 		public readonly HashSet<string> Types = new HashSet<string>();
 
 		[Desc("`SharedCargoManager.Type` thar this actor shares its passengers.")]
@@ -34,8 +34,9 @@ namespace OpenRA.Mods.Common.Traits
 		[Desc("Terrain types that this actor is allowed to eject actors onto. Leave empty for all terrain types.")]
 		public readonly HashSet<string> UnloadTerrainTypes = new HashSet<string>();
 
+		[VoiceReference]
 		[Desc("Voice to play when ordered to unload the passengers.")]
-		[VoiceReference] public readonly string UnloadVoice = "Action";
+		public readonly string UnloadVoice = "Action";
 
 		[Desc("Which direction the passenger will face (relative to the transport) when unloading.")]
 		public readonly int PassengerFacing = 128;
@@ -137,7 +138,7 @@ namespace OpenRA.Mods.Common.Traits
 				Unloading = true;
 				self.CancelActivity();
 				if (aircraft != null)
-					self.QueueActivity(new HeliLand(self, true));
+					self.QueueActivity(new Land(self));
 				self.QueueActivity(new UnloadSharedCargo(self, true));
 			}
 		}

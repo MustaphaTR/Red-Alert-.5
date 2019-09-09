@@ -100,20 +100,9 @@
 	ReloadDelayMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 75
-	InaccuracyMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 90
-	InaccuracyMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 80
-	InaccuracyMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 70
-	InaccuracyMultiplier@RANK-ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 50
 	SelfHealing@ELITE:
-		Step: 200
+		Step: 0
+		PercentageStep: 5
 		Delay: 100
 		HealIfBelow: 100
 		DamageCooldown: 125
@@ -123,6 +112,7 @@
 		Sequence: rank-veteran-1
 		Palette: effect
 		ReferencePoint: Bottom, Right
+		ValidStances: Ally, Enemy, Neutral
 		RequiresCondition: rank-veteran == 1
 		ZOffset: 256
 	WithDecoration@RANK-2:
@@ -130,6 +120,7 @@
 		Sequence: rank-veteran-2
 		Palette: effect
 		ReferencePoint: Bottom, Right
+		ValidStances: Ally, Enemy, Neutral
 		RequiresCondition: rank-veteran == 2
 		ZOffset: 256
 	WithDecoration@RANK-3:
@@ -137,6 +128,7 @@
 		Sequence: rank-veteran-3
 		Palette: effect
 		ReferencePoint: Bottom, Right
+		ValidStances: Ally, Enemy, Neutral
 		RequiresCondition: rank-veteran == 3
 		ZOffset: 256
 	WithDecoration@RANK-ELITE:
@@ -144,6 +136,7 @@
 		Sequence: rank-elite
 		Palette: effect
 		ReferencePoint: Bottom, Right
+		ValidStances: Ally, Enemy, Neutral
 		RequiresCondition: rank-elite
 		ZOffset: 256
 
@@ -275,7 +268,7 @@
 	AutoTargetPriority@ATTACKANYTHING:
 		RequiresCondition: stance-attackanything || assault-move
 	AttackMove:
-		AssaultMoveScanCondition: assault-move
+		AssaultMoveCondition: assault-move
 
 ^AutoTargetAir:
 	AutoTarget:
@@ -302,7 +295,7 @@
 	AutoTargetPriority@ATTACKANYTHING:
 		RequiresCondition: stance-attackanything || assault-move
 	AttackMove:
-		AssaultMoveScanCondition: assault-move
+		AssaultMoveCondition: assault-move
 
 ^GlobalBounty:
 	GrantConditionOnPrerequisite@GLOBALBOUNTY:
@@ -311,6 +304,14 @@
 	GivesBounty:
 		RequiresCondition: global-bounty
 
+^FlatSelectionMode:
+	Selectable:
+		PriorityModifiers: Ctrl
+
+^LowPrioritySelectionMode:
+	Selectable:
+		PriorityModifiers: Ctrl, Alt
+
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^IronCurtainable
@@ -318,6 +319,7 @@
 	Inherits@4: ^AffectedByPropaganda
 	Inherits@5: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
+	Inherits@SELECTION_MODE: ^FlatSelectionMode
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -415,6 +417,7 @@
 	Inherits@6: ^AffectedByAdvancedTraining
 	Inherits@7: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
+	Inherits@SELECTION_MODE: ^FlatSelectionMode
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -648,6 +651,7 @@
 	Inherits@5: ^AffectedByPropaganda
 	Inherits@6: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
+	Inherits@SELECTION_MODE: ^FlatSelectionMode
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -703,6 +707,7 @@
 	Inherits@6: ^AffectedByAirRadar
 	Inherits@7: ^AffectedByNationalism
 	Inherits@bounty: ^GlobalBounty
+	Inherits@SELECTION_MODE: ^FlatSelectionMode
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -793,6 +798,7 @@
 		TakeOffOnResupply: true
 		VTOL: true
 		InitialFacing: 224
+		CanSlide: True
 	GpsDot:
 		String: Helicopter
 	Hovers@CRUISING:
@@ -819,6 +825,8 @@
 		RequiresBaseProvider: True
 		BuildSounds: placbldg.aud, build5.aud
 		UndeploySounds: cashturn.aud
+	ActorPreviewPlaceBuildingPreview:
+		OverridePalette: placebuilding
 	RequiresBuildableArea:
 		AreaTypes: building
 	SoundOnDamageTransition:
@@ -926,6 +934,8 @@
 		BuildSounds: placbldg.aud
 		TerrainTypes: Clear,Road
 		UndeploySounds: cashturn.aud
+	FootprintPlaceBuildingPreview:
+		LineBuildSegmentPalette: placelinesegment
 	RequiresBuildableArea:
 		AreaTypes: building
 		Adjacent: 7
@@ -1243,6 +1253,7 @@
 	Aircraft:
 		CanHover: True
 		VTOL: true
+		CanSlide: True
 	FallsToEarth:
 		Explosion: UnitExplodeHeli
 	BodyOrientation:

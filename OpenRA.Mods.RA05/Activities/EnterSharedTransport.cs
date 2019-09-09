@@ -9,7 +9,6 @@
  */
 #endregion
 
-using System;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
@@ -66,14 +65,16 @@ namespace OpenRA.Mods.Common.Activities
             });
         }
 
-        protected override void OnCancel(Actor self)
+        protected override void OnLastRun(Actor self)
         {
             passenger.Unreserve(self);
         }
 
-        protected override void OnLastRun(Actor self)
+        public override void Cancel(Actor self, bool keepQueue = false)
         {
             passenger.Unreserve(self);
+
+            base.Cancel(self, keepQueue);
         }
     }
 }

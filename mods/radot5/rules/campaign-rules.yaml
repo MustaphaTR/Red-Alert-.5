@@ -41,7 +41,7 @@ RMBO.noautotarget:
 	-AutoTargetPriority@DEFAULT:
 	-AutoTargetPriority@ATTACKANYTHING:
 	AttackMove:
-		-AssaultMoveScanCondition:
+		-AssaultMoveCondition:
 	RenderSprites:
 		Image: RMBO
 
@@ -51,7 +51,7 @@ E7.noautotarget:
 	-AutoTargetPriority@DEFAULT:
 	-AutoTargetPriority@ATTACKANYTHING:
 	AttackMove:
-		-AssaultMoveScanCondition:
+		-AssaultMoveCondition:
 	RenderSprites:
 		Image: E7
 

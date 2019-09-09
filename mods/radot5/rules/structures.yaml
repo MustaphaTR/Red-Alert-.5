@@ -862,7 +862,7 @@ WEAP:
 		SpawnOffset: 213,-128,0
 		ExitCell: 1,2
 	Production:
-		Produces: Vehicle
+		Produces: Vehicle, Maintenance
 		PauseOnCondition: disabled
 	ProvidesPrerequisite@allies:
 		Factions: allies, greece, uk, germany, france, spain
@@ -941,6 +941,10 @@ WEAP:
 	WithColoredOverlay@IDISABLE:
 		RequiresCondition: disabled
 		Palette: disabled
+	-ActorPreviewPlaceBuildingPreview:
+	SequencePlaceBuildingPreview:
+		Sequence: place
+		SequencePalette: placebuilding
 
 MSLO:
 	Inherits: ^ScienceBuilding
@@ -1738,7 +1742,6 @@ HPAD:
 		RequiresCondition: !being-captured
 		SpawnOffset: 0,-256,0
 		ExitCell: 0,0
-		MoveIntoWorld: false
 		Facing: 224
 	RallyPoint:
 	Production:
@@ -1799,7 +1802,6 @@ AFLD:
 		RequiresCondition: !being-captured
 		ExitCell: 1,1
 		Facing: 192
-		MoveIntoWorld: false
 	RallyPoint:
 	Production:
 		Produces: Aircraft, Plane
@@ -1838,6 +1840,8 @@ AFLD:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
+		UseDirectionalTarget: True
+		DirectionArrowAnimation: paradirection
 	AirstrikePower@clustermines:
 		OrderName: ClusterMines
 		Prerequisites: aircraft.latvia
@@ -1855,6 +1859,8 @@ AFLD:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
+		UseDirectionalTarget: True
+		DirectionArrowAnimation: paradirection
 	ParatroopersPower@paratanks:
 		OrderName: SiameseParatanks
 		Prerequisites: aircraft.siam
@@ -1874,6 +1880,8 @@ AFLD:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
+		UseDirectionalTarget: True
+		DirectionArrowAnimation: paradirection
 	ProductionBar:
 		ProductionType: Aircraft
 	SupportPowerChargeBar:

@@ -53,11 +53,11 @@ namespace OpenRA.Mods.Common.Activities
 				.Where(c => pos.CanEnterCell(c, null, true) != pos.CanEnterCell(c, null, false));
 		}
 
-		public override Activity Tick(Actor self)
+		public override bool Tick(Actor self)
 		{
 			cargo.Unloading = false;
 			if (IsCanceling || cargo.Manager.IsEmpty())
-				return NextActivity;
+				return true;
 
 			foreach (var inu in notifiers)
 				inu.Unloading(self);
@@ -67,33 +67,33 @@ namespace OpenRA.Mods.Common.Activities
 
 			var exitSubCell = ChooseExitSubCell(actor);
 			if (exitSubCell == null)
-			{
-				self.NotifyBlocker(BlockedExitCells(actor));
-
-				return ActivityUtils.SequenceActivities(self, new Wait(10), this);
-			}
+            {
+                self.NotifyBlocker(BlockedExitCells(actor));
+                QueueChild(new Wait(10));
+                return false;
+            }
 
 			cargo.Unload(self);
 			self.World.AddFrameEndTask(w =>
 			{
-				if (actor.Disposed)
-					return;
+                if (actor.Disposed)
+                    return;
 
-				var move = actor.Trait<IMove>();
-				var pos = actor.Trait<IPositionable>();
+                var move = actor.Trait<IMove>();
+                var pos = actor.Trait<IPositionable>();
 
-				actor.CancelActivity();
-				pos.SetVisualPosition(actor, spawn);
-				actor.QueueActivity(move.MoveIntoWorld(actor, exitSubCell.Value.First, exitSubCell.Value.Second));
-				actor.SetTargetLine(Target.FromCell(w, exitSubCell.Value.First, exitSubCell.Value.Second), Color.Green, false);
-				w.Add(actor);
-			});
+                pos.SetPosition(self, exitSubCell.Value.First, exitSubCell.Value.Second);
+                pos.SetVisualPosition(actor, spawn);
+
+                actor.CancelActivity();
+                w.Add(actor);
+            });
 
 			if (!unloadAll || cargo.Manager.IsEmpty())
-				return NextActivity;
+				return true;
 
 			cargo.Unloading = true;
-			return this;
+			return false;
 		}
 	}
 }
