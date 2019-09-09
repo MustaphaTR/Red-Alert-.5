@@ -21,7 +21,7 @@
 			Ore: 80
 			Gems: 80
 			Beach: 80
-	Locomotor@swimsuit:
+	Locomotor@SWIMSUIT:
 		Name: swimsuit
 		Crushes: mine, crate
 		SharesCell: true
@@ -116,6 +116,16 @@
 	Locomotor@IMMOBILE:
 		Name: immobile
 		TerrainSpeeds:
+	Locomotor@MINE:
+		Name: mine
+		TerrainSpeeds:
+			Clear: 1
+			Rough: 1
+			Road: 1
+			Bridge: 1
+			Ore: 1
+			Gems: 1
+			Beach: 1
 	TerrainRenderer:
 	ShroudRenderer:
 		FogVariants: shroud

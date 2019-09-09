@@ -13,7 +13,7 @@ MINV.Cluster:
 	Inherits: MINV
 	-Immobile:
 	Mobile:
-		Locomotor: foot
+		Locomotor: mine
 	SpeedMultiplier:
 		Modifier: 0
 	RejectsOrders:
