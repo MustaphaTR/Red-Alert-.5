@@ -31,7 +31,7 @@ scoutcav:
 		UseTilesetExtension: true
 		TilesetOverrides:
 			DESERT: TEMPERAT
-	icon:scout_icon
+	icon: scavicon
 
 riflecav:
 	stand: dragoon_idle
@@ -101,7 +101,7 @@ grencav:
 		UseTilesetExtension: true
 		TilesetOverrides:
 			DESERT: TEMPERAT
-	icon: mount_grenadier_icon
+	icon: gcavicon
 
 engicav:
 	stand: cengi_idle
@@ -130,7 +130,7 @@ engicav:
 		UseTilesetExtension: true
 		TilesetOverrides:
 			DESERT: TEMPERAT
-	icon: e6icon
+	icon: ecavicon
 
 hussar:
 	idle:

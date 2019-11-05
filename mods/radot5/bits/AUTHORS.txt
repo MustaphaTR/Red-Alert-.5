@@ -26,3 +26,9 @@ MustaphaTR:
 	Hedgehog Cameo:					custom/hedgicon.shp
 	Oil Pump Cameo:					custom/oilericon.shp
 	Rifle Cavalry Cameo:			custom/rcavicon.shp
+
+Polish'dPole:
+	Scout Cavalry Cameo:			custom/scavicon.shp
+	Grenadier Cavalry Cameo:		custom/gcavicon.shp
+	Engineer Cavalry Cameo:			custom/ecavicon.shp
+	Rocket Cavalry Cameo:			custom/pcavicon.shp
