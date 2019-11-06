@@ -50,7 +50,7 @@ namespace OpenRA.Mods.Common.Activities
 
 			// Find the cells that are blocked by transient actors
 			return cargo.CurrentAdjacentCells
-				.Where(c => pos.CanEnterCell(c, null, true) != pos.CanEnterCell(c, null, false));
+				.Where(c => pos.CanEnterCell(c, null, BlockedByActor.All) != pos.CanEnterCell(c, null, BlockedByActor.None));
 		}
 
 		public override bool Tick(Actor self)
@@ -67,27 +67,27 @@ namespace OpenRA.Mods.Common.Activities
 
 			var exitSubCell = ChooseExitSubCell(actor);
 			if (exitSubCell == null)
-            {
-                self.NotifyBlocker(BlockedExitCells(actor));
-                QueueChild(new Wait(10));
-                return false;
-            }
+			{
+				self.NotifyBlocker(BlockedExitCells(actor));
+				QueueChild(new Wait(10));
+				return false;
+			}
 
 			cargo.Unload(self);
 			self.World.AddFrameEndTask(w =>
 			{
-                if (actor.Disposed)
-                    return;
+				if (actor.Disposed)
+					return;
 
-                var move = actor.Trait<IMove>();
-                var pos = actor.Trait<IPositionable>();
+				var move = actor.Trait<IMove>();
+				var pos = actor.Trait<IPositionable>();
 
-                pos.SetPosition(self, exitSubCell.Value.First, exitSubCell.Value.Second);
-                pos.SetVisualPosition(actor, spawn);
+				pos.SetPosition(self, exitSubCell.Value.First, exitSubCell.Value.Second);
+				pos.SetVisualPosition(actor, spawn);
 
-                actor.CancelActivity();
-                w.Add(actor);
-            });
+				actor.CancelActivity();
+				w.Add(actor);
+			});
 
 			if (!unloadAll || cargo.Manager.IsEmpty())
 				return true;
