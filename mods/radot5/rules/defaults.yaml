@@ -713,7 +713,7 @@
 		Action: Kill
 	DrawLineToTarget:
 	Armor:
-		Type: Light
+		Type: Aircraft
 	UpdatesPlayerStatistics:
 	AppearsOnRadar:
 		UseLocation: true

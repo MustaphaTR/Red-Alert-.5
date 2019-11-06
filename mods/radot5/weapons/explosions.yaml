@@ -7,6 +7,7 @@
 			None: 90
 			Wood: 75
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -156,6 +157,7 @@ BarrelExplode:
 			None: 120
 			Wood: 100
 			Light: 50
+			Aircraft: 50
 			Concrete: 10
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, Incendiary
 	Warhead@2Eff: CreateEffect
@@ -199,6 +201,7 @@ OreExplosion:
 			None: 90
 			Wood: 70
 			Light: 60
+			Aircraft: 60
 			Heavy: 20
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Res: CreateResource

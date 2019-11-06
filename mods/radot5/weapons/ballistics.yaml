@@ -13,6 +13,7 @@
 			None: 30
 			Wood: 75
 			Light: 75
+			Aircraft: 75
 			Concrete: 50
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
@@ -42,6 +43,7 @@
 			None: 30
 			Wood: 50
 			Light: 100
+			Aircraft: 100
 			Heavy: 50
 			Concrete: 30
 	-Warhead@2Smu: LeaveSmudge
@@ -57,6 +59,7 @@
 			None: 60
 			Wood: 50
 			Light: 110
+			Aircraft: 110
 			Heavy: 55
 			Concrete: 30
 
@@ -83,6 +86,7 @@
 			None: 60
 			Wood: 75
 			Light: 80
+			Aircraft: 80
 			Heavy: 105
 			Concrete: 50
 
@@ -113,6 +117,7 @@
 			None: 60
 			Wood: 75
 			Light: 80
+			Aircraft: 80
 			Heavy: 105
 			Concrete: 50
 
@@ -149,6 +154,7 @@ SABOT:
 			None: 1
 			Wood: 10
 			Light: 240
+			Aircraft: 240
 			Heavy: 200
 			Concrete: 3
 
@@ -159,6 +165,7 @@ SABOT.Chemical:
 			None: 2
 			Wood: 10
 			Light: 250
+			Aircraft: 250
 			Heavy: 205
 			Concrete: 3
 
@@ -178,6 +185,7 @@ SABOT.Chemical:
 			None: 90
 			Wood: 40
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
@@ -230,6 +238,7 @@ SABOT.Chemical:
 			None: 60
 			Wood: 35
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 100
 	Warhead@4EffWater: CreateEffect
@@ -249,6 +258,7 @@ SABOT.Chemical:
 			None: 28
 			Wood: 72
 			Light: 72
+			Aircraft: 72
 			Concrete: 48
 
 Grenade:
@@ -264,9 +274,10 @@ Grenade:
 		Spread: 256
 		Damage: 6000
 		Versus:
-			None: 50
+			None: 20
 			Wood: 100
 			Light: 35
+			Aircraft: 35
 			Heavy: 45
 			Concrete: 100
 	Warhead@3Eff: CreateEffect
@@ -297,6 +308,7 @@ DepthCharge:
 		ValidTargets: Submarine
 		Versus:
 			Light: 75
+			Aircraft: 75
 		DamageTypes: ExplosionDeath
 	Warhead@4EffWater: CreateEffect
 		Explosions: large_splash
@@ -327,6 +339,7 @@ MortarShell:
 			None: 100
 			Wood: 50
 			Light: 80
+			Aircraft: 80
 			Heavy: 35
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@2Smu: LeaveSmudge
@@ -354,6 +367,7 @@ PlaneBomb:
 			None: 50
 			Wood: 75
 			Light: 75
+			Aircraft: 75
 			Heavy: 90
 			Concrete: 50
 		DamageTypes: Prone100Percent, TriggerProne, ExplosionDeath

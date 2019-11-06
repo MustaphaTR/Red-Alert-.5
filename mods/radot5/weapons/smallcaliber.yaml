@@ -14,6 +14,7 @@
 			None: 60
 			Wood: 10
 			Light: 60
+			Aircraft: 60
 			Heavy: 10
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
@@ -35,6 +36,7 @@ ZSU-23:
 			None: 25
 			Wood: 75
 			Light: 75
+			Aircraft: 75
 			Heavy: 100
 			Concrete: 50
 
@@ -89,6 +91,7 @@ FLAK-23-AG.Decoy:
 			None: 120
 			Wood: 60
 			Light: 72
+			Aircraft: 72
 			Heavy: 28
 			Concrete: 28
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -108,6 +111,7 @@ FLAK-23-AG.Decoy:
 			None: 150
 			Wood: 10
 			Light: 40
+			Aircraft: 40
 			Heavy: 10
 			Concrete: 10
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
@@ -120,6 +124,7 @@ Vulcan:
 			None: 200
 			Wood: 50
 			Light: 50
+			Aircraft: 50
 			Heavy: 20
 			Concrete: 20
 	Warhead@4Dam_2: SpreadDamage
@@ -130,6 +135,7 @@ Vulcan:
 			None: 200
 			Wood: 50
 			Light: 50
+			Aircraft: 50
 			Heavy: 20
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -150,6 +156,7 @@ Vulcan:
 			None: 200
 			Wood: 50
 			Light: 50
+			Aircraft: 50
 			Heavy: 20
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -170,6 +177,7 @@ Vulcan:
 			None: 200
 			Wood: 50
 			Light: 50
+			Aircraft: 50
 			Heavy: 20
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -190,6 +198,7 @@ Vulcan:
 			None: 200
 			Wood: 50
 			Light: 50
+			Aircraft: 50
 			Heavy: 20
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -210,6 +219,7 @@ Vulcan:
 			None: 200
 			Wood: 50
 			Light: 50
+			Aircraft: 50
 			Heavy: 20
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -229,24 +239,28 @@ Vulcan.AP:
 		Versus:
 			Wood: 55
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 22
 	Warhead@4Dam_2: SpreadDamage
 		Versus:
 			Wood: 55
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 22
 	Warhead@5Dam_3: SpreadDamage
 		Versus:
 			Wood: 55
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 22
 	Warhead@7Dam_4: SpreadDamage
 		Versus:
 			Wood: 55
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 22
 	Warhead@9Dam_5: SpreadDamage
@@ -259,6 +273,7 @@ Vulcan.AP:
 		Versus:
 			Wood: 55
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 22
 
@@ -288,6 +303,7 @@ ChainGun.Yak:
 			None: 100
 			Wood: 50
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 25
 
@@ -297,6 +313,7 @@ ChainGun.Yak.AP:
 		Versus:
 			Wood: 55
 			Light: 70
+			Aircraft: 70
 			Heavy: 30
 			Concrete: 27
 
@@ -320,6 +337,7 @@ Pistol.AP:
 		Versus:
 			Wood: 15
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 
@@ -342,6 +360,7 @@ M1Carbine.AP:
 		Versus:
 			Wood: 35
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 
@@ -357,6 +376,7 @@ ScoutGun.AP:
 		Versus:
 			Wood: 35
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 
@@ -372,6 +392,7 @@ CavalryRifle.AP:
 		Versus:
 			Wood: 35
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 
@@ -391,6 +412,7 @@ HussarShotgun:
 			None: 150
 			Wood: 40
 			Light: 40
+			Aircraft: 40
 			Heavy: 10
 			Concrete: 10
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -405,12 +427,14 @@ HussarShotgun.AP:
 		Versus:
 			Wood: 45
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 	Warhead@2Dam: SpreadDamage
 		Versus:
 			Wood: 45
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 
@@ -427,6 +451,7 @@ M60mg.AP:
 		Versus:
 			Wood: 35
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 
@@ -444,6 +469,7 @@ GatlingAG.AP:
 		Versus:
 			Wood: 35
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 
@@ -463,6 +489,7 @@ GatlingAA.AP:
 		Versus:
 			Wood: 35
 			Light: 50
+			Aircraft: 50
 			Heavy: 15
 			Concrete: 12
 

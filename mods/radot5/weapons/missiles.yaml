@@ -22,6 +22,7 @@
 			None: 10
 			Wood: 74
 			Light: 34
+			Aircraft: 34
 			Heavy: 100
 			Concrete: 50
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -63,11 +64,16 @@ Maverick:
 			None: 30
 			Wood: 90
 			Light: 90
+			Aircraft: 90
 			Heavy: 115
 			Concrete: 100
 
 Dragon:
 	Inherits: ^AntiGroundMissile
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Light: 24
+			Heavy: 60
 
 HellfireAG:
 	Inherits: ^AntiGroundMissile
@@ -85,6 +91,7 @@ HellfireAG:
 			None: 30
 			Wood: 90
 			Light: 90
+			Aircraft: 90
 			Concrete: 100
 
 HellfireAA:
@@ -104,6 +111,7 @@ HellfireAA:
 		Versus:
 			Wood: 75
 			Light: 75
+			Aircraft: 75
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 
@@ -123,6 +131,7 @@ MammothTusk:
 		Versus:
 			None: 100
 			Light: 60
+			Aircraft: 60
 			Heavy: 24
 			Concrete: 50
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
@@ -150,7 +159,7 @@ Nike:
 		Damage: 5000
 		ValidTargets: Air
 		Versus:
-			Light: 90
+			Aircraft: 90
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 		ImpactSounds: kaboom25.aud
@@ -165,10 +174,10 @@ RedEye:
 		RangeLimit: 9c0
 		Speed: 298
 	Warhead@1Dam: SpreadDamage
-		Damage: 4000
 		ValidTargets: Air
 		Versus:
-			Light: 60
+			Light: 24
+			Aircraft: 70
 
 Stinger:
 	Inherits: ^AntiGroundMissile
@@ -190,6 +199,7 @@ Stinger:
 			None: 36
 			Wood: 88
 			Light: 88
+			Aircraft: 88
 			Heavy: 120
 			Concrete: 60
 
@@ -217,6 +227,7 @@ APTusk:
 			None: 28
 			Wood: 88
 			Light: 88
+			Aircraft: 88
 			Heavy: 120
 			Concrete: 60
 
@@ -245,6 +256,7 @@ TorpTube:
 		Versus:
 			Wood: 75
 			Light: 75
+			Aircraft: 75
 			Heavy: 100
 			Concrete: 500
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -277,6 +289,7 @@ TorpTube:
 			None: 40
 			Wood: 50
 			Light: 30
+			Aircraft: 30
 			Heavy: 30
 			Concrete: 100
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
@@ -333,6 +346,7 @@ SCUD:
 			None: 90
 			Wood: 75
 			Light: 70
+			Aircraft: 70
 			Heavy: 40
 			Concrete: 100
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath, Incendiary
@@ -371,6 +385,7 @@ SCUD:
 			None: 24
 			Wood: 60
 			Light: 100
+			Aircraft: 100
 			Heavy: 48
 
 BikeRockets:
@@ -389,5 +404,6 @@ BikeRockets:
 			None: 25
 			Wood: 90
 			Light: 125
+			Aircraft: 125
 			Heavy: 125
 		ValidTargets: Ground, Water, Air

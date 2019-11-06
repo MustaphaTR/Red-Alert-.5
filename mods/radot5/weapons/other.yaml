@@ -10,6 +10,7 @@
 			None: 90
 			Wood: 50
 			Light: 60
+			Aircraft: 60
 			Heavy: 25
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
@@ -32,6 +33,7 @@ FireballLauncher:
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Light: 50
+			Aircraft: 50
 
 Flamer:
 	Inherits: ^FireWeapon
@@ -51,6 +53,7 @@ Flamer:
 			None: 70
 			Wood: 80
 			Light: 40
+			Aircraft: 40
 			Heavy: 20
 			Concrete: 10
 	Warhead@3Eff: CreateEffect
@@ -69,6 +72,7 @@ Chemspray:
 			None: 70
 			Wood: 35
 			Light: 75
+			Aircraft: 75
 			Heavy: 75
 		DamageTypes: Prone50Percent, TriggerProne, TiberiumDeath
 	Warhead@3Eff: CreateEffect
@@ -178,6 +182,7 @@ Claw:
 			None: 97
 			Wood: 10
 			Light: 30
+			Aircraft: 30
 			Heavy: 10
 			Concrete: 10
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
@@ -205,6 +210,7 @@ MandibleHeavy:
 		Versus:
 			None: 100
 			Light: 90
+			Aircraft: 90
 			Heavy: 35
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -225,6 +231,7 @@ AntFireball:
 			None: 80
 			Wood: 85
 			Light: 45
+			Aircraft: 45
 			Heavy: 20
 			Concrete: 15
 
