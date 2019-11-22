@@ -1,6 +1,6 @@
 Metadata:
 	Title: Red Alert .5
-	Version: cfa6775
+	Version: d537b6c
 	Website: https://www.openra.net
 	WebIcon32: https://www.openra.net/images/icons/ra_32x32.png
 
@@ -48,7 +48,7 @@ Packages:
 
 MapFolders:
 	radot5|maps: System
-	~^maps/ra/cfa6775: User
+	~^maps/ra/d537b6c: User
 
 Rules:
 	radot5|rules/misc.yaml
