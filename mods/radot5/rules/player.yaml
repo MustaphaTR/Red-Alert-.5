@@ -185,3 +185,4 @@ Player:
 	ConditionManager:
 	SharedCargoManager:
 		MaxWeight: 8
+	PlayerRadarTerrain:
