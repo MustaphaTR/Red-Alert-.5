@@ -381,9 +381,9 @@ production-icons:
 		infantry: 34, 68, 16, 16
 		infantry-disabled: 34, 85, 16, 16
 		infantry-alert: 34, 102, 16, 16
-		cavalry: 235, 68, 16, 16
-		cavalry-disabled: 235, 85, 16, 16
-		cavalry-alert: 235, 102, 16, 16
+		cavalry: 237, 68, 16, 16
+		cavalry-disabled: 237, 85, 16, 16
+		cavalry-alert: 237, 102, 16, 16
 		vehicle: 51, 68, 16, 16
 		vehicle-disabled: 51, 85, 16, 16
 		vehicle-alert: 51, 102, 16, 16
@@ -393,9 +393,9 @@ production-icons:
 		ship: 187, 68, 16, 16
 		ship-disabled: 187, 85, 16, 16
 		ship-alert: 187, 102, 16, 16
-		upgrade: 219, 68, 16, 16
-		upgrade-disabled: 219, 85, 16, 16
-		upgrade-alert: 219, 102, 16, 16
+		upgrade: 220, 68, 16, 16
+		upgrade-disabled: 220, 85, 16, 16
+		upgrade-alert: 220, 102, 16, 16
 
 order-icons:
 	Inherits: ^Glyphs
