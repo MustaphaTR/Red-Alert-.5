@@ -85,6 +85,8 @@ Speech:
 		SovietReinforcementsArrived: sovrein1
 		SpyPlaneReady: spypln1
 		StartGame: bctrinit
+		GameLoaded: load1
+		GameSaved: save1
 		StructureDestroyed: strckil1
 		StructureSold: strusld1
 		TanyaFreed: tanyaf1
