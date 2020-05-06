@@ -593,6 +593,7 @@
 		TargetTypes: Ground, Infantry, Cavalry
 	WithInfantryBody:
 		IdleSequences: idle1
+		StandSequences: stand
 	WithDeathAnimation:
 		DeathTypes:
 			DefaultDeath: 1
@@ -603,8 +604,6 @@
 			ElectricityDeath: 1
 		CrushedSequence: die-crushed
 		FallbackSequence: die1
-		IdleSequences: idle1
-		StandSequences: stand
 	RevealsShroud:
 		Range: 5c0
 
