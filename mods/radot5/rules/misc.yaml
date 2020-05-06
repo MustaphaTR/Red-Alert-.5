@@ -179,6 +179,8 @@ maintenance:
 	Buildable:
 		Queue: Maintenance
 	-RevealsShroud:
+	Tooltip:
+		Name: Maintenance
 	ProvidesPrerequisite@proxyname:
 	KillsSelf:
 		Delay: 1500
