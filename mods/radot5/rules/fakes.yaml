@@ -658,11 +658,11 @@ HARF:
 	Valued:
 		Cost: 110
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
@@ -692,11 +692,11 @@ HARF:
 	Valued:
 		Cost: 70
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
@@ -723,11 +723,11 @@ FTRF:
 	Valued:
 		Cost: 60
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
@@ -758,11 +758,11 @@ ARTF:
 	Valued:
 		Cost: 85
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
@@ -787,11 +787,11 @@ MRJF:
 	Valued:
 		Cost: 80
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
@@ -815,11 +815,11 @@ MCVF:
 	Valued:
 		Cost: 200
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
@@ -844,11 +844,11 @@ MNLF:
 	Valued:
 		Cost: 80
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
@@ -874,11 +874,11 @@ MNLF:
 	Valued:
 		Cost: 85
 	WithDecoration@fake:
-		RequiresSelection: true
+		Position: Top
+		Margin: 0, 4
+		RequiresSelection: false
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 	Armament:
 		Weapon: 90mm.Decoy
 		Recoil: 0
