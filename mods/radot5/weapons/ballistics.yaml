@@ -46,7 +46,7 @@
 			Aircraft: 100
 			Heavy: 50
 			Concrete: 30
-	-Warhead@2Smu: LeaveSmudge
+	-Warhead@2Smu:
 	Warhead@3Eff: CreateEffect
 		-ImpactSounds:
 	Warhead@4EffWater: CreateEffect
@@ -66,12 +66,12 @@
 25mm.Decoy:
 	Inherits: 25mm
 	-Report:
-	-Projectile: Bullet
+	-Projectile:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
-	-Warhead@3Eff: CreateEffect
-	-Warhead@4EffWater: CreateEffect
+	-Warhead@3Eff:
+	-Warhead@4EffWater:
 
 90mm:
 	Inherits: ^Cannon
@@ -93,13 +93,13 @@
 90mm.Decoy:
 	Inherits: 90mm
 	-Report:
-	-Projectile: Bullet
+	-Projectile:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
-	-Warhead@2Smu: LeaveSmudge
-	-Warhead@3Eff: CreateEffect
-	-Warhead@4EffWater: CreateEffect
+	-Warhead@2Smu:
+	-Warhead@3Eff:
+	-Warhead@4EffWater:
 
 105mm:
 	Inherits: ^Cannon
@@ -211,13 +211,13 @@ SABOT.Chemical:
 155mm.Decoy:
 	Inherits: 155mm
 	-Report:
-	-Projectile: Bullet
+	-Projectile:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
-	-Warhead@2Smu: LeaveSmudge
-	-Warhead@3Eff: CreateEffect
-	-Warhead@4EffWater: CreateEffect
+	-Warhead@2Smu:
+	-Warhead@3Eff:
+	-Warhead@4EffWater:
 
 8Inch:
 	Inherits: ^Artillery

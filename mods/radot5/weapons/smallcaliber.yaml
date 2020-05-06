@@ -48,11 +48,11 @@ FLAK-23-AA:
 FLAK-23-AA.Decoy:
 	Inherits: FLAK-23-AA
 	-Report:
-	-Projectile: Bullet
+	-Projectile:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
-	-Warhead@2Eff: CreateEffect
+	-Warhead@2Eff:
 
 FLAK-23-AG:
 	Inherits: ^AACannon
@@ -71,12 +71,12 @@ FLAK-23-AG:
 FLAK-23-AG.Decoy:
 	Inherits: FLAK-23-AG
 	-Report:
-	-Projectile: Bullet
+	-Projectile:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
-	-Warhead@2Eff: CreateEffect
-	-Warhead@3EffWater: CreateEffect
+	-Warhead@2Eff:
+	-Warhead@3EffWater:
 
 ^HeavyMG:
 	ReloadDelay: 30
@@ -481,7 +481,7 @@ GatlingAA:
 		ValidTargets: Air
 	Warhead@2Eff: CreateEffect
 		ValidTargets: Air
-	-Warhead@3EffWater: CreateEffect
+	-Warhead@3EffWater:
 
 GatlingAA.AP:
 	Inherits: GatlingAA
