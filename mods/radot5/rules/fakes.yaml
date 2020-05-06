@@ -671,6 +671,7 @@ HARF:
 	-WithDockingAnimation:
 	-HarvesterHuskModifier:
 	-SpawnActorOnDeath:
+	-WithHarvesterPipsDecoration:
 	RenderSprites:
 		Image: HARV
 
@@ -736,6 +737,7 @@ FTRF:
 		Recoil: 0
 	-WithMuzzleOverlay:
 	-Cargo:
+	-WithCargoPipsDecoration:
 	RenderSprites:
 		Image: FTRK
 
