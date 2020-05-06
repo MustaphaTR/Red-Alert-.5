@@ -1227,6 +1227,7 @@
 ^PlaneHusk:
 	Inherits: ^BasicHusk
 	Inherits@1: ^AffectedByAirRadar
+	ConditionManager:
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
@@ -1246,6 +1247,7 @@
 ^HelicopterHusk:
 	Inherits: ^BasicHusk
 	Inherits@1: ^AffectedByAirRadar
+	ConditionManager:
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
