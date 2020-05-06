@@ -1050,11 +1050,11 @@
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
 	InfiltrateForDecoration:
 		Types: SpyInfiltrate
+		Position: Top
+		Margin: 0, 4
 		RequiresSelection: true
 		Image: pips
 		Sequence: tag-fake
-		ReferencePoint: Top
-		ZOffset: 256
 
 ^AmmoBox:
 	Inherits: ^TechBuilding
