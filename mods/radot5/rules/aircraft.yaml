@@ -14,8 +14,6 @@ BADR:
 	Cargo:
 		MaxWeight: 10
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	-Voiced:
 	Tooltip:
 		Name: Paradrop Plane
@@ -55,8 +53,6 @@ BADR.Bomber:
 	AmmoPool:
 		Ammo: 7
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	-Voiced:
 	Tooltip:
 		Name: Heavy Bomber Plane
@@ -129,8 +125,6 @@ BADR.Buildable:
 	-Interactable:
 	Selectable:
 		Bounds: 48,48
-	SelectionDecorations:
-		RenderSelectionBars: True
 	Rearmable:
 		RearmActors: afld, fix
 	Repairable:
@@ -612,8 +606,6 @@ U2:
 		MaximumPitch: 56
 	AttackBomber:
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	-Voiced:
 	-Targetable@AIRBORNE:
 	Contrail@1:

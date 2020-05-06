@@ -312,8 +312,6 @@ V19.Husk:
 		StartSequence: fire-start
 		Sequence: fire-loop
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	-Targetable:
 	-Demolishable:
 	-HitShape:
@@ -325,8 +323,6 @@ V19.Husk:
 BARL:
 	Inherits: ^TechBuilding
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	Health:
 		HP: 1000
 	Explodes:
@@ -349,8 +345,6 @@ BARL:
 BRL3:
 	Inherits: ^TechBuilding
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	Health:
 		HP: 1000
 	Explodes:
