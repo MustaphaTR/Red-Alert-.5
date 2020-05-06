@@ -1045,7 +1045,6 @@ TNKD:
 		GenericName: Tank
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
-	SelectionDecorations:
 	Health:
 		HP: 45000
 	Armor:
@@ -1070,10 +1069,10 @@ TNKD:
 		RequiresCondition: chemical_shells
 	AttackFrontal:
 	WithMuzzleOverlay:
+	Selectable:
+		DecorationBounds: 28,28
 	SpawnActorOnDeath:
 		Actor: TNKD.Husk
-	SelectionDecorations:
-		VisualBounds: 28,28
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 
