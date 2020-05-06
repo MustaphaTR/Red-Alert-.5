@@ -929,7 +929,7 @@ e5:
 		Length: 16
 		Facings: 8
 	parachute:
-		Start: 528
+		Start: 622
 	idle1:
 		Start: 384
 		Length: 14
