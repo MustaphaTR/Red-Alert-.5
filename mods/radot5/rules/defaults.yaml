@@ -619,7 +619,7 @@
 	RevealsShroud:
 		Range: 3c0
 	Passenger:
-		PipType: Gray
+		CustomPipType: gray
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:

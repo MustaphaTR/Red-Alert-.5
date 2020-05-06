@@ -345,9 +345,9 @@ E6:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	Passenger:
-		PipType: Yellow
+		CustomPipType: yellow
 	SharedPassenger:
-		PipType: Yellow
+		CustomPipType: yellow
 	EngineerRepair:
 	RepairsBridges:
 	CaptureManager:
@@ -414,9 +414,9 @@ e9:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	SharedPassenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: MP5
 	Armament@GARRISONED:
@@ -497,10 +497,10 @@ SPY:
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
-		PipType: Blue
+		CustomPipType: blue
 		Voice: Move
 	SharedPassenger:
-		PipType: Blue
+		CustomPipType: blue
 		Voice: Move
 	Disguise:
 		DisguisedCondition: disguise
@@ -563,10 +563,10 @@ RMBO:
 		DetonationDelay: 45
 		Voice: Demolish
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 		Voice: Move
 	SharedPassenger:
-		PipType: Red
+		CustomPipType: red
 		Voice: Move
 	Armament@PRIMARY:
 		Weapon: RamboGun
@@ -623,9 +623,9 @@ MEDI:
 	RevealsShroud:
 		Range: 3c0
 	Passenger:
-		PipType: Blue
+		CustomPipType: blue
 	SharedPassenger:
-		PipType: Blue
+		CustomPipType: blue
 	Armament:
 		Weapon: Heal
 		Cursor: heal
@@ -665,10 +665,10 @@ MECH:
 	RevealsShroud:
 		Range: 3c0
 	Passenger:
-		PipType: Blue
+		CustomPipType: blue
 		Voice: Move
 	SharedPassenger:
-		PipType: Blue
+		CustomPipType: blue
 		Voice: Move
 	Armament:
 		Weapon: Repair
@@ -773,9 +773,9 @@ THF:
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
-		PipType: Blue
+		CustomPipType: blue
 	SharedPassenger:
-		PipType: Blue
+		CustomPipType: blue
 	CaptureManager:
 	Captures:
 		CaptureTypes: vehicle
@@ -871,9 +871,9 @@ SNIPER:
 	Health:
 		HP: 8000
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	SharedPassenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 6c0
 	AutoTarget:
@@ -922,9 +922,9 @@ SABOT:
 		Prerequisites: ~barr, ~infantry.comchina, stek, ~techlevel.8
 		Description: Infantry armed with explosions to blow up structures.\nCan be deployed to cloak.\n  Strong vs Buildings\n  Weak vs Infantry, Vehicles, Aircraft
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	SharedPassenger:
-		PipType: Red
+		CustomPipType: red
 	Demolition:
 		DetonationDelay: 0
 		Flashes: 0
