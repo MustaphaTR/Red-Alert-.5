@@ -131,6 +131,7 @@ HUSSAR:
 	WithMuzzleOverlay:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		IdleSequences: idle1, idle2
 	ProducibleWithLevel:
 		Prerequisites: stable.upgraded
 	RenderSprites:

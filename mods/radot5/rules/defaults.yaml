@@ -591,6 +591,8 @@
 		CargoType: Cavalry
 	Targetable:
 		TargetTypes: Ground, Infantry, Cavalry
+	WithInfantryBody:
+		IdleSequences: idle1
 	WithDeathAnimation:
 		DeathTypes:
 			DefaultDeath: 1
