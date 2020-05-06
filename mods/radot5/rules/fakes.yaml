@@ -666,12 +666,14 @@ HARF:
 	Explodes:
 		Weapon: Demolish
 		DamageThreshold: 70
+	-SpawnActorOnDeath:
 	-Harvester:
 	-WithHarvestAnimation:
 	-WithDockingAnimation:
 	-HarvesterHuskModifier:
-	-SpawnActorOnDeath:
 	-WithHarvesterPipsDecoration:
+	-WithHarvesterSpriteBody:
+	WithFacingSpriteBody:
 	RenderSprites:
 		Image: HARV
 
