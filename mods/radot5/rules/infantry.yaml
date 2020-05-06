@@ -518,11 +518,11 @@ SPY:
 		IdleSequences: idle1,idle2
 		StandSequences: stand,stand2
 	WithDecoration@disguise:
+		Margin: 6, 10
 		Image: pips
 		Sequence: pip-disguise
 		Palette: effect
-		ReferencePoint: Top, Right
-		ZOffset: 256
+		Position: TopRight
 		RequiresCondition: disguise
 	IgnoresDisguise:
 	DetectCloaked:
