@@ -361,7 +361,6 @@ PROC:
 		DockAngle: 64
 		DockOffset: 1,2
 	StoresResources:
-		PipCount: 17
 		Capacity: 2000
 	DrawLineToTarget:
 	CustomSellValue:
@@ -382,7 +381,7 @@ PROC:
 	InfiltrateForCash:
 		Percentage: 50
 		Types: ThiefInfiltrate
-		Notification: CreditsStolen
+		InfiltratedNotification: CreditsStolen
 	WithBuildingBib:
 	WithIdleOverlay@TOP:
 		RequiresCondition: !build-incomplete
@@ -407,6 +406,16 @@ PROC:
 		Type: Rectangle
 			TopLeft: -1536, 598
 			BottomRight: -512, 1280
+	-ActorPreviewPlaceBuildingPreview:
+	SequencePlaceBuildingPreview:
+		Sequence: idle
+		SequencePalette: placebuilding
+	WithResourceStoragePipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 17
+		FullSequence: pip-yellow
 
 OILER:
 	Inherits: ^Building
@@ -471,14 +480,13 @@ SILO:
 	InfiltrateForCash:
 		Percentage: 50
 		Types: ThiefInfiltrate
-		Notification: CreditsStolen
+		InfiltratedNotification: CreditsStolen
 	WithBuildingBib:
 		HasMinibib: true
 	-WithSpriteBody:
 	WithResourceLevelSpriteBody:
 		Sequence: stages
 	StoresResources:
-		PipCount: 5
 		Capacity: 3000
 	-SpawnActorsOnSell:
 	Power:
@@ -486,6 +494,12 @@ SILO:
 	Explodes:
 		Weapon: SmallBuildingExplode
 		EmptyWeapon: SmallBuildingExplode
+	WithResourceStoragePipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 5
+		FullSequence: pip-yellow
 
 TENT:
 	Inherits: ^Building
@@ -1214,6 +1228,15 @@ PDOX:
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	ProvidesPrerequisite@buildingname:
+	WithSharedCargoPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		CustomPipSequences:
+			gray: pip-gray
+			yellow: pip-yellow
+			blue: pip-blue
+			red: pip-red
 
 TSLA:
 	Inherits: ^Defense
@@ -1365,6 +1388,7 @@ DOME:
 PBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetAll
+	Inherits@CARGOPIPS: ^CargoPips
 	Tooltip:
 		Name: Pillbox
 	Building:
@@ -1396,7 +1420,6 @@ PBOX:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
-		PipCount: 1
 		InitialUnits: e1
 	-SpawnActorsOnSell:
 	AttackGarrisoned:
@@ -1415,6 +1438,7 @@ PBOX:
 HBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetAll
+	Inherits@CARGOPIPS: ^CargoPips
 	Tooltip:
 		Name: Fortified Pillbox
 	Building:
@@ -1444,7 +1468,6 @@ HBOX:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 2
-		PipCount: 2
 		InitialUnits: e1, e3
 	-SpawnActorsOnSell:
 	DetectCloaked:
@@ -1464,6 +1487,7 @@ HBOX:
 TBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetAll
+	Inherits@CARGOPIPS: ^CargoPips
 	Tooltip:
 		Name: Tank Bunker
 	Building:
@@ -1493,7 +1517,6 @@ TBOX:
 	Cargo:
 		Types: Vehicle
 		MaxWeight: 1
-		PipCount: 1
 	-SpawnActorsOnSell:
 	AttackGarrisoned:
 		RequiresCondition: !build-incomplete
@@ -1719,7 +1742,7 @@ HPAD:
 		Prerequisites: dome, stek, ~techlevel.9
 		Description: Produces and reloads\nhelicopters.
 	Valued:
-		Cost: 800
+		Cost: 1000
 	Tooltip:
 		Name: Helipad
 	Building:

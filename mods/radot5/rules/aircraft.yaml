@@ -94,6 +94,7 @@ BADR.ClusterMines:
 
 BADR.Buildable:
 	Inherits: BADR
+	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
@@ -121,7 +122,6 @@ BADR.Buildable:
 	Cargo:
 		Types: Infantry, Cavalry, Vehicle
 		PipCount: 10
-		MaxWeight: 10
 		LoadedCondition: loaded
 	Sellable:
 		RequiresCondition: unit.sellable && !airborne && !loaded
@@ -199,7 +199,11 @@ MIG:
 	ProducibleWithLevel:
 		Prerequisites: aircraft.upgraded
 	Rearmable:
-		RearmActors: afld, afld.ukraine
+		RearmActors: afld
+	WithAmmoPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
 
 YAK:
 	Inherits: ^Plane
@@ -266,7 +270,6 @@ YAK:
 		InitialStanceAI: HoldFire
 	AmmoPool:
 		Ammo: 18
-		PipCount: 6
 		ReloadDelay: 11
 		AmmoCondition: ammo
 	SelectionDecorations:
@@ -283,7 +286,12 @@ YAK:
 	Selectable:
 		DecorationBounds: 30,28,0,2
 	Rearmable:
-		RearmActors: afld, afld.ukraine
+		RearmActors: afld
+	WithAmmoPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 6
 	RenderSprites:
 		Scale: 0.8
 		Image: YAK
@@ -313,7 +321,6 @@ BOMBER:
 		Actor: BOMBER.Husk
 	AmmoPool:
 		Ammo: 6
-		PipCount: 6
 		ReloadDelay: 40
 	RenderSprites:
 		Scale: 1.2
@@ -339,6 +346,7 @@ KMKZ:
 	-Armament@PRIMARY-AP:
 	-Armament@SECONDARY-AP:
 	-AmmoPool:
+	-WithAmmoPipsDecoration:
 	-WithMuzzleOverlay:
 	-GrantConditionOnPrerequisite@AP_BULLETS:
 	-ProducibleWithLevel:
@@ -355,6 +363,7 @@ KMKZ:
 
 BALLOON:
 	Inherits: ^Helicopter
+	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
@@ -383,7 +392,6 @@ BALLOON:
 	Cargo:
 		Types: Infantry, Cavalry
 		MaxWeight: 5
-		PipCount: 5
 		LoadedCondition: loaded
 	Sellable:
 		RequiresCondition: unit.sellable && !airborne && !loaded
@@ -396,6 +404,7 @@ BALLOON:
 
 TRAN:
 	Inherits: ^Helicopter
+	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
@@ -441,7 +450,6 @@ TRAN:
 	Cargo:
 		Types: Infantry, Cavalry
 		MaxWeight: 8
-		PipCount: 8
 		LoadedCondition: loaded
 		LoadingCondition: notmobile
 	Sellable:
@@ -513,6 +521,10 @@ HELI:
 		DecorationBounds: 36,28
 	Rearmable:
 		RearmActors: hpad
+	WithAmmoPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
 
 HIND:
 	Inherits: ^Helicopter
@@ -566,7 +578,6 @@ HIND:
 		RequiresCondition: !airborne
 	AmmoPool:
 		Ammo: 24
-		PipCount: 6
 		ReloadDelay: 8
 		AmmoCondition: ammo
 	SelectionDecorations:
@@ -581,6 +592,11 @@ HIND:
 		DecorationBounds: 38,32
 	Rearmable:
 		RearmActors: hpad
+	WithAmmoPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 6
 
 U2:
 	Inherits: ^NeutralPlane

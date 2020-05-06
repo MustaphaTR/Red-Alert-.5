@@ -66,7 +66,7 @@ namespace OpenRA.Mods.Common.Traits
 		public override object Create(ActorInitializer init) { return new SharedCargo(init, this); }
 	}
 
-	public class SharedCargo : PausableConditionalTrait<SharedCargoInfo>, IPips, IIssueOrder, IResolveOrder, IOrderVoice, INotifyCreated,
+	public class SharedCargo : PausableConditionalTrait<SharedCargoInfo>, IIssueOrder, IResolveOrder, IOrderVoice, INotifyCreated,
 		INotifyAddedToWorld, ITick, IIssueDeployOrder, INotifyKilled, INotifyActorDisposing
 	{
 		readonly Actor self;
@@ -126,7 +126,7 @@ namespace OpenRA.Mods.Common.Traits
 			return new Order("UnloadShared", self, queued);
 		}
 
-		bool IIssueDeployOrder.CanIssueDeployOrder(Actor self) { return true; }
+		bool IIssueDeployOrder.CanIssueDeployOrder(Actor self, bool queued) { return true; }
 
 		public void ResolveOrder(Actor self, Order order)
 		{
@@ -253,33 +253,6 @@ namespace OpenRA.Mods.Common.Traits
 
 			foreach (var t in passenger.TraitsImplementing<Turreted>())
 				t.TurretFacing = facing.Value.Facing + Info.PassengerFacing;
-		}
-
-		public IEnumerable<PipType> GetPips(Actor self)
-		{
-			if (IsTraitDisabled)
-				yield break;
-
-			var numPips = Info.PipCount;
-
-			for (var i = 0; i < numPips; i++)
-				yield return GetPipAt(i);
-		}
-
-		PipType GetPipAt(int i)
-		{
-			var n = i * Manager.Info.MaxWeight / Info.PipCount;
-
-			foreach (var c in Manager.Cargo)
-			{
-				var pi = c.Info.TraitInfo<SharedPassengerInfo>();
-				if (n < pi.Weight)
-					return pi.PipType;
-				else
-					n -= pi.Weight;
-			}
-
-			return PipType.Transparent;
 		}
 
 		public void Load(Actor self, Actor a)

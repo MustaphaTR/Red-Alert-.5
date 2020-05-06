@@ -418,8 +418,8 @@ HARV:
 		Capacity: 20
 		Resources: Ore,Gems
 		BaleUnloadDelay: 1
-		SearchFromProcRadius: 30
-		SearchFromHarvesterRadius: 11
+		SearchFromProcRadius: 15
+		SearchFromHarvesterRadius: 8
 		EmptyCondition: no-ore
 	Health:
 		HP: 60000
@@ -450,6 +450,14 @@ HARV:
 	WithHarvesterSpriteBody:
 		ImageByFullness: harvempty, harvhalf, harv
 	-WithFacingSpriteBody:
+	WithHarvesterPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 7
+		ResourceSequences:
+			Ore: pip-yellow
+			Gems: pip-red
 
 WHRV:
 	Inherits: HARV
@@ -530,6 +538,7 @@ JEEP:
 	Inherits: ^Vehicle
 	Inherits@APBULLETS: ^AffectedByAPBullets
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@CARGOPIPS: ^CargoPips
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
@@ -574,7 +583,6 @@ JEEP:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
-		PipCount: 1
 		LoadedCondition: loaded
 		LoadingCondition: notmobile
 	Sellable:
@@ -626,6 +634,7 @@ BGGY:
 APC:
 	Inherits: ^TrackedVehicle
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
@@ -656,7 +665,6 @@ APC:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
-		PipCount: 5
 		InitialUnits: e1
 		LoadedCondition: loaded
 		LoadingCondition: notmobile
@@ -691,6 +699,7 @@ MNLY:
 		Range: 4c0
 	Minelayer:
 		Mine: MINV
+		TileUnknownName: build-valid
 	MineImmune:
 	AmmoPool:
 		Ammo: 5
@@ -844,6 +853,7 @@ TTNK:
 FTRK:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@CARGOPIPS: ^CargoPips
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Buildable:
 		Queue: Vehicle
@@ -888,7 +898,6 @@ FTRK:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 2
-		PipCount: 2
 		LoadedCondition: loaded
 		LoadingCondition: notmobile
 	Sellable:
@@ -1108,6 +1117,7 @@ QTNK:
 STNK:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@CARGOPIPS: ^CargoPips
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
@@ -1146,8 +1156,7 @@ STNK:
 	WithSpriteTurret:
 	Cargo:
 		Types: Infantry
-		MaxWeight: 4
-		PipCount: 4
+		MaxWeight: 5
 		LoadedCondition: loaded
 		LoadingCondition: notmobile
 	Sellable:
